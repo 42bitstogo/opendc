@@ -109,6 +109,7 @@ private fun ClusterJSONSpec.toClusterSpec(random: RandomGenerator): ClusterSpec 
             totalPower = this.powerSource.totalPower,
             carbonTracePath = this.powerSource.carbonTracePath,
         )
+    //adit-2-TODO: construct costspec
     clusterId++
     return ClusterSpec(this.name, hostSpecs, powerSourceSpec)
 }

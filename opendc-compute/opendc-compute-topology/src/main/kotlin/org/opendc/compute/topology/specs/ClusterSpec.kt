@@ -26,4 +26,5 @@ public data class ClusterSpec(
     val name: String,
     val hostSpecs: List<HostSpec>,
     val powerSource: PowerSourceSpec,
+    //adit-1-TODO: add costSpec here which is a path to the file with host vs timestamp vs cost
 )
