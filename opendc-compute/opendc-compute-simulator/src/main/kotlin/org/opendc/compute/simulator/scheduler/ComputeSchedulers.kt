@@ -113,6 +113,7 @@ public fun createComputeScheduler(
                 subsetSize = Int.MAX_VALUE,
                 random = SplittableRandom(seeder.nextLong()),
             )
+        //adit-3-TODO add simple CostFilter that filters on the basis of some maxCost(later make this configurable) threshold
         ComputeSchedulerEnum.Replay -> ReplayScheduler(placements)
     }
 }

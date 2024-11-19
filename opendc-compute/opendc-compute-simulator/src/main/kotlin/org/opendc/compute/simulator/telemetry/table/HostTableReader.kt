@@ -141,4 +141,7 @@ public interface HostTableReader : Exportable {
      * The [Instant] at which the host booted.
      */
     public val bootTimeAbsolute: Instant?
+
+    //adit-TODO: add cost here
+
 }

@@ -75,6 +75,8 @@ public class SimHost(
     private val taskToGuestMap = HashMap<ServiceTask, Guest>()
     private val guests = mutableListOf<Guest>()
 
+    private var currentCost: Double = 0.0
+
     private var hostState: HostState = HostState.DOWN
         set(value) {
             if (value != field) {
@@ -368,5 +370,12 @@ public class SimHost(
         for (i in guests.indices) {
             guests[i].updateUptime()
         }
+    }
+
+    //adit-6-TODO - Part of 5 - make simHost update its cost
+    public fun updateCost(newCost: Double) {
+        currentCost = newCost
+        // Additional logic if needed, e.g., adjusting power consumption based on new cost
+        println("Host $name (ID: $uid) cost updated to $newCost at time ${InstantSource.system().millis()}")
     }
 }

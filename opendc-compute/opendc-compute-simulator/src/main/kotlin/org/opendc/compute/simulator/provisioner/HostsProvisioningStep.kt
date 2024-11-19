@@ -59,6 +59,21 @@ public class HostsProvisioningStep internal constructor(
 
             val carbonFragments = getCarbonFragments(cluster.powerSource.carbonTracePath)
 
+            //Design and implement CostTraceLoader and CostTraceReader.kt class same as for the carbon traces
+            //implement CostNode and CostDto classes
+            //CostNode has the onUpdate that is the main crucial function
+            //adit-4-TODO: val costTrace = getCostTrace()
+            val costTrace = loadCostTraces(costTracePath)
+            //loadCostTraces -> this should be in CostTraceLoader
+
+            // Initialize CostNode
+            val costNode = CostNode(
+                parentGraph = graph,
+                costTrace = costTrace,
+                startTime = startTime
+            )
+
+
             val simPowerSource = SimPowerSource(graph, cluster.powerSource.totalPower.toDouble(), carbonFragments, startTime)
 
             service.addPowerSource(simPowerSource)
@@ -69,6 +84,8 @@ public class HostsProvisioningStep internal constructor(
 
             // Create hosts, they are connected to the powerMux when SimMachine is created
             for (hostSpec in cluster.hostSpecs) {
+                //adit-5-TODO: Add method in Simhost  to accept the cost update
+                //
                 val simHost =
                     SimHost(
                         hostSpec.uid,
@@ -83,7 +100,29 @@ public class HostsProvisioningStep internal constructor(
 
                 require(simHosts.add(simHost)) { "Host with uid ${hostSpec.uid} already exists" }
                 service.addHost(simHost)
+
+                //adit-TODO register the host with CostNode
+                costNode.registerHost(simHost)
+                println("Created SimPowerSource: $simPowerSource")
+                println("Created Multiplexer: $powerMux connected to $simPowerSource")
+                println("Created SimHost: $simHost connected to $powerMux")
             }
+        }
+
+        private fun loadCostTraces(pathToFile: String): CostTrace {
+            val entries = File(pathToFile).useLines { lines ->
+                lines.drop(1) // Assuming the first line is a header
+                    .map { line ->
+                        val parts = line.split(",")
+                        CostTraceEntry(
+                            hostId = parts[0].trim(),
+                            timestamp = parts[1].trim().toLong(),
+                            cost = parts[2].trim().toDouble()
+                        )
+                    }
+                    .toList()
+            }
+            return CostTrace(entries)
         }
 
         return AutoCloseable {
