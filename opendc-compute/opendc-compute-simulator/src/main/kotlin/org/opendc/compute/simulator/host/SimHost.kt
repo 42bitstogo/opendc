@@ -306,6 +306,7 @@ public class SimHost(
             running,
             failed,
             invalid,
+            currentCost,
         )
     }
 
@@ -372,7 +373,11 @@ public class SimHost(
         }
     }
 
-    //adit-6-TODO - Part of 5 - make simHost update its cost
+    public fun getCurrentCost(): Double {
+        return currentCost
+    }
+
+    // adit-6-TODO - Part of 5 - make simHost update its cost
     public fun updateCost(newCost: Double) {
         currentCost = newCost
         // Additional logic if needed, e.g., adjusting power consumption based on new cost

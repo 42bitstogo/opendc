@@ -52,3 +52,5 @@ public const val TABLE_INTERFERENCE_GROUPS: String = "interference_groups"
 public const val TABLE_CARBON_INTENSITIES: String = "carbon_intensities"
 
 public const val TABLE_FAILURES: String = "failures"
+
+public const val COSTS: String = "costs"

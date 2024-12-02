@@ -20,30 +20,17 @@
  * SOFTWARE.
  */
 
-package org.opendc.simulator.compute.models;
+package org.opendc.compute.simulator.scheduler.filters
 
-public class CostDto {
-    private Long timestamp;
-    private double cost;
+import org.opendc.compute.simulator.service.HostView
+import org.opendc.compute.simulator.service.ServiceTask
 
-    public CostDto(Long timestamp, double cost) {
-        this.timestamp = timestamp;
-        this.cost = cost;
-    }
-
-    public Long getTimestamp() {
-        return timestamp;
-    }
-
-    public void setTimestamp(Long timestamp) {
-        this.timestamp = timestamp;
-    }
-
-    public double getCost() {
-        return cost;
-    }
-
-    public void setCost(double cost) {
-        this.cost = cost;
+public class CostFilter() : HostFilter {
+    override fun test(
+        host: HostView,
+        task: ServiceTask,
+    ): Boolean {
+        val currentCost = host.host.getMeta()["currentCost"] as? Double ?: Double.MAX_VALUE
+        return currentCost <= 1000000
     }
 }

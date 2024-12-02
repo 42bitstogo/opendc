@@ -20,30 +20,11 @@
  * SOFTWARE.
  */
 
-package org.opendc.simulator.compute.models;
+package org.opendc.trace.formats.cost.parquet
 
-public class CostDto {
-    private Long timestamp;
-    private double cost;
+import java.time.Instant
 
-    public CostDto(Long timestamp, double cost) {
-        this.timestamp = timestamp;
-        this.cost = cost;
-    }
-
-    public Long getTimestamp() {
-        return timestamp;
-    }
-
-    public void setTimestamp(Long timestamp) {
-        this.timestamp = timestamp;
-    }
-
-    public double getCost() {
-        return cost;
-    }
-
-    public void setCost(double cost) {
-        this.cost = cost;
-    }
-}
+internal data class CostFragment(
+    val timestamp: Instant,
+    val carbonIntensity: Double,
+)

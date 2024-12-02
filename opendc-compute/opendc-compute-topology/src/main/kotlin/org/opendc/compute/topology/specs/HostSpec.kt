@@ -23,6 +23,7 @@
 package org.opendc.compute.topology.specs
 
 import org.opendc.simulator.compute.cpu.CpuPowerModel
+import org.opendc.simulator.compute.models.CostModel
 import org.opendc.simulator.compute.models.MachineModel
 import java.util.UUID
 
@@ -42,4 +43,6 @@ public data class HostSpec(
     val meta: Map<String, Any>,
     val model: MachineModel,
     val cpuPowerModel: CpuPowerModel,
+    val costTracePath: String,
+    val costModel: CostModel,
 )

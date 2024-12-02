@@ -27,7 +27,9 @@ import org.opendc.compute.simulator.host.SimHost
 import org.opendc.compute.simulator.service.ComputeService
 import org.opendc.compute.topology.specs.ClusterSpec
 import org.opendc.compute.topology.specs.HostSpec
+import org.opendc.org.opendc.compute.price.getCosts
 import org.opendc.simulator.Multiplexer
+import org.opendc.simulator.compute.models.CostModel
 import org.opendc.simulator.compute.power.SimPowerSource
 import org.opendc.simulator.engine.FlowEngine
 
@@ -59,20 +61,14 @@ public class HostsProvisioningStep internal constructor(
 
             val carbonFragments = getCarbonFragments(cluster.powerSource.carbonTracePath)
 
-            //Design and implement CostTraceLoader and CostTraceReader.kt class same as for the carbon traces
-            //implement CostNode and CostDto classes
-            //CostNode has the onUpdate that is the main crucial function
-            //adit-4-TODO: val costTrace = getCostTrace()
-            val costTrace = loadCostTraces(costTracePath)
-            //loadCostTraces -> this should be in CostTraceLoader
-
-            // Initialize CostNode
-            val costNode = CostNode(
-                parentGraph = graph,
-                costTrace = costTrace,
-                startTime = startTime
-            )
-
+            // Design and implement CostTraceLoader and CostTraceReader.kt class same as for the carbon traces
+            // implement CostNode and CostDto classes
+            // CostNode has the onUpdate that is the main crucial function
+            // adit-4-TODO: val costTrace = getCostTrace()
+//            val costTrace = loadCostTraces(costTracePath)
+            // loadCostTraces -> this should be in CostTraceLoader
+            // make this directly in the
+            // check topologyfactory
 
             val simPowerSource = SimPowerSource(graph, cluster.powerSource.totalPower.toDouble(), carbonFragments, startTime)
 
@@ -82,10 +78,12 @@ public class HostsProvisioningStep internal constructor(
             val powerMux = Multiplexer(graph)
             graph.addEdge(powerMux, simPowerSource)
 
+            val costModels = mutableListOf<CostModel>()
             // Create hosts, they are connected to the powerMux when SimMachine is created
             for (hostSpec in cluster.hostSpecs) {
-                //adit-5-TODO: Add method in Simhost  to accept the cost update
+                // adit-5-TODO: Add method in Simhost  to accept the cost update
                 //
+                val costTrace = getCosts(hostSpec.costTracePath)
                 val simHost =
                     SimHost(
                         hostSpec.uid,
@@ -101,28 +99,14 @@ public class HostsProvisioningStep internal constructor(
                 require(simHosts.add(simHost)) { "Host with uid ${hostSpec.uid} already exists" }
                 service.addHost(simHost)
 
-                //adit-TODO register the host with CostNode
-                costNode.registerHost(simHost)
+                val costModel = CostModel(graph, costTrace, simHost, startTime)
+                graph.addEdge(simHost, costModel)
+                costModel.registerHost(hostSpec)
+                costModels.add(costModel)
                 println("Created SimPowerSource: $simPowerSource")
                 println("Created Multiplexer: $powerMux connected to $simPowerSource")
                 println("Created SimHost: $simHost connected to $powerMux")
             }
-        }
-
-        private fun loadCostTraces(pathToFile: String): CostTrace {
-            val entries = File(pathToFile).useLines { lines ->
-                lines.drop(1) // Assuming the first line is a header
-                    .map { line ->
-                        val parts = line.split(",")
-                        CostTraceEntry(
-                            hostId = parts[0].trim(),
-                            timestamp = parts[1].trim().toLong(),
-                            cost = parts[2].trim().toDouble()
-                        )
-                    }
-                    .toList()
-            }
-            return CostTrace(entries)
         }
 
         return AutoCloseable {

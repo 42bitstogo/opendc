@@ -20,30 +20,16 @@
  * SOFTWARE.
  */
 
-package org.opendc.simulator.compute.models;
+@file:JvmName("CostColumns")
 
-public class CostDto {
-    private Long timestamp;
-    private double cost;
+package org.opendc.trace.conv
 
-    public CostDto(Long timestamp, double cost) {
-        this.timestamp = timestamp;
-        this.cost = cost;
-    }
+/**
+ * A column containing the task identifier.
+ */
+public const val COST_TIMESTAMP: String = "timestamp"
 
-    public Long getTimestamp() {
-        return timestamp;
-    }
-
-    public void setTimestamp(Long timestamp) {
-        this.timestamp = timestamp;
-    }
-
-    public double getCost() {
-        return cost;
-    }
-
-    public void setCost(double cost) {
-        this.cost = cost;
-    }
-}
+/**
+ * A column containing the task identifier.
+ */
+public const val COST_VALUE: String = "cost"

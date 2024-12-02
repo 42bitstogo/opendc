@@ -142,6 +142,5 @@ public interface HostTableReader : Exportable {
      */
     public val bootTimeAbsolute: Instant?
 
-    //adit-TODO: add cost here
-
+    public val cost: Double
 }
