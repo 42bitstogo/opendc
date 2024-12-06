@@ -364,6 +364,7 @@ public class OpenDCRunner(
                     mapOf("cluster" to clusterId),
                     MachineModel(processors, memoryUnits[0]),
                     powerModel,
+                    "cost-trace-path",
                 )
 
             res += spec

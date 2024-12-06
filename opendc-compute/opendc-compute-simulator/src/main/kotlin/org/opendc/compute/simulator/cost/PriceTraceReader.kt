@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 AtLarge Research
+ * Copyright (c) 2024 AtLarge Research
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,15 +20,30 @@
  * SOFTWARE.
  */
 
-description = "Library for simulating computing workloads"
+package org.opendc.compute.simulator.cost
 
-plugins {
-    `kotlin-library-conventions`
-    `benchmark-conventions`
+import org.opendc.compute.simulator.models.CostDto
+import java.io.File
+import javax.management.InvalidAttributeValueException
+
+/**
+ * Construct a workload from a trace.
+ */
+public fun getCosts(pathToFile: String?): List<CostDto>? {
+    if (pathToFile == null) {
+        return null
+    }
+
+    return getCosts(File(pathToFile))
 }
 
-dependencies {
-    api(projects.opendcSimulator.opendcSimulatorFlow)
-//    implementation(projects.opendcCompute.opendcComputeSimulator)
-    testImplementation(libs.slf4j.simple)
+/**
+ * Construct a workload from a trace.
+ */
+public fun getCosts(file: File): List<CostDto> {
+    if (!file.exists()) {
+        throw InvalidAttributeValueException("The price trace cannot be found")
+    }
+
+    return PriceTraceLoader().get(file)
 }

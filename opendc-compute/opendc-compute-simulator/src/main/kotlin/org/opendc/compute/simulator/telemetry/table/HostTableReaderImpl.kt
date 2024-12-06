@@ -63,6 +63,7 @@ public class HostTableReaderImpl(
         _downtime = table.downtime
         _bootTime = table.bootTime
         _bootTimeAbsolute = table.bootTimeAbsolute
+        _cost = table.cost
     }
 
     private val _host = host
@@ -164,6 +165,10 @@ public class HostTableReaderImpl(
         get() = _bootTimeAbsolute
     private var _bootTimeAbsolute: Instant? = null
 
+    override val cost: Double
+        get() = _cost
+    private var _cost = 0.0
+
     /**
      * Record the next cycle.
      */
@@ -192,6 +197,7 @@ public class HostTableReaderImpl(
         _downtime = hostSysStats.downtime.toMillis()
         _bootTime = hostSysStats.bootTime
         _bootTime = hostSysStats.bootTime + startTime
+        _cost = hostSysStats.cost
     }
 
     /**

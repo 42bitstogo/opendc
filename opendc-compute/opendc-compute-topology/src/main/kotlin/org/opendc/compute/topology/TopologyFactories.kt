@@ -156,6 +156,7 @@ private fun HostJSONSpec.toHostSpec(
             mapOf("cluster" to clusterId),
             machineModel,
             powerModel,
+            costTracePath,
         )
     hostId++
 

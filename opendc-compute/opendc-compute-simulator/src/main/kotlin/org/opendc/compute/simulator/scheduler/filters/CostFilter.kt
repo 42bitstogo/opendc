@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 AtLarge Research
+ * Copyright (c) 2024 AtLarge Research
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,15 +20,31 @@
  * SOFTWARE.
  */
 
-description = "Library for simulating computing workloads"
+package org.opendc.compute.simulator.scheduler.filters
 
-plugins {
-    `kotlin-library-conventions`
-    `benchmark-conventions`
-}
+import org.opendc.compute.simulator.service.HostView
+import org.opendc.compute.simulator.service.ServiceTask
+import java.time.Instant
+import java.time.InstantSource
+import java.time.ZoneOffset
+import java.time.format.DateTimeFormatter
 
-dependencies {
-    api(projects.opendcSimulator.opendcSimulatorFlow)
-//    implementation(projects.opendcCompute.opendcComputeSimulator)
-    testImplementation(libs.slf4j.simple)
+public class CostFilter() : HostFilter {
+    private val formatter: DateTimeFormatter = DateTimeFormatter.ISO_INSTANT
+
+    override fun test(
+        host: HostView,
+        task: ServiceTask,
+    ): Boolean {
+        val currentCost = host.host.getCurrentCost() as? Double ?: Double.MAX_VALUE
+        val timestamp = Instant.ofEpochMilli(InstantSource.system().millis()).atOffset(ZoneOffset.UTC).format(formatter)
+
+        println("CostFilter: Evaluating Host '${host.host.getName()}' (ID: ${host.host.getUid()}) at $timestamp")
+        println("Current Cost: $currentCost")
+
+        val result = currentCost <= 100000.0
+        println("CostFilter: Host '${host.host.getName()}' selection result: $result\n")
+
+        return result
+    }
 }

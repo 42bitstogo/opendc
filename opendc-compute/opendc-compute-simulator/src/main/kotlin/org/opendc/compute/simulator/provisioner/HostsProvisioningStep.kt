@@ -23,7 +23,9 @@
 package org.opendc.compute.simulator.provisioner
 
 import org.opendc.compute.carbon.getCarbonFragments
+import org.opendc.compute.simulator.cost.getCosts
 import org.opendc.compute.simulator.host.SimHost
+import org.opendc.compute.simulator.models.CostModel
 import org.opendc.compute.simulator.service.ComputeService
 import org.opendc.compute.topology.specs.ClusterSpec
 import org.opendc.compute.topology.specs.HostSpec
@@ -53,6 +55,7 @@ public class HostsProvisioningStep internal constructor(
 
         val engine = FlowEngine.create(ctx.dispatcher)
         val graph = engine.newGraph()
+        val costModels = mutableListOf<CostModel>()
 
         for (cluster in clusterSpecs) {
             // Create the Power Source to which hosts are connected
@@ -69,6 +72,7 @@ public class HostsProvisioningStep internal constructor(
 
             // Create hosts, they are connected to the powerMux when SimMachine is created
             for (hostSpec in cluster.hostSpecs) {
+                val costTrace = getCosts(hostSpec.costTracePath)
                 val simHost =
                     SimHost(
                         hostSpec.uid,
@@ -83,12 +87,19 @@ public class HostsProvisioningStep internal constructor(
 
                 require(simHosts.add(simHost)) { "Host with uid ${hostSpec.uid} already exists" }
                 service.addHost(simHost)
+
+                val costModel = CostModel(graph, costTrace, simHost, startTime) // adit added this for cost awareness
+                costModels.add(costModel)
             }
         }
 
         return AutoCloseable {
             for (simHost in simHosts) {
                 simHost.close()
+            }
+
+            for (costModel in costModels) {
+                costModel.close()
             }
 
             for (simPowerSource in simPowerSources) {

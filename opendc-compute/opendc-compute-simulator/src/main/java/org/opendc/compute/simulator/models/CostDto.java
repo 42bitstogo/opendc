@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 AtLarge Research
+ * Copyright (c) 2024 AtLarge Research
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,15 +20,30 @@
  * SOFTWARE.
  */
 
-description = "Library for simulating computing workloads"
+package org.opendc.compute.simulator.models;
 
-plugins {
-    `kotlin-library-conventions`
-    `benchmark-conventions`
-}
+public class CostDto {
+    private Long timestamp;
+    private double cost;
 
-dependencies {
-    api(projects.opendcSimulator.opendcSimulatorFlow)
-//    implementation(projects.opendcCompute.opendcComputeSimulator)
-    testImplementation(libs.slf4j.simple)
+    public CostDto(Long timestamp, double cost) {
+        this.timestamp = timestamp;
+        this.cost = cost;
+    }
+
+    public Long getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(Long timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    public double getCost() {
+        return cost;
+    }
+
+    public void setCost(double cost) {
+        this.cost = cost;
+    }
 }

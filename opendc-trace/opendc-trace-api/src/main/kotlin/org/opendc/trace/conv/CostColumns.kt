@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 AtLarge Research
+ * Copyright (c) 2024 AtLarge Research
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -20,15 +20,16 @@
  * SOFTWARE.
  */
 
-description = "Library for simulating computing workloads"
+@file:JvmName("CostColumns")
 
-plugins {
-    `kotlin-library-conventions`
-    `benchmark-conventions`
-}
+package org.opendc.trace.conv
 
-dependencies {
-    api(projects.opendcSimulator.opendcSimulatorFlow)
-//    implementation(projects.opendcCompute.opendcComputeSimulator)
-    testImplementation(libs.slf4j.simple)
-}
+/**
+ * A column containing the task identifier.
+ */
+public const val COST_TIMESTAMP: String = "timestamp"
+
+/**
+ * A column containing the task identifier.
+ */
+public const val COST_VALUE: String = "cost"
