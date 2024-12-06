@@ -197,7 +197,7 @@ public class HostTableReaderImpl(
         _downtime = hostSysStats.downtime.toMillis()
         _bootTime = hostSysStats.bootTime
         _bootTime = hostSysStats.bootTime + startTime
-        _cost = hostSysStats.cos
+        _cost = hostSysStats.cost
     }
 
     /**

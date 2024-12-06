@@ -27,6 +27,7 @@ import org.opendc.trace.TableWriter
 import org.opendc.trace.azure.AzureTraceFormat
 import org.opendc.trace.bitbrains.BitbrainsTraceFormat
 import org.opendc.trace.formats.carbon.CarbonTraceFormat
+import org.opendc.trace.formats.cost.CostTraceFormat
 import org.opendc.trace.formats.failure.FailureTraceFormat
 import org.opendc.trace.formats.opendc.OdcVmTraceFormat
 import org.opendc.trace.gwf.GwfTraceFormat
@@ -131,6 +132,7 @@ public interface TraceFormat {
                 "swf" -> SwfTraceFormat()
                 "wfformat" -> WfFormatTraceFormat()
                 "wtf" -> WtfTraceFormat()
+                "cost" -> CostTraceFormat()
                 else -> null
             }
         }

@@ -20,8 +20,11 @@
  * SOFTWARE.
  */
 
-package org.opendc.simulator.compute.models;
+package org.opendc.compute.simulator.models;
 
+import java.time.Instant;
+import java.time.ZoneOffset;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import org.opendc.compute.simulator.host.SimHost;
 import org.opendc.simulator.engine.FlowGraph;
@@ -37,6 +40,7 @@ public class CostModel extends FlowNode {
     private final List<CostDto> costTrace;
     private int currentIndex = 0;
 
+    private final DateTimeFormatter formatter = DateTimeFormatter.ISO_INSTANT.withZone(ZoneOffset.UTC);
     /**
      * Construct a CostModel.
      *
@@ -62,20 +66,32 @@ public class CostModel extends FlowNode {
     public long onUpdate(long now) {
         currentIndex++;
         if (currentIndex < costTrace.size()) {
-            // Update host cost
             CostDto currentCostDto = costTrace.get(currentIndex);
-            host.updateCost(currentCostDto.getCost());
+            double newCost = currentCostDto.getCost();
+            long timestampMillis = currentCostDto.getTimestamp();
+            String timestamp = Instant.ofEpochMilli(timestampMillis)
+                    .atOffset(ZoneOffset.UTC)
+                    .format(formatter);
 
-            // Schedule next update
+            System.out.println("CostModel: Updating cost for Host '" + host.getName() + "' (ID: " + host.getUid()
+                    + ") at " + timestamp);
+            System.out.println("CostModel: New Cost = " + newCost);
+
+            host.updateCost(newCost);
+
             if (currentIndex + 1 < costTrace.size()) {
                 long nextTimestamp = costTrace.get(currentIndex + 1).getTimestamp();
+                String nextTimeFormatted = Instant.ofEpochMilli(nextTimestamp)
+                        .atOffset(ZoneOffset.UTC)
+                        .format(formatter);
+                System.out.println("CostModel: Scheduling next cost update at " + nextTimeFormatted + "\n");
                 return getRelativeTime(nextTimestamp);
             } else {
-                // No more updates
+                System.out.println("CostModel: No more cost updates. Scheduling termination.\n");
                 return Long.MAX_VALUE;
             }
         } else {
-            // No more cost data
+            System.out.println("CostModel: Cost trace exhausted. No more updates.\n");
             return Long.MAX_VALUE;
         }
     }

@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-package org.opendc.simulator.compute.models;
+package org.opendc.compute.simulator.models;
 
 public class CostDto {
     private Long timestamp;

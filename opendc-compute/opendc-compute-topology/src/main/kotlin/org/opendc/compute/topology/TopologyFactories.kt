@@ -31,7 +31,6 @@ import org.opendc.compute.topology.specs.HostSpec
 import org.opendc.compute.topology.specs.PowerSourceSpec
 import org.opendc.compute.topology.specs.TopologySpec
 import org.opendc.simulator.compute.cpu.getPowerModel
-import org.opendc.simulator.compute.models.CostModel
 import org.opendc.simulator.compute.models.CpuModel
 import org.opendc.simulator.compute.models.MachineModel
 import org.opendc.simulator.compute.models.MemoryUnit
@@ -110,7 +109,6 @@ private fun ClusterJSONSpec.toClusterSpec(random: RandomGenerator): ClusterSpec 
             totalPower = this.powerSource.totalPower,
             carbonTracePath = this.powerSource.carbonTracePath,
         )
-    // adit-2-TODO: construct costspec
     clusterId++
     return ClusterSpec(this.name, hostSpecs, powerSourceSpec)
 }
@@ -151,11 +149,6 @@ private fun HostJSONSpec.toHostSpec(
         hostName = name
     }
 
-    // adit-3-TODO
-    // read the file from costTracePath in hostspec
-
-    val costModel = CostModel()
-
     val hostSpec =
         HostSpec(
             UUID(random.nextLong(), (hostId).toLong()),
@@ -163,6 +156,7 @@ private fun HostJSONSpec.toHostSpec(
             mapOf("cluster" to clusterId),
             machineModel,
             powerModel,
+            costTracePath,
         )
     hostId++
 

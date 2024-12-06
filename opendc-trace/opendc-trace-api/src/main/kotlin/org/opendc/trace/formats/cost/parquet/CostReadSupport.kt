@@ -32,15 +32,13 @@ import org.apache.parquet.schema.PrimitiveType
 import org.apache.parquet.schema.Types
 import org.opendc.trace.conv.COST_TIMESTAMP
 import org.opendc.trace.conv.COST_VALUE
-import org.opendc.trace.formats.carbon.parquet.CarbonIntensityFragment
-import org.opendc.trace.formats.carbon.parquet.CarbonIntensityRecordMaterializer
 
 /**
  * A [ReadSupport] instance for [Task] objects.
  *
  * @param projection The projection of the table to read.
  */
-internal class CostReadSupport(private val projection: List<String>?) : ReadSupport<CarbonIntensityFragment>() {
+internal class CostReadSupport(private val projection: List<String>?) : ReadSupport<CostFragment>() {
     /**
      * Mapping of table columns to their Parquet column names.
      */
@@ -74,7 +72,7 @@ internal class CostReadSupport(private val projection: List<String>?) : ReadSupp
         keyValueMetaData: Map<String, String>,
         fileSchema: MessageType,
         readContext: ReadContext,
-    ): RecordMaterializer<CarbonIntensityFragment> = CarbonIntensityRecordMaterializer(readContext.requestedSchema)
+    ): RecordMaterializer<CostFragment> = CostRecordMaterializer(readContext.requestedSchema)
 
     companion object {
         /**

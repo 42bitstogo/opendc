@@ -25,17 +25,17 @@ package org.opendc.trace.formats.cost
 import org.opendc.trace.TableReader
 import org.opendc.trace.conv.COST_TIMESTAMP
 import org.opendc.trace.conv.COST_VALUE
-import org.opendc.trace.formats.carbon.parquet.CarbonIntensityFragment
+import org.opendc.trace.formats.cost.parquet.CostFragment
 import org.opendc.trace.util.parquet.LocalParquetReader
 import java.time.Duration
 import java.time.Instant
 import java.util.UUID
 
-internal class CostTableReader(private val reader: LocalParquetReader<CarbonIntensityFragment>) : TableReader {
+internal class CostTableReader(private val reader: LocalParquetReader<CostFragment>) : TableReader {
     /**
      * The current record.
      */
-    private var record: CarbonIntensityFragment? = null
+    private var record: CostFragment? = null
 
     override fun nextRow(): Boolean {
         try {
@@ -84,7 +84,7 @@ internal class CostTableReader(private val reader: LocalParquetReader<CarbonInte
     override fun getDouble(index: Int): Double {
         val record = checkNotNull(record) { "Reader in invalid state" }
         return when (index) {
-            cost -> record.carbonIntensity
+            cost -> record.cost
             else -> throw IllegalArgumentException("Invalid column")
         }
     }

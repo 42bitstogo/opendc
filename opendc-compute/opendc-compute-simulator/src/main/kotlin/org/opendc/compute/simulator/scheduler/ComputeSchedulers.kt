@@ -46,7 +46,7 @@ public enum class ComputeSchedulerEnum {
     ProvisionedCoresInv,
     Random,
     Replay,
-    Cost, // adit-TODO: add costscheduler
+    Cost,
 }
 
 public fun createComputeScheduler(
@@ -115,11 +115,11 @@ public fun createComputeScheduler(
                 subsetSize = Int.MAX_VALUE,
                 random = SplittableRandom(seeder.nextLong()),
             )
-        // adit-3-TODO add simple CostFilter that filters on the basis of some maxCost(later make this configurable) threshold
         ComputeSchedulerEnum.Cost ->
             FilterScheduler(
-                filters = listOf(CostFilter(), VCpuFilter(cpuAllocationRatio), RamFilter(ramAllocationRatio)),
+                filters = listOf(CostFilter()),
                 weighers = emptyList(),
+//                weighers = listOf(CostWeigher()),
                 subsetSize = Int.MAX_VALUE,
                 random = SplittableRandom(seeder.nextLong()),
             )

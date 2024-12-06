@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-package org.opendc.compute.simulator.scheduler.filters
+package org.opendc.compute.simulator.scheduler.weights
 
 import org.opendc.compute.simulator.service.HostView
 import org.opendc.compute.simulator.service.ServiceTask
@@ -29,22 +29,28 @@ import java.time.InstantSource
 import java.time.ZoneOffset
 import java.time.format.DateTimeFormatter
 
-public class CostFilter() : HostFilter {
+/* Return the cost as the weight.
+     The FilterScheduler picks the host with the lowest weight by default if no multiplier is negative.
+     we want the lowest cost to win, so the multiplier is
+     positive and the scheduler picks by minimum weight.*/
+public class CostWeigher(override val multiplier: Double = 1.0) : HostWeigher {
     private val formatter: DateTimeFormatter = DateTimeFormatter.ISO_INSTANT
 
-    override fun test(
+    override fun getWeight(
         host: HostView,
         task: ServiceTask,
-    ): Boolean {
+    ): Double {
         val currentCost = host.host.getCurrentCost() as? Double ?: Double.MAX_VALUE
         val timestamp = Instant.ofEpochMilli(InstantSource.system().millis()).atOffset(ZoneOffset.UTC).format(formatter)
 
-        println("CostFilter: Evaluating Host '${host.host.getName()}' (ID: ${host.host.getUid()}) at $timestamp")
-        println("Current Cost: $currentCost")
+        println("CostWeigher: Calculating weight for Host '${host.host.getName()}' (ID: ${host.host.getUid()}) at $timestamp")
+        println("Current Cost: $currentCost, Multiplier: $multiplier")
 
-        val result = currentCost <= 100000.0
-        println("CostFilter: Host '${host.host.getName()}' selection result: $result\n")
+        val weight = currentCost * multiplier
+        println("CostWeigher: Weight for Host '${host.host.getName()}' is $weight\n")
 
-        return result
+        return weight
     }
+
+    override fun toString(): String = "CostWeigher"
 }

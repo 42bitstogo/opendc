@@ -377,10 +377,8 @@ public class SimHost(
         return currentCost
     }
 
-    // adit-6-TODO - Part of 5 - make simHost update its cost
     public fun updateCost(newCost: Double) {
         currentCost = newCost
-        // Additional logic if needed, e.g., adjusting power consumption based on new cost
         println("Host $name (ID: $uid) cost updated to $newCost at time ${InstantSource.system().millis()}")
     }
 }

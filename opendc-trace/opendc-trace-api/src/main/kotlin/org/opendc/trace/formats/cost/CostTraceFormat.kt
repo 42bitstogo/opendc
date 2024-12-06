@@ -25,7 +25,7 @@ import org.opendc.trace.TableColumn
 import org.opendc.trace.TableColumnType
 import org.opendc.trace.TableReader
 import org.opendc.trace.TableWriter
-import org.opendc.trace.conv.COSTS
+import org.opendc.trace.conv.COST
 import org.opendc.trace.conv.COST_TIMESTAMP
 import org.opendc.trace.conv.COST_VALUE
 import org.opendc.trace.formats.cost.parquet.CostReadSupport
@@ -41,14 +41,14 @@ public class CostTraceFormat : TraceFormat {
         throw UnsupportedOperationException("Writing not supported for this format")
     }
 
-    override fun getTables(path: Path): List<String> = listOf(COSTS)
+    override fun getTables(path: Path): List<String> = listOf(COST)
 
     override fun getDetails(
         path: Path,
         table: String,
     ): TableDetails {
         return when (table) {
-            COSTS ->
+            COST ->
                 TableDetails(
                     listOf(
                         TableColumn(COST_TIMESTAMP, TableColumnType.Instant),
@@ -65,7 +65,7 @@ public class CostTraceFormat : TraceFormat {
         projection: List<String>?,
     ): TableReader {
         return when (table) {
-            COSTS -> {
+            COST -> {
                 val reader = LocalParquetReader(path, CostReadSupport(projection))
                 CostTableReader(reader)
             }

@@ -26,5 +26,5 @@ import java.time.Instant
 
 internal data class CostFragment(
     val timestamp: Instant,
-    val carbonIntensity: Double,
+    val cost: Double,
 )
