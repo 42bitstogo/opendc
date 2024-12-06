@@ -117,7 +117,7 @@ public fun createComputeScheduler(
             )
         ComputeSchedulerEnum.Cost ->
             FilterScheduler(
-                filters = listOf(CostFilter()),
+                filters = listOf(CostFilter(),ComputeFilter(), VCpuFilter(cpuAllocationRatio), RamFilter(ramAllocationRatio)),
                 weighers = emptyList(),
 //                weighers = listOf(CostWeigher()),
                 subsetSize = Int.MAX_VALUE,
