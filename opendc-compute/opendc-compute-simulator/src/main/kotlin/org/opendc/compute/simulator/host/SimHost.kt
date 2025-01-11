@@ -26,6 +26,8 @@ import org.opendc.compute.api.Flavor
 import org.opendc.compute.api.TaskState
 import org.opendc.compute.simulator.internal.Guest
 import org.opendc.compute.simulator.internal.GuestListener
+import org.opendc.compute.simulator.models.CostDto
+import org.opendc.compute.simulator.models.CostModel
 import org.opendc.compute.simulator.service.ServiceTask
 import org.opendc.compute.simulator.telemetry.GuestCpuStats
 import org.opendc.compute.simulator.telemetry.GuestSystemStats
@@ -63,6 +65,7 @@ public class SimHost(
     private val machineModel: MachineModel,
     private val powerModel: CpuPowerModel,
     private val powerMux: Multiplexer,
+    private val costTrace: List<CostDto>,
 ) : AutoCloseable {
     /**
      * The event listeners registered with this host.
@@ -91,6 +94,9 @@ public class SimHost(
             machineModel.cpu.coreCount,
             machineModel.memory.size,
         )
+
+//    val costModel = CostModel(graph, costTrace, simHost, startTime) // adit added this for cost awareness
+    private val costModel = CostModel(graph, costTrace, this) // adit added this for cost awareness
 
     private var simMachine: SimMachine? = null
 
@@ -378,7 +384,8 @@ public class SimHost(
     }
 
     public fun updateCost(newCost: Double) {
-        currentCost = newCost
+        this.currentCost = newCost
         println("Host $name (ID: $uid) cost updated to $newCost at time ${InstantSource.system().millis()}")
     }
+
 }

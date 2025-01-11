@@ -36,7 +36,7 @@ import org.opendc.simulator.engine.FlowNode;
 public class CostModel extends FlowNode {
 
     private final SimHost host;
-    private final long startTime; // Simulation start time
+    private final long startTime = 0L; // Simulation start time
     private final List<CostDto> costTrace;
     private int currentIndex = 0;
 
@@ -49,10 +49,9 @@ public class CostModel extends FlowNode {
      * @param costTrace   The list of CostDto representing cost over time.
      * @param startTime   The simulation start time.
      */
-    public CostModel(FlowGraph parentGraph, List<CostDto> costTrace, SimHost host, long startTime) {
+    public CostModel(FlowGraph parentGraph, List<CostDto> costTrace, SimHost host) {
         super(parentGraph);
         this.host = host;
-        this.startTime = startTime;
         this.costTrace = costTrace;
 
         if (!costTrace.isEmpty()) {
@@ -77,7 +76,7 @@ public class CostModel extends FlowNode {
                     + ") at " + timestamp);
             System.out.println("CostModel: New Cost = " + newCost);
 
-            host.updateCost(newCost);
+            this.host.updateCost(newCost);
 
             if (currentIndex + 1 < costTrace.size()) {
                 long nextTimestamp = costTrace.get(currentIndex + 1).getTimestamp();
