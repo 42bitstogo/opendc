@@ -30,6 +30,7 @@ import org.opendc.compute.simulator.scheduler.filters.RamFilter
 import org.opendc.compute.simulator.scheduler.filters.VCpuFilter
 import org.opendc.compute.simulator.scheduler.weights.CoreRamWeigher
 import org.opendc.compute.simulator.scheduler.weights.InstanceCountWeigher
+import org.opendc.compute.simulator.scheduler.weights.CostWeigher
 import org.opendc.compute.simulator.scheduler.weights.RamWeigher
 import org.opendc.compute.simulator.scheduler.weights.VCpuWeigher
 import java.util.SplittableRandom
@@ -118,10 +119,10 @@ public fun createComputeScheduler(
         ComputeSchedulerEnum.Cost ->
             FilterScheduler(
                 filters = listOf(CostFilter(),ComputeFilter(), VCpuFilter(cpuAllocationRatio), RamFilter(ramAllocationRatio)),
-                weighers = emptyList(),
-//                weighers = listOf(CostWeigher()),
-                subsetSize = Int.MAX_VALUE,
-                random = SplittableRandom(seeder.nextLong()),
+//                weighers = emptyList(),
+                weighers = listOf(CostWeigher()),
+//                subsetSize = Int.MAX_VALUE,
+//                random = SplittableRandom(seeder.nextLong()),
             )
         ComputeSchedulerEnum.Replay -> ReplayScheduler(placements)
     }

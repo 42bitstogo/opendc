@@ -83,7 +83,7 @@ public class CostModel extends FlowNode {
                 String nextTimeFormatted = Instant.ofEpochMilli(nextTimestamp)
                         .atOffset(ZoneOffset.UTC)
                         .format(formatter);
-                System.out.println("CostModel: Scheduling next cost update at " + nextTimeFormatted + "\n");
+                System.out.println("CostModel: Scheduling next cost update at " + nextTimestamp + "\n");
                 return getRelativeTime(nextTimestamp);
             } else {
                 System.out.println("CostModel: No more cost updates. Scheduling termination.\n");
