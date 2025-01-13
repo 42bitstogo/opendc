@@ -29,22 +29,15 @@ import java.time.InstantSource
 import java.time.ZoneOffset
 import java.time.format.DateTimeFormatter
 
-public class CostFilter() : HostFilter {
-    private val formatter: DateTimeFormatter = DateTimeFormatter.ISO_INSTANT
+public class CostFilter(private val maxCost: Double = 1000.0) : HostFilter {
+    override fun test(host: HostView, task: ServiceTask): Boolean {
+        val currentCost = host.host.getCurrentCost()
 
-    override fun test(
-        host: HostView,
-        task: ServiceTask,
-    ): Boolean {
-        val currentCost = host.host.getCurrentCost() as? Double ?: Double.MAX_VALUE
-        val timestamp = Instant.ofEpochMilli(InstantSource.system().millis()).atOffset(ZoneOffset.UTC).format(formatter)
+        System.out.printf("CostFilter: Host %s cost %.2f at %s%n",
+            host.host.getName(),
+            currentCost,
+            host.host.getSystemStats())
 
-        println("CostFilter: Evaluating Host '${host.host.getName()}' (ID: ${host.host.getUid()}) at $timestamp")
-        println("Current Cost: $currentCost")
-
-        val result = currentCost <= 100000.0
-        println("CostFilter: Host '${host.host.getName()}' selection result: $result\n")
-
-        return result
+        return currentCost <= maxCost
     }
 }

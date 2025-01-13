@@ -33,7 +33,9 @@ internal class CostRecordMaterializer(schema: MessageType) : RecordMaterializer<
     /**
      * State of current record being read.
      */
-    private var localTimestamp: Instant = Instant.MIN
+//    private var localTimestamp: Instant = Instant.MIN
+    private var localStartTime: Instant = Instant.MIN
+    private var localEndTime: Instant = Instant.MIN
     private var localCost: Double = 0.0
 
     /**
@@ -47,10 +49,16 @@ internal class CostRecordMaterializer(schema: MessageType) : RecordMaterializer<
             private val converters =
                 schema.fields.map { type ->
                     when (type.name) {
-                        "timestamp" ->
+                        "startTime" ->
                             object : PrimitiveConverter() {
                                 override fun addLong(value: Long) {
-                                    localTimestamp = Instant.ofEpochMilli(value)
+                                    localStartTime = Instant.ofEpochMilli(value)
+                                }
+                            }
+                        "endTime" ->
+                            object : PrimitiveConverter() {
+                                override fun addLong(value: Long) {
+                                    localEndTime = Instant.ofEpochMilli(value)
                                 }
                             }
                         "cost" ->
@@ -64,7 +72,8 @@ internal class CostRecordMaterializer(schema: MessageType) : RecordMaterializer<
                 }
 
             override fun start() {
-                localTimestamp = Instant.MIN
+                localStartTime = Instant.MIN
+                localEndTime = Instant.MIN
                 localCost = 0.0
             }
 
@@ -75,7 +84,8 @@ internal class CostRecordMaterializer(schema: MessageType) : RecordMaterializer<
 
     override fun getCurrentRecord(): CostFragment =
         CostFragment(
-            localTimestamp,
+            localStartTime,
+            localEndTime,
             localCost,
         )
 

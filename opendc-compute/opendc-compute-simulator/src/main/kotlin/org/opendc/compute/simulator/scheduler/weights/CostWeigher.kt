@@ -34,23 +34,16 @@ import java.time.format.DateTimeFormatter
      we want the lowest cost to win, so the multiplier is
      positive and the scheduler picks by minimum weight.*/
 public class CostWeigher(override val multiplier: Double = 1.0) : HostWeigher {
-    private val formatter: DateTimeFormatter = DateTimeFormatter.ISO_INSTANT
+    override fun getWeight(host: HostView, task: ServiceTask): Double {
+        return host.host.getCurrentCost()
 
-    override fun getWeight(
-        host: HostView,
-        task: ServiceTask,
-    ): Double {
-        val currentCost = host.host.getCurrentCost() as? Double ?: Double.MAX_VALUE
-        val timestamp = Instant.ofEpochMilli(InstantSource.system().millis()).atOffset(ZoneOffset.UTC).format(formatter)
-
-        println("CostWeigher: Calculating weight for Host '${host.host.getName()}' (ID: ${host.host.getUid()}) at $timestamp")
-        println("Current Cost: $currentCost, Multiplier: $multiplier")
-
-        val weight = currentCost * multiplier
-        println("CostWeigher: Weight for Host '${host.host.getName()}' is $weight\n")
-
-        return weight
+//        System.out.printf("CostWeigher: Host %s weight calculation - Cost: %.2f, Multiplier: %.2f%n",
+//            host.host.getName(),
+//            cost,
+//            multiplier)
+//
+//        return cost * multiplier
     }
 
-    override fun toString(): String = "CostWeigher"
+    override fun toString(): String = "CostWeigher(multiplier=$multiplier)"
 }

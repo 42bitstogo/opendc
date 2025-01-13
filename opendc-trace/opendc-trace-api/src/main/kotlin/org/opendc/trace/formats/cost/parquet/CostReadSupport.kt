@@ -32,6 +32,8 @@ import org.apache.parquet.schema.PrimitiveType
 import org.apache.parquet.schema.Types
 import org.opendc.trace.conv.COST_TIMESTAMP
 import org.opendc.trace.conv.COST_VALUE
+import org.opendc.trace.conv.END_TIME
+import org.opendc.trace.conv.START_TIME
 
 /**
  * A [ReadSupport] instance for [Task] objects.
@@ -44,8 +46,10 @@ internal class CostReadSupport(private val projection: List<String>?) : ReadSupp
      */
     private val colMap =
         mapOf(
-            COST_TIMESTAMP to "timestamp",
             COST_VALUE to "cost",
+            START_TIME to "startTime",
+            END_TIME to "endTime",
+
         )
 
     override fun init(context: InitContext): ReadContext {
@@ -83,12 +87,16 @@ internal class CostReadSupport(private val projection: List<String>?) : ReadSupp
             Types.buildMessage()
                 .addFields(
                     Types
-                        .optional(PrimitiveType.PrimitiveTypeName.INT64)
-                        .`as`(LogicalTypeAnnotation.timestampType(true, LogicalTypeAnnotation.TimeUnit.MILLIS))
-                        .named("timestamp"),
-                    Types
                         .optional(PrimitiveType.PrimitiveTypeName.DOUBLE)
                         .named("cost"),
+                    Types
+                        .optional(PrimitiveType.PrimitiveTypeName.INT64)
+                        .`as`(LogicalTypeAnnotation.timestampType(true, LogicalTypeAnnotation.TimeUnit.MILLIS))
+                        .named("startTime"),
+                    Types
+                        .optional(PrimitiveType.PrimitiveTypeName.INT64)
+                        .`as`(LogicalTypeAnnotation.timestampType(true, LogicalTypeAnnotation.TimeUnit.MILLIS))
+                        .named("endTime"),
                 )
                 .named("cost_fragment")
     }

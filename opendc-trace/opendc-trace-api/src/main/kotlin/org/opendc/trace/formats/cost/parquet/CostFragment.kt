@@ -25,6 +25,8 @@ package org.opendc.trace.formats.cost.parquet
 import java.time.Instant
 
 internal data class CostFragment(
-    val timestamp: Instant,
+//    val timestamp: Instant,
+    val startTime: Instant,
+    val endTime: Instant,
     val cost: Double,
 )

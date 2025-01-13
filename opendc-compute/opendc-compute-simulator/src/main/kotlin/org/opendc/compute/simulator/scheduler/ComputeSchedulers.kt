@@ -29,6 +29,7 @@ import org.opendc.compute.simulator.scheduler.filters.CostFilter
 import org.opendc.compute.simulator.scheduler.filters.RamFilter
 import org.opendc.compute.simulator.scheduler.filters.VCpuFilter
 import org.opendc.compute.simulator.scheduler.weights.CoreRamWeigher
+import org.opendc.compute.simulator.scheduler.weights.CostWeigher
 import org.opendc.compute.simulator.scheduler.weights.InstanceCountWeigher
 import org.opendc.compute.simulator.scheduler.weights.RamWeigher
 import org.opendc.compute.simulator.scheduler.weights.VCpuWeigher
@@ -47,6 +48,7 @@ public enum class ComputeSchedulerEnum {
     Random,
     Replay,
     Cost,
+    SimpleCost,
 }
 
 public fun createComputeScheduler(
@@ -118,11 +120,11 @@ public fun createComputeScheduler(
         ComputeSchedulerEnum.Cost ->
             FilterScheduler(
                 filters = listOf(CostFilter(),ComputeFilter(), VCpuFilter(cpuAllocationRatio), RamFilter(ramAllocationRatio)),
-                weighers = emptyList(),
-//                weighers = listOf(CostWeigher()),
+                weighers = listOf(CostWeigher(multiplier = -1.0)),
                 subsetSize = Int.MAX_VALUE,
                 random = SplittableRandom(seeder.nextLong()),
             )
+        ComputeSchedulerEnum.SimpleCost -> SimpleCostScheduler()
         ComputeSchedulerEnum.Replay -> ReplayScheduler(placements)
     }
 }

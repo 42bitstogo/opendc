@@ -24,8 +24,9 @@ package org.opendc.compute.simulator.cost
 import org.opendc.compute.simulator.models.CostDto
 import org.opendc.trace.Trace
 import org.opendc.trace.conv.COST
-import org.opendc.trace.conv.COST_TIMESTAMP
 import org.opendc.trace.conv.COST_VALUE
+import org.opendc.trace.conv.END_TIME
+import org.opendc.trace.conv.START_TIME
 import java.io.File
 import java.time.Instant
 
@@ -39,15 +40,16 @@ public class PriceTraceLoader() {
         val reader = checkNotNull(trace.getTable(COST)!!.newReader())
 
         val costs: MutableList<CostDto> = mutableListOf()
-        val costTimestamp = reader.resolve(COST_TIMESTAMP)
+        val start = reader.resolve(START_TIME)
+        val end = reader.resolve(END_TIME)
         val costColumn = reader.resolve(COST_VALUE)
 
         try {
             while (reader.nextRow()) {
-                val timestamp = reader.getInstant(costTimestamp)!!
+                val startTime = reader.getInstant(start)!!
+                val endTime = reader.getInstant(end)!!
                 val cost = reader.getDouble(costColumn)
-
-                costs.add(CostDto(timestamp.toEpochMilli(), cost))
+                costs.add(CostDto(startTime.toEpochMilli(), endTime.toEpochMilli(), cost))
             }
             return costs
         } catch (e: Exception) {
@@ -76,12 +78,14 @@ private class CostFragmentBuilder {
      */
     fun add(
         startTime: Instant,
+        endTime: Instant,
         cost: Double,
     ) {
         fragments.add(
             CostDto(
                 startTime.toEpochMilli(),
-                cost,
+                endTime.toEpochMilli(),
+                cost
             ),
         )
     }

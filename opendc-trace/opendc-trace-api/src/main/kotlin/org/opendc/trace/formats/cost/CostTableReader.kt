@@ -25,6 +25,8 @@ package org.opendc.trace.formats.cost
 import org.opendc.trace.TableReader
 import org.opendc.trace.conv.COST_TIMESTAMP
 import org.opendc.trace.conv.COST_VALUE
+import org.opendc.trace.conv.END_TIME
+import org.opendc.trace.conv.START_TIME
 import org.opendc.trace.formats.cost.parquet.CostFragment
 import org.opendc.trace.util.parquet.LocalParquetReader
 import java.time.Duration
@@ -51,10 +53,13 @@ internal class CostTableReader(private val reader: LocalParquetReader<CostFragme
 
     private val timestamp = 0
     private val cost = 1
+    private val startTime = 0
+    private val endTime = 1
 
     override fun resolve(name: String): Int {
         return when (name) {
-            COST_TIMESTAMP -> timestamp
+            START_TIME -> startTime
+            END_TIME -> endTime
             COST_VALUE -> cost
             else -> -1
         }
@@ -100,7 +105,8 @@ internal class CostTableReader(private val reader: LocalParquetReader<CostFragme
     override fun getInstant(index: Int): Instant {
         val record = checkNotNull(record) { "Reader in invalid state" }
         return when (index) {
-            timestamp -> record.timestamp
+            startTime -> record.startTime
+            endTime -> record.endTime
             else -> throw IllegalArgumentException("Invalid column")
         }
     }

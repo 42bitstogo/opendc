@@ -26,8 +26,9 @@ import org.opendc.trace.TableColumnType
 import org.opendc.trace.TableReader
 import org.opendc.trace.TableWriter
 import org.opendc.trace.conv.COST
-import org.opendc.trace.conv.COST_TIMESTAMP
 import org.opendc.trace.conv.COST_VALUE
+import org.opendc.trace.conv.END_TIME
+import org.opendc.trace.conv.START_TIME
 import org.opendc.trace.formats.cost.parquet.CostReadSupport
 import org.opendc.trace.spi.TableDetails
 import org.opendc.trace.spi.TraceFormat
@@ -51,7 +52,8 @@ public class CostTraceFormat : TraceFormat {
             COST ->
                 TableDetails(
                     listOf(
-                        TableColumn(COST_TIMESTAMP, TableColumnType.Instant),
+                        TableColumn(START_TIME, TableColumnType.Instant),
+                        TableColumn(END_TIME, TableColumnType.Instant),
                         TableColumn(COST_VALUE, TableColumnType.Double),
                     ),
                 )

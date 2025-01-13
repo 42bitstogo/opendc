@@ -33,3 +33,8 @@ public const val COST_TIMESTAMP: String = "timestamp"
  * A column containing the task identifier.
  */
 public const val COST_VALUE: String = "cost"
+
+public const val START_TIME: String = "startTime"
+
+public const val END_TIME: String = "endTime"
+

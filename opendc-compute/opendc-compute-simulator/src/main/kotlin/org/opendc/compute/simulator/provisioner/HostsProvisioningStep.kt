@@ -21,7 +21,6 @@
  */
 
 package org.opendc.compute.simulator.provisioner
-
 import org.opendc.compute.carbon.getCarbonFragments
 import org.opendc.compute.simulator.cost.getCosts
 import org.opendc.compute.simulator.host.SimHost
@@ -84,6 +83,7 @@ public class HostsProvisioningStep internal constructor(
                         hostSpec.cpuPowerModel,
                         powerMux,
                         costTrace!!,
+                        startTime,
                     )
 
                 require(simHosts.add(simHost)) { "Host with uid ${hostSpec.uid} already exists" }

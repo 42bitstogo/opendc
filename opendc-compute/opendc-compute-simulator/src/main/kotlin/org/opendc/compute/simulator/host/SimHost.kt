@@ -66,6 +66,7 @@ public class SimHost(
     private val powerModel: CpuPowerModel,
     private val powerMux: Multiplexer,
     private val costTrace: List<CostDto>,
+    private val startTime: Long,
 ) : AutoCloseable {
     /**
      * The event listeners registered with this host.
@@ -96,7 +97,7 @@ public class SimHost(
         )
 
 //    val costModel = CostModel(graph, costTrace, simHost, startTime) // adit added this for cost awareness
-    private val costModel = CostModel(graph, costTrace, this) // adit added this for cost awareness
+    private val costModel = CostModel(graph, costTrace, this, startTime) // adit added this for cost awareness
 
     private var simMachine: SimMachine? = null
 
