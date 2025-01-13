@@ -28,6 +28,7 @@ import org.opendc.compute.simulator.internal.Guest
 import org.opendc.compute.simulator.internal.GuestListener
 import org.opendc.compute.simulator.models.CostDto
 import org.opendc.compute.simulator.models.CostModel
+import org.opendc.compute.simulator.scheduler.filters.CostFilter
 import org.opendc.compute.simulator.service.ServiceTask
 import org.opendc.compute.simulator.telemetry.GuestCpuStats
 import org.opendc.compute.simulator.telemetry.GuestSystemStats
@@ -384,9 +385,24 @@ public class SimHost(
         return currentCost
     }
 
+    public companion object {
+        public const val COST_THRESHOLD: Double = 1000.0
+    }
+
     public fun updateCost(newCost: Double) {
+        val oldCost = this.currentCost
         this.currentCost = newCost
-        println("Host $name (ID: $uid) cost updated to $newCost at time ${InstantSource.system().millis()}")
+
+        // If cost rises above threshold, trigger rescheduling
+        if (newCost > COST_THRESHOLD && oldCost <= COST_THRESHOLD) {
+            // Need to trigger rescheduling of existing tasks
+            hostListeners.forEach {
+                val runningTasks = guests.map { it.task }
+                it.onCostThresholdExceeded(this, runningTasks)  // We'd need to add this method to HostListener
+            }
+        }
+
+        println("Host $name (ID: $uid) cost updated from $oldCost to $newCost at ${clock.instant()}")
     }
 
 }

@@ -39,5 +39,10 @@ public enum HostState {
     /**
      * The host is in an error state and unable to host any guests.
      */
-    ERROR
+    ERROR,
+
+    /**
+     * The host is operational but in a cost-critical state and should not accept new tasks.
+     */
+    COST_CRITICAL
 }

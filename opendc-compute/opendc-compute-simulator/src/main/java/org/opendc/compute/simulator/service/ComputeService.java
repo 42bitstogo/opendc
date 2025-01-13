@@ -211,6 +211,37 @@ public final class ComputeService implements AutoCloseable {
                 requestSchedulingCycle();
             }
         }
+
+        @Override
+        public void onCostThresholdExceeded(@NotNull SimHost host, @NotNull List<ServiceTask> tasks) {
+            System.out.printf("Cost threshold exceeded for host %s. Re-scheduling %d tasks%n", host.getUid(), tasks.size());
+
+            for (ServiceTask task : tasks) {
+                // Re-queue each task for scheduling
+                taskQueue.add(new SchedulingRequest(task, clock.millis()));
+                tasksPending++;
+
+                // Remove from active tasks on current host
+                if (activeTasks.remove(task) != null) {
+                    tasksActive--;
+                }
+
+                // Update host view metrics
+                HostView hv = hostToView.get(host);
+                if (hv != null) {
+                    ServiceFlavor flavor = task.getFlavor();
+                    hv.provisionedCores -= flavor.getCoreCount();
+                    hv.instanceCount--;
+                    hv.availableMemory += flavor.getMemorySize();
+                }
+
+                // Clear host reference
+                task.setHost(null);
+            }
+
+            // Trigger scheduling cycle
+            requestSchedulingCycle();
+        }
     };
 
     private int maxCores = 0;

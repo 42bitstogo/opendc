@@ -25,6 +25,8 @@ package org.opendc.compute.simulator.host;
 import org.opendc.compute.api.TaskState;
 import org.opendc.compute.simulator.service.ServiceTask;
 
+import java.util.List;
+
 /**
  * Listener interface for events originating from a {@link SimHost}.
  */
@@ -38,4 +40,6 @@ public interface HostListener {
      * This method is invoked when the state of a {@link SimHost} has changed.
      */
     default void onStateChanged(SimHost host, HostState newState) {}
+
+    default void onCostThresholdExceeded(SimHost host, List<ServiceTask> tasks) {}
 }
