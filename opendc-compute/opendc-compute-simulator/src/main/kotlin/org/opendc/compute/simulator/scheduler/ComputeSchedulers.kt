@@ -49,6 +49,8 @@ public enum class ComputeSchedulerEnum {
     Replay,
     Cost,
     SimpleCost,
+    CostEfficient,
+    PredictiveCost,
 }
 
 public fun createComputeScheduler(
@@ -124,6 +126,8 @@ public fun createComputeScheduler(
                 subsetSize = Int.MAX_VALUE,
                 random = SplittableRandom(seeder.nextLong()),
             )
+        ComputeSchedulerEnum.CostEfficient -> CostEfficientScheduler()
+        ComputeSchedulerEnum.PredictiveCost -> PredictiveCostScheduler()
         ComputeSchedulerEnum.SimpleCost -> SimpleCostScheduler()
         ComputeSchedulerEnum.Replay -> ReplayScheduler(placements)
     }
