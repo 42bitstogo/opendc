@@ -1,0 +1,19 @@
+{
+    "name": "cost_experiment_volatile", 
+    "outputFolder": "output/cost_comparison/volatile",
+    "runs": 3,
+    "topologies": [
+        {"pathToFile": "topologies/volatile/topology_small.json"},
+        {"pathToFile": "topologies/volatile/topology_medium.json"},
+        {"pathToFile": "topologies/volatile/topology_large.json"}
+    ],
+    "workloads": [{
+        "pathToFile": "traces/bitbrains-small",
+        "type": "ComputeWorkload"
+    }],
+    "allocationPolicies": [
+        {"policyType": "SimpleCost"},
+        {"policyType": "CostEfficient"},
+        {"policyType": "PredictiveCost"}
+    ]
+}

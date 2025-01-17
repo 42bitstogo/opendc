@@ -1,0 +1,7 @@
+scenario_label,topology,scheduler,cost_mean,cost_std,cpu_utilization_mean,cpu_utilization_std,cost_efficiency
+large_cost_stable_CostEfficient,large,CostEfficient,517.2797,68.3036,0.1104,0.1929,0.00021342418
+large_cost_stable_PredictiveCost,large,PredictiveCost,514.6267,69.0307,0.0828,0.173,0.00016089332
+medium_cost_stable_CostEfficient,medium,CostEfficient,502.0278,92.4705,0.1104,0.1913,0.00021990814
+medium_cost_stable_PredictiveCost,medium,PredictiveCost,501.1793,92.8224,0.0946,0.1805,0.0001887548
+small_cost_stable_CostEfficient,small,CostEfficient,594.0224,11.9655,0.1188,0.1958,0.00019999246
+small_cost_stable_PredictiveCost,small,PredictiveCost,594.3891,10.7936,0.0962,0.1815,0.00016184684

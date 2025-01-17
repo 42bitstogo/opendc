@@ -1,0 +1,14 @@
+Analysis Summary for Volatile Pattern
+==================================================
+
+Efficiency Metrics Summary:
+                  avg_cost  avg_utilization  cost_efficiency
+scheduler                                                   
+CostEfficient   414.480011             0.11              0.0
+PredictiveCost  410.239990             0.09              0.0
+
+Task Completion Summary:
+                completion_rate  avg_completion_time
+scheduler                                           
+CostEfficient               0.0          12791239.10
+PredictiveCost              0.0          15834942.82

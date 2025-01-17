@@ -1,0 +1,266 @@
+2025-01-16 14:49:45,170 - ExperimentAnalyzer_volatile - INFO - Initializing ExperimentAnalyzer for volatile cost pattern
+2025-01-16 14:49:45,170 - ExperimentAnalyzer_volatile - INFO - Loading parquet files...
+2025-01-16 14:49:46,012 - ExperimentAnalyzer_volatile - INFO - Loaded host data: 4427784 records
+2025-01-16 14:49:56,754 - ExperimentAnalyzer_volatile - INFO - Loaded task data: 62332347 records
+2025-01-16 14:49:56,755 - ExperimentAnalyzer_volatile - INFO - Loaded trackr data: 9 scenarios
+2025-01-16 14:49:56,755 - ExperimentAnalyzer_volatile - INFO - Processing timestamps...
+2025-01-16 14:49:56,885 - ExperimentAnalyzer_volatile - INFO - Processed timestamps for host data
+2025-01-16 14:49:57,494 - ExperimentAnalyzer_volatile - INFO - Processed timestamps for task data
+2025-01-16 14:49:57,494 - ExperimentAnalyzer_volatile - INFO - Generating scenario labels...
+2025-01-16 14:49:58,009 - ExperimentAnalyzer_volatile - INFO - Generated scenario labels for host data
+2025-01-16 14:49:58,171 - ExperimentAnalyzer_volatile - INFO - Unique scenarios: ['volatile_cost_volatile_SimpleCost'
+ 'volatile_cost_volatile_CostEfficient'
+ 'volatile_cost_volatile_PredictiveCost']
+2025-01-16 14:50:14,906 - ExperimentAnalyzer_volatile - INFO - Generated scenario labels for task data
+2025-01-16 14:50:17,880 - ExperimentAnalyzer_volatile - INFO - Unique scenarios: ['volatile_cost_volatile_SimpleCost'
+ 'volatile_cost_volatile_CostEfficient'
+ 'volatile_cost_volatile_PredictiveCost']
+2025-01-16 16:36:45,817 - ExperimentAnalyzer_volatile - INFO - Initializing ExperimentAnalyzer for 'volatile' pattern.
+2025-01-16 16:36:45,817 - ExperimentAnalyzer_volatile - INFO - Loading parquet files (host, task)...
+2025-01-16 16:36:46,340 - ExperimentAnalyzer_volatile - INFO - Loaded host data: 4427784 records.
+2025-01-16 16:36:55,877 - ExperimentAnalyzer_volatile - INFO - Loaded task data: 62332347 records.
+2025-01-16 16:36:55,878 - ExperimentAnalyzer_volatile - INFO - Loaded trackr data: 9 scenarios.
+2025-01-16 16:36:55,878 - ExperimentAnalyzer_volatile - INFO - Converting timestamps from 'timestamp_absolute' to datetime...
+2025-01-16 16:36:56,004 - ExperimentAnalyzer_volatile - INFO - Processed timestamps for host data.
+2025-01-16 16:36:56,501 - ExperimentAnalyzer_volatile - INFO - Processed timestamps for task data.
+2025-01-16 16:36:56,501 - ExperimentAnalyzer_volatile - INFO - Generating scenario labels for each record...
+2025-01-16 16:36:57,085 - ExperimentAnalyzer_volatile - INFO - [host] Unique scenarios: ['small_cost_volatile_SimpleCost' 'large_cost_volatile_CostEfficient'
+ 'large_cost_volatile_SimpleCost' 'small_cost_volatile_CostEfficient'
+ 'large_cost_volatile_PredictiveCost' 'medium_cost_volatile_CostEfficient'
+ 'medium_cost_volatile_SimpleCost' 'small_cost_volatile_PredictiveCost'
+ 'medium_cost_volatile_PredictiveCost']
+2025-01-16 16:37:12,829 - ExperimentAnalyzer_volatile - INFO - [task] Unique scenarios: ['small_cost_volatile_SimpleCost' 'large_cost_volatile_CostEfficient'
+ 'large_cost_volatile_SimpleCost' 'small_cost_volatile_CostEfficient'
+ 'large_cost_volatile_PredictiveCost' 'medium_cost_volatile_CostEfficient'
+ 'medium_cost_volatile_SimpleCost' 'small_cost_volatile_PredictiveCost'
+ 'medium_cost_volatile_PredictiveCost']
+2025-01-16 16:37:24,994 - ExperimentAnalyzer_volatile - INFO - Starting resource utilization analysis...
+2025-01-16 16:37:24,994 - ExperimentAnalyzer_volatile - INFO - Aggregating utilization metrics: ['cpu_utilization', 'guests_running', 'cpu_time_steal']
+2025-01-16 16:37:25,698 - ExperimentAnalyzer_volatile - INFO - Successfully aggregated metrics across 716949 grouped rows.
+2025-01-16 16:37:25,727 - ExperimentAnalyzer_volatile - INFO - Columns before flattening: [('scenario_label', ''), ('datetime', ''), ('topology', ''), ('scheduler', ''), ('cpu_utilization', 'mean'), ('cpu_utilization', 'std'), ('guests_running', 'mean'), ('guests_running', 'std'), ('cpu_time_steal', 'mean'), ('cpu_time_steal', 'std')]
+2025-01-16 16:37:25,727 - ExperimentAnalyzer_volatile - INFO - Columns after flattening: ['scenario_label', 'datetime', 'topology', 'scheduler', 'cpu_utilization_mean', 'cpu_utilization_std', 'guests_running_mean', 'guests_running_std', 'cpu_time_steal_mean', 'cpu_time_steal_std']
+2025-01-16 16:37:25,727 - ExperimentAnalyzer_volatile - INFO - Generating CPU utilization plot...
+2025-01-16 16:37:26,241 - ExperimentAnalyzer_volatile - INFO - Saved CPU utilization plot to results/volatile_cpu_utilization.png
+2025-01-16 16:37:26,250 - ExperimentAnalyzer_volatile - INFO - Starting cost metrics analysis...
+2025-01-16 16:37:26,250 - ExperimentAnalyzer_volatile - INFO - Analyzing cost metrics: ['cost', 'cpu_utilization']
+2025-01-16 16:37:26,729 - ExperimentAnalyzer_volatile - INFO - Aggregated cost metrics: 9 scenario group(s).
+2025-01-16 16:37:26,730 - ExperimentAnalyzer_volatile - INFO - Columns before flattening: [('scenario_label', ''), ('topology', ''), ('scheduler', ''), ('cost', 'mean'), ('cost', 'std'), ('cpu_utilization', 'mean'), ('cpu_utilization', 'std')]
+2025-01-16 16:37:26,730 - ExperimentAnalyzer_volatile - INFO - Columns after flattening: ['scenario_label', 'topology', 'scheduler', 'cost_mean', 'cost_std', 'cpu_utilization_mean', 'cpu_utilization_std']
+2025-01-16 16:37:26,730 - ExperimentAnalyzer_volatile - INFO - Calculating cost efficiency metrics...
+2025-01-16 16:37:26,730 - ExperimentAnalyzer_volatile - INFO - Generating cost comparison plot...
+2025-01-16 16:37:26,870 - ExperimentAnalyzer_volatile - INFO - Saved cost comparison plot to results/volatile_cost_comparison.png
+2025-01-16 16:37:26,870 - ExperimentAnalyzer_volatile - INFO - Cost Summary Statistics:
+2025-01-16 16:37:26,870 - ExperimentAnalyzer_volatile - INFO - 
+Scenario: large_cost_volatile_CostEfficient
+2025-01-16 16:37:26,870 - ExperimentAnalyzer_volatile - INFO -   Topology: large
+2025-01-16 16:37:26,870 - ExperimentAnalyzer_volatile - INFO -   Scheduler: CostEfficient
+2025-01-16 16:37:26,870 - ExperimentAnalyzer_volatile - INFO -   Avg Cost: 478.68
+2025-01-16 16:37:26,870 - ExperimentAnalyzer_volatile - INFO -   Cost Std Dev: 123.82
+2025-01-16 16:37:26,870 - ExperimentAnalyzer_volatile - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:37:26,870 - ExperimentAnalyzer_volatile - INFO - 
+Scenario: large_cost_volatile_PredictiveCost
+2025-01-16 16:37:26,870 - ExperimentAnalyzer_volatile - INFO -   Topology: large
+2025-01-16 16:37:26,870 - ExperimentAnalyzer_volatile - INFO -   Scheduler: PredictiveCost
+2025-01-16 16:37:26,870 - ExperimentAnalyzer_volatile - INFO -   Avg Cost: 472.70
+2025-01-16 16:37:26,870 - ExperimentAnalyzer_volatile - INFO -   Cost Std Dev: 123.74
+2025-01-16 16:37:26,870 - ExperimentAnalyzer_volatile - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO - 
+Scenario: large_cost_volatile_SimpleCost
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Topology: large
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Scheduler: SimpleCost
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Avg Cost: 478.68
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Cost Std Dev: 123.82
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO - 
+Scenario: medium_cost_volatile_CostEfficient
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Topology: medium
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Scheduler: CostEfficient
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Avg Cost: 451.13
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Cost Std Dev: 138.98
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO - 
+Scenario: medium_cost_volatile_PredictiveCost
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Topology: medium
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Scheduler: PredictiveCost
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Avg Cost: 448.01
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Cost Std Dev: 139.38
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO - 
+Scenario: medium_cost_volatile_SimpleCost
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Topology: medium
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Scheduler: SimpleCost
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Avg Cost: 451.13
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Cost Std Dev: 138.98
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO - 
+Scenario: small_cost_volatile_CostEfficient
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Topology: small
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Scheduler: CostEfficient
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Avg Cost: 313.62
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Cost Std Dev: 67.78
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Cost Efficiency: 0.0004
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO - 
+Scenario: small_cost_volatile_PredictiveCost
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Topology: small
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Scheduler: PredictiveCost
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Avg Cost: 310.00
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Cost Std Dev: 61.45
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Cost Efficiency: 0.0003
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO - 
+Scenario: small_cost_volatile_SimpleCost
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Topology: small
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Scheduler: SimpleCost
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Avg Cost: 313.62
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Cost Std Dev: 67.78
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO -   Cost Efficiency: 0.0004
+2025-01-16 16:37:26,871 - ExperimentAnalyzer_volatile - INFO - Starting task completion analysis...
+2025-01-16 16:37:30,147 - ExperimentAnalyzer_volatile - INFO - Analyzing scenario: small_cost_volatile_SimpleCost
+2025-01-16 16:37:35,521 - ExperimentAnalyzer_volatile - INFO -   Total Tasks: 50
+2025-01-16 16:37:35,521 - ExperimentAnalyzer_volatile - INFO -   Completion Rate: 98.00%
+2025-01-16 16:37:35,521 - ExperimentAnalyzer_volatile - INFO -   Average Completion Time: 24596183.53s
+2025-01-16 16:37:35,521 - ExperimentAnalyzer_volatile - INFO - Analyzing scenario: large_cost_volatile_CostEfficient
+2025-01-16 16:37:39,160 - ExperimentAnalyzer_volatile - INFO -   Total Tasks: 50
+2025-01-16 16:37:39,160 - ExperimentAnalyzer_volatile - INFO -   Completion Rate: 98.00%
+2025-01-16 16:37:39,160 - ExperimentAnalyzer_volatile - INFO -   Average Completion Time: 4961639.22s
+2025-01-16 16:37:39,161 - ExperimentAnalyzer_volatile - INFO - Analyzing scenario: large_cost_volatile_SimpleCost
+2025-01-16 16:37:41,397 - ExperimentAnalyzer_volatile - INFO -   Total Tasks: 50
+2025-01-16 16:37:41,397 - ExperimentAnalyzer_volatile - INFO -   Completion Rate: 98.00%
+2025-01-16 16:37:41,397 - ExperimentAnalyzer_volatile - INFO -   Average Completion Time: 4961639.22s
+2025-01-16 16:37:41,397 - ExperimentAnalyzer_volatile - INFO - Analyzing scenario: small_cost_volatile_CostEfficient
+2025-01-16 16:37:47,751 - ExperimentAnalyzer_volatile - INFO -   Total Tasks: 50
+2025-01-16 16:37:47,756 - ExperimentAnalyzer_volatile - INFO -   Completion Rate: 98.00%
+2025-01-16 16:37:47,756 - ExperimentAnalyzer_volatile - INFO -   Average Completion Time: 24596183.53s
+2025-01-16 16:37:47,756 - ExperimentAnalyzer_volatile - INFO - Analyzing scenario: large_cost_volatile_PredictiveCost
+2025-01-16 16:37:52,150 - ExperimentAnalyzer_volatile - INFO -   Total Tasks: 50
+2025-01-16 16:37:52,150 - ExperimentAnalyzer_volatile - INFO -   Completion Rate: 98.00%
+2025-01-16 16:37:52,150 - ExperimentAnalyzer_volatile - INFO -   Average Completion Time: 6545924.10s
+2025-01-16 16:37:52,150 - ExperimentAnalyzer_volatile - INFO - Analyzing scenario: medium_cost_volatile_CostEfficient
+2025-01-16 16:37:56,449 - ExperimentAnalyzer_volatile - INFO -   Total Tasks: 50
+2025-01-16 16:37:56,452 - ExperimentAnalyzer_volatile - INFO -   Completion Rate: 98.00%
+2025-01-16 16:37:56,452 - ExperimentAnalyzer_volatile - INFO -   Average Completion Time: 8815894.53s
+2025-01-16 16:37:56,452 - ExperimentAnalyzer_volatile - INFO - Analyzing scenario: medium_cost_volatile_SimpleCost
+2025-01-16 16:38:00,593 - ExperimentAnalyzer_volatile - INFO -   Total Tasks: 50
+2025-01-16 16:38:00,593 - ExperimentAnalyzer_volatile - INFO -   Completion Rate: 98.00%
+2025-01-16 16:38:00,593 - ExperimentAnalyzer_volatile - INFO -   Average Completion Time: 8815894.53s
+2025-01-16 16:38:00,593 - ExperimentAnalyzer_volatile - INFO - Analyzing scenario: small_cost_volatile_PredictiveCost
+2025-01-16 16:38:09,384 - ExperimentAnalyzer_volatile - INFO -   Total Tasks: 50
+2025-01-16 16:38:09,384 - ExperimentAnalyzer_volatile - INFO -   Completion Rate: 98.00%
+2025-01-16 16:38:09,384 - ExperimentAnalyzer_volatile - INFO -   Average Completion Time: 30177264.67s
+2025-01-16 16:38:09,384 - ExperimentAnalyzer_volatile - INFO - Analyzing scenario: medium_cost_volatile_PredictiveCost
+2025-01-16 16:38:13,991 - ExperimentAnalyzer_volatile - INFO -   Total Tasks: 50
+2025-01-16 16:38:13,992 - ExperimentAnalyzer_volatile - INFO -   Completion Rate: 98.00%
+2025-01-16 16:38:13,992 - ExperimentAnalyzer_volatile - INFO -   Average Completion Time: 10781639.69s
+2025-01-16 16:38:13,992 - ExperimentAnalyzer_volatile - INFO - Generating task completion visualizations...
+2025-01-16 16:38:14,059 - ExperimentAnalyzer_volatile - INFO - Saved completion rates plot to results/volatile_completion_rates.png
+2025-01-16 16:38:49,613 - ExperimentAnalyzer_volatile - INFO - Saved completion times plot to results/volatile_completion_times.png
+2025-01-16 16:39:26,225 - ExperimentAnalyzer_volatile - INFO - Saved state distribution plot to results/volatile_state_distribution.png
+2025-01-16 16:39:26,297 - ExperimentAnalyzer_volatile - INFO - Starting comparative analysis...
+2025-01-16 16:39:26,297 - ExperimentAnalyzer_volatile - INFO - Generating comparative bar plots...
+2025-01-16 16:39:26,507 - ExperimentAnalyzer_volatile - INFO - Saved comparative analysis plot to results/volatile_comparative_analysis.png
+2025-01-17 01:46:59,588 - ExperimentAnalyzer_volatile - INFO - Initializing ExperimentAnalyzer for 'volatile' pattern.
+2025-01-17 01:46:59,589 - ExperimentAnalyzer_volatile - INFO - Loading parquet files (host, task)...
+2025-01-17 01:47:15,802 - ExperimentAnalyzer_volatile - INFO - Loaded and filtered host data: 3063558 records.
+2025-01-17 01:47:15,802 - ExperimentAnalyzer_volatile - INFO - Loaded and filtered task data: 43089438 records.
+2025-01-17 01:47:15,803 - ExperimentAnalyzer_volatile - INFO - Loaded trackr data: 9 scenarios.
+2025-01-17 01:47:15,803 - ExperimentAnalyzer_volatile - INFO - Converting timestamps from 'timestamp_absolute' to datetime...
+2025-01-17 01:47:15,847 - ExperimentAnalyzer_volatile - INFO - Processed timestamps for host data.
+2025-01-17 01:47:16,201 - ExperimentAnalyzer_volatile - INFO - Processed timestamps for task data.
+2025-01-17 01:47:16,201 - ExperimentAnalyzer_volatile - INFO - Generating scenario labels for each record...
+2025-01-17 01:47:16,630 - ExperimentAnalyzer_volatile - INFO - [host] Unique scenarios: ['large_cost_volatile_CostEfficient' 'small_cost_volatile_CostEfficient'
+ 'large_cost_volatile_PredictiveCost' 'medium_cost_volatile_CostEfficient'
+ 'small_cost_volatile_PredictiveCost'
+ 'medium_cost_volatile_PredictiveCost']
+2025-01-17 01:47:25,792 - ExperimentAnalyzer_volatile - INFO - [task] Unique scenarios: ['large_cost_volatile_CostEfficient' 'small_cost_volatile_CostEfficient'
+ 'large_cost_volatile_PredictiveCost' 'medium_cost_volatile_CostEfficient'
+ 'small_cost_volatile_PredictiveCost'
+ 'medium_cost_volatile_PredictiveCost']
+2025-01-17 01:47:27,741 - ExperimentAnalyzer_volatile - INFO - Starting resource utilization analysis...
+2025-01-17 01:47:27,741 - ExperimentAnalyzer_volatile - INFO - Aggregating utilization metrics: ['cpu_utilization', 'guests_running', 'cpu_time_steal']
+2025-01-17 01:47:28,198 - ExperimentAnalyzer_volatile - INFO - Successfully aggregated metrics across 495033 grouped rows.
+2025-01-17 01:47:28,216 - ExperimentAnalyzer_volatile - INFO - Columns before flattening: [('scenario_label', ''), ('datetime', ''), ('topology', ''), ('scheduler', ''), ('cpu_utilization', 'mean'), ('cpu_utilization', 'std'), ('guests_running', 'mean'), ('guests_running', 'std'), ('cpu_time_steal', 'mean'), ('cpu_time_steal', 'std')]
+2025-01-17 01:47:28,216 - ExperimentAnalyzer_volatile - INFO - Columns after flattening: ['scenario_label', 'datetime', 'topology', 'scheduler', 'cpu_utilization_mean', 'cpu_utilization_std', 'guests_running_mean', 'guests_running_std', 'cpu_time_steal_mean', 'cpu_time_steal_std']
+2025-01-17 01:47:28,216 - ExperimentAnalyzer_volatile - INFO - Generating CPU utilization plot...
+2025-01-17 01:47:28,555 - ExperimentAnalyzer_volatile - INFO - Saved CPU utilization plot to results/volatile_cpu_utilization.png
+2025-01-17 01:47:28,561 - ExperimentAnalyzer_volatile - INFO - Starting cost metrics analysis...
+2025-01-17 01:47:28,561 - ExperimentAnalyzer_volatile - INFO - Analyzing cost metrics: ['cost', 'cpu_utilization']
+2025-01-17 01:47:28,893 - ExperimentAnalyzer_volatile - INFO - Aggregated cost metrics: 6 scenario group(s).
+2025-01-17 01:47:28,893 - ExperimentAnalyzer_volatile - INFO - Columns before flattening: [('scenario_label', ''), ('topology', ''), ('scheduler', ''), ('cost', 'mean'), ('cost', 'std'), ('cpu_utilization', 'mean'), ('cpu_utilization', 'std')]
+2025-01-17 01:47:28,893 - ExperimentAnalyzer_volatile - INFO - Columns after flattening: ['scenario_label', 'topology', 'scheduler', 'cost_mean', 'cost_std', 'cpu_utilization_mean', 'cpu_utilization_std']
+2025-01-17 01:47:28,893 - ExperimentAnalyzer_volatile - INFO - Calculating cost efficiency metrics...
+2025-01-17 01:47:28,893 - ExperimentAnalyzer_volatile - INFO - Generating cost comparison plot...
+2025-01-17 01:47:28,952 - ExperimentAnalyzer_volatile - INFO - Saved cost comparison plot to results/volatile_cost_comparison.png
+2025-01-17 01:47:28,952 - ExperimentAnalyzer_volatile - INFO - Cost Summary Statistics:
+2025-01-17 01:47:28,952 - ExperimentAnalyzer_volatile - INFO - 
+Scenario: large_cost_volatile_CostEfficient
+2025-01-17 01:47:28,952 - ExperimentAnalyzer_volatile - INFO -   Topology: large
+2025-01-17 01:47:28,952 - ExperimentAnalyzer_volatile - INFO -   Scheduler: CostEfficient
+2025-01-17 01:47:28,952 - ExperimentAnalyzer_volatile - INFO -   Avg Cost: 478.68
+2025-01-17 01:47:28,952 - ExperimentAnalyzer_volatile - INFO -   Cost Std Dev: 123.82
+2025-01-17 01:47:28,952 - ExperimentAnalyzer_volatile - INFO -   Cost Efficiency: 0.0002
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO - 
+Scenario: large_cost_volatile_PredictiveCost
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Topology: large
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Scheduler: PredictiveCost
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Avg Cost: 472.70
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Cost Std Dev: 123.74
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Cost Efficiency: 0.0002
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO - 
+Scenario: medium_cost_volatile_CostEfficient
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Topology: medium
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Scheduler: CostEfficient
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Avg Cost: 451.13
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Cost Std Dev: 138.98
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Cost Efficiency: 0.0002
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO - 
+Scenario: medium_cost_volatile_PredictiveCost
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Topology: medium
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Scheduler: PredictiveCost
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Avg Cost: 448.01
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Cost Std Dev: 139.38
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Cost Efficiency: 0.0002
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO - 
+Scenario: small_cost_volatile_CostEfficient
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Topology: small
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Scheduler: CostEfficient
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Avg Cost: 313.62
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Cost Std Dev: 67.78
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Cost Efficiency: 0.0004
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO - 
+Scenario: small_cost_volatile_PredictiveCost
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Topology: small
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Scheduler: PredictiveCost
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Avg Cost: 310.00
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Cost Std Dev: 61.45
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO -   Cost Efficiency: 0.0003
+2025-01-17 01:47:28,953 - ExperimentAnalyzer_volatile - INFO - Starting task completion analysis...
+2025-01-17 01:47:30,352 - ExperimentAnalyzer_volatile - INFO - Analyzing scenario: large_cost_volatile_CostEfficient
+2025-01-17 01:47:31,882 - ExperimentAnalyzer_volatile - INFO -   Total Tasks: 50
+2025-01-17 01:47:31,882 - ExperimentAnalyzer_volatile - INFO -   Completion Rate: 98.00%
+2025-01-17 01:47:31,882 - ExperimentAnalyzer_volatile - INFO -   Average Completion Time: 4961639.22s
+2025-01-17 01:47:31,882 - ExperimentAnalyzer_volatile - INFO - Analyzing scenario: small_cost_volatile_CostEfficient
+2025-01-17 01:47:36,761 - ExperimentAnalyzer_volatile - INFO -   Total Tasks: 50
+2025-01-17 01:47:36,761 - ExperimentAnalyzer_volatile - INFO -   Completion Rate: 98.00%
+2025-01-17 01:47:36,761 - ExperimentAnalyzer_volatile - INFO -   Average Completion Time: 24596183.53s
+2025-01-17 01:47:36,761 - ExperimentAnalyzer_volatile - INFO - Analyzing scenario: large_cost_volatile_PredictiveCost
+2025-01-17 01:47:39,378 - ExperimentAnalyzer_volatile - INFO -   Total Tasks: 50
+2025-01-17 01:47:39,378 - ExperimentAnalyzer_volatile - INFO -   Completion Rate: 98.00%
+2025-01-17 01:47:39,378 - ExperimentAnalyzer_volatile - INFO -   Average Completion Time: 6545924.10s
+2025-01-17 01:47:39,378 - ExperimentAnalyzer_volatile - INFO - Analyzing scenario: medium_cost_volatile_CostEfficient
+2025-01-17 01:47:41,450 - ExperimentAnalyzer_volatile - INFO -   Total Tasks: 50
+2025-01-17 01:47:41,450 - ExperimentAnalyzer_volatile - INFO -   Completion Rate: 98.00%
+2025-01-17 01:47:41,450 - ExperimentAnalyzer_volatile - INFO -   Average Completion Time: 8815894.53s
+2025-01-17 01:47:41,450 - ExperimentAnalyzer_volatile - INFO - Analyzing scenario: small_cost_volatile_PredictiveCost
+2025-01-17 01:47:47,522 - ExperimentAnalyzer_volatile - INFO -   Total Tasks: 50
+2025-01-17 01:47:47,522 - ExperimentAnalyzer_volatile - INFO -   Completion Rate: 98.00%
+2025-01-17 01:47:47,522 - ExperimentAnalyzer_volatile - INFO -   Average Completion Time: 30177264.67s
+2025-01-17 01:47:47,522 - ExperimentAnalyzer_volatile - INFO - Analyzing scenario: medium_cost_volatile_PredictiveCost
+2025-01-17 01:47:50,790 - ExperimentAnalyzer_volatile - INFO -   Total Tasks: 50
+2025-01-17 01:47:50,790 - ExperimentAnalyzer_volatile - INFO -   Completion Rate: 98.00%
+2025-01-17 01:47:50,790 - ExperimentAnalyzer_volatile - INFO -   Average Completion Time: 10781639.69s
+2025-01-17 01:47:50,790 - ExperimentAnalyzer_volatile - INFO - Generating task completion visualizations...
+2025-01-17 01:47:50,844 - ExperimentAnalyzer_volatile - INFO - Saved completion rates plot to results/volatile_completion_rates.png
+2025-01-17 01:48:01,040 - ExperimentAnalyzer_volatile - INFO - Saved completion times plot to results/volatile_completion_times.png
+2025-01-17 01:48:15,558 - ExperimentAnalyzer_volatile - INFO - Saved state distribution plot to results/volatile_state_distribution.png
+2025-01-17 01:48:15,633 - ExperimentAnalyzer_volatile - INFO - Starting comparative analysis...
+2025-01-17 01:48:15,634 - ExperimentAnalyzer_volatile - INFO - Generating comparative bar plots...
+2025-01-17 01:48:15,832 - ExperimentAnalyzer_volatile - INFO - Saved comparative analysis plot to results/volatile_comparative_analysis.png

@@ -1,0 +1,247 @@
+2025-01-16 16:41:59,800 - ExperimentAnalyzer_spike - INFO - Initializing ExperimentAnalyzer for 'spike' pattern.
+2025-01-16 16:41:59,800 - ExperimentAnalyzer_spike - INFO - Loading parquet files (host, task)...
+2025-01-16 16:42:00,302 - ExperimentAnalyzer_spike - INFO - Loaded host data: 4427802 records.
+2025-01-16 16:42:10,384 - ExperimentAnalyzer_spike - INFO - Loaded task data: 62435412 records.
+2025-01-16 16:42:10,384 - ExperimentAnalyzer_spike - INFO - Loaded trackr data: 9 scenarios.
+2025-01-16 16:42:10,384 - ExperimentAnalyzer_spike - INFO - Converting timestamps from 'timestamp_absolute' to datetime...
+2025-01-16 16:42:10,511 - ExperimentAnalyzer_spike - INFO - Processed timestamps for host data.
+2025-01-16 16:42:11,070 - ExperimentAnalyzer_spike - INFO - Processed timestamps for task data.
+2025-01-16 16:42:11,070 - ExperimentAnalyzer_spike - INFO - Generating scenario labels for each record...
+2025-01-16 16:42:11,750 - ExperimentAnalyzer_spike - INFO - [host] Unique scenarios: ['small_cost_spike_SimpleCost' 'large_cost_spike_CostEfficient'
+ 'large_cost_spike_SimpleCost' 'small_cost_spike_CostEfficient'
+ 'large_cost_spike_PredictiveCost' 'medium_cost_spike_CostEfficient'
+ 'medium_cost_spike_SimpleCost' 'small_cost_spike_PredictiveCost'
+ 'medium_cost_spike_PredictiveCost']
+2025-01-16 16:42:35,066 - ExperimentAnalyzer_spike - INFO - [task] Unique scenarios: ['small_cost_spike_SimpleCost' 'large_cost_spike_CostEfficient'
+ 'large_cost_spike_SimpleCost' 'small_cost_spike_CostEfficient'
+ 'large_cost_spike_PredictiveCost' 'medium_cost_spike_CostEfficient'
+ 'medium_cost_spike_SimpleCost' 'small_cost_spike_PredictiveCost'
+ 'medium_cost_spike_PredictiveCost']
+2025-01-16 16:42:47,813 - ExperimentAnalyzer_spike - INFO - Starting resource utilization analysis...
+2025-01-16 16:42:47,815 - ExperimentAnalyzer_spike - INFO - Aggregating utilization metrics: ['cpu_utilization', 'guests_running', 'cpu_time_steal']
+2025-01-16 16:42:48,690 - ExperimentAnalyzer_spike - INFO - Successfully aggregated metrics across 716951 grouped rows.
+2025-01-16 16:42:48,729 - ExperimentAnalyzer_spike - INFO - Columns before flattening: [('scenario_label', ''), ('datetime', ''), ('topology', ''), ('scheduler', ''), ('cpu_utilization', 'mean'), ('cpu_utilization', 'std'), ('guests_running', 'mean'), ('guests_running', 'std'), ('cpu_time_steal', 'mean'), ('cpu_time_steal', 'std')]
+2025-01-16 16:42:48,729 - ExperimentAnalyzer_spike - INFO - Columns after flattening: ['scenario_label', 'datetime', 'topology', 'scheduler', 'cpu_utilization_mean', 'cpu_utilization_std', 'guests_running_mean', 'guests_running_std', 'cpu_time_steal_mean', 'cpu_time_steal_std']
+2025-01-16 16:42:48,729 - ExperimentAnalyzer_spike - INFO - Generating CPU utilization plot...
+2025-01-16 16:42:49,294 - ExperimentAnalyzer_spike - INFO - Saved CPU utilization plot to results/spike_cpu_utilization.png
+2025-01-16 16:42:49,306 - ExperimentAnalyzer_spike - INFO - Starting cost metrics analysis...
+2025-01-16 16:42:49,306 - ExperimentAnalyzer_spike - INFO - Analyzing cost metrics: ['cost', 'cpu_utilization']
+2025-01-16 16:42:49,825 - ExperimentAnalyzer_spike - INFO - Aggregated cost metrics: 9 scenario group(s).
+2025-01-16 16:42:49,826 - ExperimentAnalyzer_spike - INFO - Columns before flattening: [('scenario_label', ''), ('topology', ''), ('scheduler', ''), ('cost', 'mean'), ('cost', 'std'), ('cpu_utilization', 'mean'), ('cpu_utilization', 'std')]
+2025-01-16 16:42:49,826 - ExperimentAnalyzer_spike - INFO - Columns after flattening: ['scenario_label', 'topology', 'scheduler', 'cost_mean', 'cost_std', 'cpu_utilization_mean', 'cpu_utilization_std']
+2025-01-16 16:42:49,826 - ExperimentAnalyzer_spike - INFO - Calculating cost efficiency metrics...
+2025-01-16 16:42:49,827 - ExperimentAnalyzer_spike - INFO - Generating cost comparison plot...
+2025-01-16 16:42:49,912 - ExperimentAnalyzer_spike - INFO - Saved cost comparison plot to results/spike_cost_comparison.png
+2025-01-16 16:42:49,912 - ExperimentAnalyzer_spike - INFO - Cost Summary Statistics:
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO - 
+Scenario: large_cost_spike_CostEfficient
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Topology: large
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Scheduler: CostEfficient
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Avg Cost: 525.66
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Cost Std Dev: 227.70
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO - 
+Scenario: large_cost_spike_PredictiveCost
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Topology: large
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Scheduler: PredictiveCost
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Avg Cost: 510.45
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Cost Std Dev: 199.89
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO - 
+Scenario: large_cost_spike_SimpleCost
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Topology: large
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Scheduler: SimpleCost
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Avg Cost: 525.66
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Cost Std Dev: 227.70
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO - 
+Scenario: medium_cost_spike_CostEfficient
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Topology: medium
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Scheduler: CostEfficient
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Avg Cost: 492.24
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Cost Std Dev: 173.22
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO - 
+Scenario: medium_cost_spike_PredictiveCost
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Topology: medium
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Scheduler: PredictiveCost
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Avg Cost: 487.32
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Cost Std Dev: 161.85
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO - 
+Scenario: medium_cost_spike_SimpleCost
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Topology: medium
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Scheduler: SimpleCost
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Avg Cost: 492.24
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Cost Std Dev: 173.22
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO - 
+Scenario: small_cost_spike_CostEfficient
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Topology: small
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Scheduler: CostEfficient
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Avg Cost: 407.11
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Cost Std Dev: 83.90
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Cost Efficiency: 0.0003
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO - 
+Scenario: small_cost_spike_PredictiveCost
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Topology: small
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Scheduler: PredictiveCost
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Avg Cost: 405.12
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Cost Std Dev: 75.61
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO - 
+Scenario: small_cost_spike_SimpleCost
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Topology: small
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Scheduler: SimpleCost
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Avg Cost: 407.11
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Cost Std Dev: 83.90
+2025-01-16 16:42:49,913 - ExperimentAnalyzer_spike - INFO -   Cost Efficiency: 0.0003
+2025-01-16 16:42:49,914 - ExperimentAnalyzer_spike - INFO - Starting task completion analysis...
+2025-01-16 16:42:57,154 - ExperimentAnalyzer_spike - INFO - Analyzing scenario: small_cost_spike_SimpleCost
+2025-01-16 16:43:05,339 - ExperimentAnalyzer_spike - INFO -   Total Tasks: 50
+2025-01-16 16:43:05,340 - ExperimentAnalyzer_spike - INFO -   Completion Rate: 98.00%
+2025-01-16 16:43:05,340 - ExperimentAnalyzer_spike - INFO -   Average Completion Time: 24596183.53s
+2025-01-16 16:43:05,340 - ExperimentAnalyzer_spike - INFO - Analyzing scenario: large_cost_spike_CostEfficient
+2025-01-16 16:43:09,468 - ExperimentAnalyzer_spike - INFO -   Total Tasks: 50
+2025-01-16 16:43:09,468 - ExperimentAnalyzer_spike - INFO -   Completion Rate: 98.00%
+2025-01-16 16:43:09,468 - ExperimentAnalyzer_spike - INFO -   Average Completion Time: 5014190.92s
+2025-01-16 16:43:09,468 - ExperimentAnalyzer_spike - INFO - Analyzing scenario: large_cost_spike_SimpleCost
+2025-01-16 16:43:13,032 - ExperimentAnalyzer_spike - INFO -   Total Tasks: 50
+2025-01-16 16:43:13,036 - ExperimentAnalyzer_spike - INFO -   Completion Rate: 98.00%
+2025-01-16 16:43:13,036 - ExperimentAnalyzer_spike - INFO -   Average Completion Time: 5014190.92s
+2025-01-16 16:43:13,036 - ExperimentAnalyzer_spike - INFO - Analyzing scenario: small_cost_spike_CostEfficient
+2025-01-16 16:43:20,815 - ExperimentAnalyzer_spike - INFO -   Total Tasks: 50
+2025-01-16 16:43:20,816 - ExperimentAnalyzer_spike - INFO -   Completion Rate: 98.00%
+2025-01-16 16:43:20,816 - ExperimentAnalyzer_spike - INFO -   Average Completion Time: 24596183.53s
+2025-01-16 16:43:20,816 - ExperimentAnalyzer_spike - INFO - Analyzing scenario: large_cost_spike_PredictiveCost
+2025-01-16 16:43:25,417 - ExperimentAnalyzer_spike - INFO -   Total Tasks: 50
+2025-01-16 16:43:25,417 - ExperimentAnalyzer_spike - INFO -   Completion Rate: 98.00%
+2025-01-16 16:43:25,417 - ExperimentAnalyzer_spike - INFO -   Average Completion Time: 6545848.90s
+2025-01-16 16:43:25,417 - ExperimentAnalyzer_spike - INFO - Analyzing scenario: medium_cost_spike_CostEfficient
+2025-01-16 16:43:29,953 - ExperimentAnalyzer_spike - INFO -   Total Tasks: 50
+2025-01-16 16:43:29,953 - ExperimentAnalyzer_spike - INFO -   Completion Rate: 98.00%
+2025-01-16 16:43:29,953 - ExperimentAnalyzer_spike - INFO -   Average Completion Time: 8815958.65s
+2025-01-16 16:43:29,953 - ExperimentAnalyzer_spike - INFO - Analyzing scenario: medium_cost_spike_SimpleCost
+2025-01-16 16:43:34,959 - ExperimentAnalyzer_spike - INFO -   Total Tasks: 50
+2025-01-16 16:43:34,959 - ExperimentAnalyzer_spike - INFO -   Completion Rate: 98.00%
+2025-01-16 16:43:34,959 - ExperimentAnalyzer_spike - INFO -   Average Completion Time: 8815958.65s
+2025-01-16 16:43:34,959 - ExperimentAnalyzer_spike - INFO - Analyzing scenario: small_cost_spike_PredictiveCost
+2025-01-16 16:43:44,551 - ExperimentAnalyzer_spike - INFO -   Total Tasks: 50
+2025-01-16 16:43:44,551 - ExperimentAnalyzer_spike - INFO -   Completion Rate: 98.00%
+2025-01-16 16:43:44,551 - ExperimentAnalyzer_spike - INFO -   Average Completion Time: 30177264.67s
+2025-01-16 16:43:44,552 - ExperimentAnalyzer_spike - INFO - Analyzing scenario: medium_cost_spike_PredictiveCost
+2025-01-16 16:43:49,860 - ExperimentAnalyzer_spike - INFO -   Total Tasks: 50
+2025-01-16 16:43:49,860 - ExperimentAnalyzer_spike - INFO -   Completion Rate: 98.00%
+2025-01-16 16:43:49,860 - ExperimentAnalyzer_spike - INFO -   Average Completion Time: 10781639.69s
+2025-01-16 16:43:49,862 - ExperimentAnalyzer_spike - INFO - Generating task completion visualizations...
+2025-01-16 16:43:49,936 - ExperimentAnalyzer_spike - INFO - Saved completion rates plot to results/spike_completion_rates.png
+2025-01-16 16:44:28,915 - ExperimentAnalyzer_spike - INFO - Saved completion times plot to results/spike_completion_times.png
+2025-01-16 16:45:08,744 - ExperimentAnalyzer_spike - INFO - Saved state distribution plot to results/spike_state_distribution.png
+2025-01-16 16:45:08,825 - ExperimentAnalyzer_spike - INFO - Starting comparative analysis...
+2025-01-16 16:45:08,826 - ExperimentAnalyzer_spike - INFO - Generating comparative bar plots...
+2025-01-16 16:45:09,057 - ExperimentAnalyzer_spike - INFO - Saved comparative analysis plot to results/spike_comparative_analysis.png
+2025-01-17 01:49:33,576 - ExperimentAnalyzer_spike - INFO - Initializing ExperimentAnalyzer for 'spike' pattern.
+2025-01-17 01:49:33,576 - ExperimentAnalyzer_spike - INFO - Loading parquet files (host, task)...
+2025-01-17 01:49:51,823 - ExperimentAnalyzer_spike - INFO - Loaded and filtered host data: 3063567 records.
+2025-01-17 01:49:51,823 - ExperimentAnalyzer_spike - INFO - Loaded and filtered task data: 43140951 records.
+2025-01-17 01:49:51,824 - ExperimentAnalyzer_spike - INFO - Loaded trackr data: 9 scenarios.
+2025-01-17 01:49:51,824 - ExperimentAnalyzer_spike - INFO - Converting timestamps from 'timestamp_absolute' to datetime...
+2025-01-17 01:49:51,873 - ExperimentAnalyzer_spike - INFO - Processed timestamps for host data.
+2025-01-17 01:49:52,235 - ExperimentAnalyzer_spike - INFO - Processed timestamps for task data.
+2025-01-17 01:49:52,235 - ExperimentAnalyzer_spike - INFO - Generating scenario labels for each record...
+2025-01-17 01:49:52,719 - ExperimentAnalyzer_spike - INFO - [host] Unique scenarios: ['large_cost_spike_CostEfficient' 'small_cost_spike_CostEfficient'
+ 'large_cost_spike_PredictiveCost' 'medium_cost_spike_CostEfficient'
+ 'small_cost_spike_PredictiveCost' 'medium_cost_spike_PredictiveCost']
+2025-01-17 01:50:01,938 - ExperimentAnalyzer_spike - INFO - [task] Unique scenarios: ['large_cost_spike_CostEfficient' 'small_cost_spike_CostEfficient'
+ 'large_cost_spike_PredictiveCost' 'medium_cost_spike_CostEfficient'
+ 'small_cost_spike_PredictiveCost' 'medium_cost_spike_PredictiveCost']
+2025-01-17 01:50:05,503 - ExperimentAnalyzer_spike - INFO - Starting resource utilization analysis...
+2025-01-17 01:50:05,503 - ExperimentAnalyzer_spike - INFO - Aggregating utilization metrics: ['cpu_utilization', 'guests_running', 'cpu_time_steal']
+2025-01-17 01:50:05,961 - ExperimentAnalyzer_spike - INFO - Successfully aggregated metrics across 495034 grouped rows.
+2025-01-17 01:50:05,977 - ExperimentAnalyzer_spike - INFO - Columns before flattening: [('scenario_label', ''), ('datetime', ''), ('topology', ''), ('scheduler', ''), ('cpu_utilization', 'mean'), ('cpu_utilization', 'std'), ('guests_running', 'mean'), ('guests_running', 'std'), ('cpu_time_steal', 'mean'), ('cpu_time_steal', 'std')]
+2025-01-17 01:50:05,977 - ExperimentAnalyzer_spike - INFO - Columns after flattening: ['scenario_label', 'datetime', 'topology', 'scheduler', 'cpu_utilization_mean', 'cpu_utilization_std', 'guests_running_mean', 'guests_running_std', 'cpu_time_steal_mean', 'cpu_time_steal_std']
+2025-01-17 01:50:05,977 - ExperimentAnalyzer_spike - INFO - Generating CPU utilization plot...
+2025-01-17 01:50:06,311 - ExperimentAnalyzer_spike - INFO - Saved CPU utilization plot to results/spike_cpu_utilization.png
+2025-01-17 01:50:06,318 - ExperimentAnalyzer_spike - INFO - Starting cost metrics analysis...
+2025-01-17 01:50:06,318 - ExperimentAnalyzer_spike - INFO - Analyzing cost metrics: ['cost', 'cpu_utilization']
+2025-01-17 01:50:06,649 - ExperimentAnalyzer_spike - INFO - Aggregated cost metrics: 6 scenario group(s).
+2025-01-17 01:50:06,650 - ExperimentAnalyzer_spike - INFO - Columns before flattening: [('scenario_label', ''), ('topology', ''), ('scheduler', ''), ('cost', 'mean'), ('cost', 'std'), ('cpu_utilization', 'mean'), ('cpu_utilization', 'std')]
+2025-01-17 01:50:06,656 - ExperimentAnalyzer_spike - INFO - Columns after flattening: ['scenario_label', 'topology', 'scheduler', 'cost_mean', 'cost_std', 'cpu_utilization_mean', 'cpu_utilization_std']
+2025-01-17 01:50:06,657 - ExperimentAnalyzer_spike - INFO - Calculating cost efficiency metrics...
+2025-01-17 01:50:06,657 - ExperimentAnalyzer_spike - INFO - Generating cost comparison plot...
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO - Saved cost comparison plot to results/spike_cost_comparison.png
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO - Cost Summary Statistics:
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO - 
+Scenario: large_cost_spike_CostEfficient
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Topology: large
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Scheduler: CostEfficient
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Avg Cost: 525.66
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Cost Std Dev: 227.70
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Cost Efficiency: 0.0002
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO - 
+Scenario: large_cost_spike_PredictiveCost
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Topology: large
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Scheduler: PredictiveCost
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Avg Cost: 510.45
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Cost Std Dev: 199.89
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Cost Efficiency: 0.0002
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO - 
+Scenario: medium_cost_spike_CostEfficient
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Topology: medium
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Scheduler: CostEfficient
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Avg Cost: 492.24
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Cost Std Dev: 173.22
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Cost Efficiency: 0.0002
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO - 
+Scenario: medium_cost_spike_PredictiveCost
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Topology: medium
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Scheduler: PredictiveCost
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Avg Cost: 487.32
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Cost Std Dev: 161.85
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Cost Efficiency: 0.0002
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO - 
+Scenario: small_cost_spike_CostEfficient
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Topology: small
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Scheduler: CostEfficient
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Avg Cost: 407.11
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Cost Std Dev: 83.90
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Cost Efficiency: 0.0003
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO - 
+Scenario: small_cost_spike_PredictiveCost
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Topology: small
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Scheduler: PredictiveCost
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Avg Cost: 405.12
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Cost Std Dev: 75.61
+2025-01-17 01:50:06,727 - ExperimentAnalyzer_spike - INFO -   Cost Efficiency: 0.0002
+2025-01-17 01:50:06,728 - ExperimentAnalyzer_spike - INFO - Starting task completion analysis...
+2025-01-17 01:50:08,053 - ExperimentAnalyzer_spike - INFO - Analyzing scenario: large_cost_spike_CostEfficient
+2025-01-17 01:50:09,553 - ExperimentAnalyzer_spike - INFO -   Total Tasks: 50
+2025-01-17 01:50:09,553 - ExperimentAnalyzer_spike - INFO -   Completion Rate: 98.00%
+2025-01-17 01:50:09,553 - ExperimentAnalyzer_spike - INFO -   Average Completion Time: 5014190.92s
+2025-01-17 01:50:09,553 - ExperimentAnalyzer_spike - INFO - Analyzing scenario: small_cost_spike_CostEfficient
+2025-01-17 01:50:14,524 - ExperimentAnalyzer_spike - INFO -   Total Tasks: 50
+2025-01-17 01:50:14,525 - ExperimentAnalyzer_spike - INFO -   Completion Rate: 98.00%
+2025-01-17 01:50:14,525 - ExperimentAnalyzer_spike - INFO -   Average Completion Time: 24596183.53s
+2025-01-17 01:50:14,525 - ExperimentAnalyzer_spike - INFO - Analyzing scenario: large_cost_spike_PredictiveCost
+2025-01-17 01:50:17,359 - ExperimentAnalyzer_spike - INFO -   Total Tasks: 50
+2025-01-17 01:50:17,360 - ExperimentAnalyzer_spike - INFO -   Completion Rate: 98.00%
+2025-01-17 01:50:17,360 - ExperimentAnalyzer_spike - INFO -   Average Completion Time: 6545848.90s
+2025-01-17 01:50:17,360 - ExperimentAnalyzer_spike - INFO - Analyzing scenario: medium_cost_spike_CostEfficient
+2025-01-17 01:50:19,631 - ExperimentAnalyzer_spike - INFO -   Total Tasks: 50
+2025-01-17 01:50:19,631 - ExperimentAnalyzer_spike - INFO -   Completion Rate: 98.00%
+2025-01-17 01:50:19,631 - ExperimentAnalyzer_spike - INFO -   Average Completion Time: 8815958.65s
+2025-01-17 01:50:19,631 - ExperimentAnalyzer_spike - INFO - Analyzing scenario: small_cost_spike_PredictiveCost
+2025-01-17 01:50:27,357 - ExperimentAnalyzer_spike - INFO -   Total Tasks: 50
+2025-01-17 01:50:27,358 - ExperimentAnalyzer_spike - INFO -   Completion Rate: 98.00%
+2025-01-17 01:50:27,358 - ExperimentAnalyzer_spike - INFO -   Average Completion Time: 30177264.67s
+2025-01-17 01:50:27,358 - ExperimentAnalyzer_spike - INFO - Analyzing scenario: medium_cost_spike_PredictiveCost
+2025-01-17 01:50:31,583 - ExperimentAnalyzer_spike - INFO -   Total Tasks: 50
+2025-01-17 01:50:31,584 - ExperimentAnalyzer_spike - INFO -   Completion Rate: 98.00%
+2025-01-17 01:50:31,584 - ExperimentAnalyzer_spike - INFO -   Average Completion Time: 10781639.69s
+2025-01-17 01:50:31,584 - ExperimentAnalyzer_spike - INFO - Generating task completion visualizations...
+2025-01-17 01:50:31,646 - ExperimentAnalyzer_spike - INFO - Saved completion rates plot to results/spike_completion_rates.png
+2025-01-17 01:50:42,866 - ExperimentAnalyzer_spike - INFO - Saved completion times plot to results/spike_completion_times.png
+2025-01-17 01:51:00,985 - ExperimentAnalyzer_spike - INFO - Saved state distribution plot to results/spike_state_distribution.png
+2025-01-17 01:51:01,065 - ExperimentAnalyzer_spike - INFO - Starting comparative analysis...
+2025-01-17 01:51:01,066 - ExperimentAnalyzer_spike - INFO - Generating comparative bar plots...
+2025-01-17 01:51:01,267 - ExperimentAnalyzer_spike - INFO - Saved comparative analysis plot to results/spike_comparative_analysis.png

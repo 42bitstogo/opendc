@@ -1,0 +1,779 @@
+.
+├── Utils
+│   ├── __pycache__
+│   │   └── util.cpython-313.pyc
+│   └── util.py
+├── analyze_experiments.py
+├── convert_cost_csv_parquet.py
+├── experiments
+│   ├── cost_experiment_diurnal.json
+│   ├── cost_experiment_spike.json
+│   ├── cost_experiment_stable.json
+│   └── cost_experiment_volatile.json
+├── generate_cost_traces.py
+├── more_analysis.py
+├── output
+│   ├── cost_comparison
+│   │   ├── diurnal
+│   │   │   └── cost_experiment_diurnal
+│   │   │       ├── raw-output
+│   │   │       │   ├── 0
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   ├── 1
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   ├── 2
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   ├── 3
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   ├── 4
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   ├── 5
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   ├── 6
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   ├── 7
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   └── 8
+│   │   │       │       ├── seed=0
+│   │   │       │       │   ├── host.parquet
+│   │   │       │       │   ├── powerSource.parquet
+│   │   │       │       │   ├── service.parquet
+│   │   │       │       │   └── task.parquet
+│   │   │       │       ├── seed=1
+│   │   │       │       │   ├── host.parquet
+│   │   │       │       │   ├── powerSource.parquet
+│   │   │       │       │   ├── service.parquet
+│   │   │       │       │   └── task.parquet
+│   │   │       │       └── seed=2
+│   │   │       │           ├── host.parquet
+│   │   │       │           ├── powerSource.parquet
+│   │   │       │           ├── service.parquet
+│   │   │       │           └── task.parquet
+│   │   │       ├── simulation-analysis
+│   │   │       │   ├── carbon_emission
+│   │   │       │   └── power_draw
+│   │   │       └── trackr.json
+│   │   ├── spike
+│   │   │   └── cost_experiment_spike
+│   │   │       ├── raw-output
+│   │   │       │   ├── 0
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   ├── 1
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   ├── 2
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   ├── 3
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   ├── 4
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   ├── 5
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   ├── 6
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   ├── 7
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   └── 8
+│   │   │       │       ├── seed=0
+│   │   │       │       │   ├── host.parquet
+│   │   │       │       │   ├── powerSource.parquet
+│   │   │       │       │   ├── service.parquet
+│   │   │       │       │   └── task.parquet
+│   │   │       │       ├── seed=1
+│   │   │       │       │   ├── host.parquet
+│   │   │       │       │   ├── powerSource.parquet
+│   │   │       │       │   ├── service.parquet
+│   │   │       │       │   └── task.parquet
+│   │   │       │       └── seed=2
+│   │   │       │           ├── host.parquet
+│   │   │       │           ├── powerSource.parquet
+│   │   │       │           ├── service.parquet
+│   │   │       │           └── task.parquet
+│   │   │       ├── simulation-analysis
+│   │   │       │   ├── carbon_emission
+│   │   │       │   └── power_draw
+│   │   │       └── trackr.json
+│   │   ├── stable
+│   │   │   └── cost_experiment_stable
+│   │   │       ├── raw-output
+│   │   │       │   ├── 0
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   ├── 1
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   ├── 2
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   ├── 3
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   ├── 4
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   ├── 5
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   ├── 6
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   ├── 7
+│   │   │       │   │   ├── seed=0
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   ├── seed=1
+│   │   │       │   │   │   ├── host.parquet
+│   │   │       │   │   │   ├── powerSource.parquet
+│   │   │       │   │   │   ├── service.parquet
+│   │   │       │   │   │   └── task.parquet
+│   │   │       │   │   └── seed=2
+│   │   │       │   │       ├── host.parquet
+│   │   │       │   │       ├── powerSource.parquet
+│   │   │       │   │       ├── service.parquet
+│   │   │       │   │       └── task.parquet
+│   │   │       │   └── 8
+│   │   │       │       ├── seed=0
+│   │   │       │       │   ├── host.parquet
+│   │   │       │       │   ├── powerSource.parquet
+│   │   │       │       │   ├── service.parquet
+│   │   │       │       │   └── task.parquet
+│   │   │       │       ├── seed=1
+│   │   │       │       │   ├── host.parquet
+│   │   │       │       │   ├── powerSource.parquet
+│   │   │       │       │   ├── service.parquet
+│   │   │       │       │   └── task.parquet
+│   │   │       │       └── seed=2
+│   │   │       │           ├── host.parquet
+│   │   │       │           ├── powerSource.parquet
+│   │   │       │           ├── service.parquet
+│   │   │       │           └── task.parquet
+│   │   │       ├── simulation-analysis
+│   │   │       │   ├── carbon_emission
+│   │   │       │   └── power_draw
+│   │   │       └── trackr.json
+│   │   └── volatile
+│   │       └── cost_experiment_volatile
+│   │           ├── raw-output
+│   │           │   ├── 0
+│   │           │   │   ├── seed=0
+│   │           │   │   │   ├── host.parquet
+│   │           │   │   │   ├── powerSource.parquet
+│   │           │   │   │   ├── service.parquet
+│   │           │   │   │   └── task.parquet
+│   │           │   │   ├── seed=1
+│   │           │   │   │   ├── host.parquet
+│   │           │   │   │   ├── powerSource.parquet
+│   │           │   │   │   ├── service.parquet
+│   │           │   │   │   └── task.parquet
+│   │           │   │   └── seed=2
+│   │           │   │       ├── host.parquet
+│   │           │   │       ├── powerSource.parquet
+│   │           │   │       ├── service.parquet
+│   │           │   │       └── task.parquet
+│   │           │   ├── 1
+│   │           │   │   ├── seed=0
+│   │           │   │   │   ├── host.parquet
+│   │           │   │   │   ├── powerSource.parquet
+│   │           │   │   │   ├── service.parquet
+│   │           │   │   │   └── task.parquet
+│   │           │   │   ├── seed=1
+│   │           │   │   │   ├── host.parquet
+│   │           │   │   │   ├── powerSource.parquet
+│   │           │   │   │   ├── service.parquet
+│   │           │   │   │   └── task.parquet
+│   │           │   │   └── seed=2
+│   │           │   │       ├── host.parquet
+│   │           │   │       ├── powerSource.parquet
+│   │           │   │       ├── service.parquet
+│   │           │   │       └── task.parquet
+│   │           │   ├── 2
+│   │           │   │   ├── seed=0
+│   │           │   │   │   ├── host.parquet
+│   │           │   │   │   ├── powerSource.parquet
+│   │           │   │   │   ├── service.parquet
+│   │           │   │   │   └── task.parquet
+│   │           │   │   ├── seed=1
+│   │           │   │   │   ├── host.parquet
+│   │           │   │   │   ├── powerSource.parquet
+│   │           │   │   │   ├── service.parquet
+│   │           │   │   │   └── task.parquet
+│   │           │   │   └── seed=2
+│   │           │   │       ├── host.parquet
+│   │           │   │       ├── powerSource.parquet
+│   │           │   │       ├── service.parquet
+│   │           │   │       └── task.parquet
+│   │           │   ├── 3
+│   │           │   │   ├── seed=0
+│   │           │   │   │   ├── host.parquet
+│   │           │   │   │   ├── powerSource.parquet
+│   │           │   │   │   ├── service.parquet
+│   │           │   │   │   └── task.parquet
+│   │           │   │   ├── seed=1
+│   │           │   │   │   ├── host.parquet
+│   │           │   │   │   ├── powerSource.parquet
+│   │           │   │   │   ├── service.parquet
+│   │           │   │   │   └── task.parquet
+│   │           │   │   └── seed=2
+│   │           │   │       ├── host.parquet
+│   │           │   │       ├── powerSource.parquet
+│   │           │   │       ├── service.parquet
+│   │           │   │       └── task.parquet
+│   │           │   ├── 4
+│   │           │   │   ├── seed=0
+│   │           │   │   │   ├── host.parquet
+│   │           │   │   │   ├── powerSource.parquet
+│   │           │   │   │   ├── service.parquet
+│   │           │   │   │   └── task.parquet
+│   │           │   │   ├── seed=1
+│   │           │   │   │   ├── host.parquet
+│   │           │   │   │   ├── powerSource.parquet
+│   │           │   │   │   ├── service.parquet
+│   │           │   │   │   └── task.parquet
+│   │           │   │   └── seed=2
+│   │           │   │       ├── host.parquet
+│   │           │   │       ├── powerSource.parquet
+│   │           │   │       ├── service.parquet
+│   │           │   │       └── task.parquet
+│   │           │   ├── 5
+│   │           │   │   ├── seed=0
+│   │           │   │   │   ├── host.parquet
+│   │           │   │   │   ├── powerSource.parquet
+│   │           │   │   │   ├── service.parquet
+│   │           │   │   │   └── task.parquet
+│   │           │   │   ├── seed=1
+│   │           │   │   │   ├── host.parquet
+│   │           │   │   │   ├── powerSource.parquet
+│   │           │   │   │   ├── service.parquet
+│   │           │   │   │   └── task.parquet
+│   │           │   │   └── seed=2
+│   │           │   │       ├── host.parquet
+│   │           │   │       ├── powerSource.parquet
+│   │           │   │       ├── service.parquet
+│   │           │   │       └── task.parquet
+│   │           │   ├── 6
+│   │           │   │   ├── seed=0
+│   │           │   │   │   ├── host.parquet
+│   │           │   │   │   ├── powerSource.parquet
+│   │           │   │   │   ├── service.parquet
+│   │           │   │   │   └── task.parquet
+│   │           │   │   ├── seed=1
+│   │           │   │   │   ├── host.parquet
+│   │           │   │   │   ├── powerSource.parquet
+│   │           │   │   │   ├── service.parquet
+│   │           │   │   │   └── task.parquet
+│   │           │   │   └── seed=2
+│   │           │   │       ├── host.parquet
+│   │           │   │       ├── powerSource.parquet
+│   │           │   │       ├── service.parquet
+│   │           │   │       └── task.parquet
+│   │           │   ├── 7
+│   │           │   │   ├── seed=0
+│   │           │   │   │   ├── host.parquet
+│   │           │   │   │   ├── powerSource.parquet
+│   │           │   │   │   ├── service.parquet
+│   │           │   │   │   └── task.parquet
+│   │           │   │   ├── seed=1
+│   │           │   │   │   ├── host.parquet
+│   │           │   │   │   ├── powerSource.parquet
+│   │           │   │   │   ├── service.parquet
+│   │           │   │   │   └── task.parquet
+│   │           │   │   └── seed=2
+│   │           │   │       ├── host.parquet
+│   │           │   │       ├── powerSource.parquet
+│   │           │   │       ├── service.parquet
+│   │           │   │       └── task.parquet
+│   │           │   └── 8
+│   │           │       ├── seed=0
+│   │           │       │   ├── host.parquet
+│   │           │       │   ├── powerSource.parquet
+│   │           │       │   ├── service.parquet
+│   │           │       │   └── task.parquet
+│   │           │       ├── seed=1
+│   │           │       │   ├── host.parquet
+│   │           │       │   ├── powerSource.parquet
+│   │           │       │   ├── service.parquet
+│   │           │       │   └── task.parquet
+│   │           │       └── seed=2
+│   │           │           ├── host.parquet
+│   │           │           ├── powerSource.parquet
+│   │           │           ├── service.parquet
+│   │           │           └── task.parquet
+│   │           ├── simulation-analysis
+│   │           │   ├── carbon_emission
+│   │           │   └── power_draw
+│   │           └── trackr.json
+│   └── logs
+│       ├── analysis_diurnal.log
+│       ├── analysis_spike.log
+│       ├── analysis_stable.log
+│       └── analysis_volatile.log
+├── price
+│   └── csv
+│       ├── diurnal
+│       │   ├── host1_costs.csv
+│       │   ├── host2_costs.csv
+│       │   ├── host3_costs.csv
+│       │   ├── host4_costs.csv
+│       │   ├── host5_costs.csv
+│       │   └── host6_costs.csv
+│       ├── spike
+│       │   ├── host1_costs.csv
+│       │   ├── host2_costs.csv
+│       │   ├── host3_costs.csv
+│       │   ├── host4_costs.csv
+│       │   ├── host5_costs.csv
+│       │   └── host6_costs.csv
+│       ├── stable
+│       │   ├── host1_costs.csv
+│       │   ├── host2_costs.csv
+│       │   ├── host3_costs.csv
+│       │   ├── host4_costs.csv
+│       │   ├── host5_costs.csv
+│       │   └── host6_costs.csv
+│       └── volatile
+│           ├── host1_costs.csv
+│           ├── host2_costs.csv
+│           ├── host3_costs.csv
+│           ├── host4_costs.csv
+│           ├── host5_costs.csv
+│           └── host6_costs.csv
+├── price_parquet
+│   ├── diurnal
+│   │   ├── host1_costs.parquet
+│   │   ├── host2_costs.parquet
+│   │   ├── host3_costs.parquet
+│   │   ├── host4_costs.parquet
+│   │   ├── host5_costs.parquet
+│   │   └── host6_costs.parquet
+│   ├── spike
+│   │   ├── host1_costs.parquet
+│   │   ├── host2_costs.parquet
+│   │   ├── host3_costs.parquet
+│   │   ├── host4_costs.parquet
+│   │   ├── host5_costs.parquet
+│   │   └── host6_costs.parquet
+│   ├── stable
+│   │   ├── host1_costs.parquet
+│   │   ├── host2_costs.parquet
+│   │   ├── host3_costs.parquet
+│   │   ├── host4_costs.parquet
+│   │   ├── host5_costs.parquet
+│   │   └── host6_costs.parquet
+│   └── volatile
+│       ├── host1_costs.parquet
+│       ├── host2_costs.parquet
+│       ├── host3_costs.parquet
+│       ├── host4_costs.parquet
+│       ├── host5_costs.parquet
+│       └── host6_costs.parquet
+├── requirements.txt
+├── results
+│   ├── cost_analysis.log
+│   ├── cost_efficiency_heatmap.png
+│   ├── cross_pattern_completion.csv
+│   ├── cross_pattern_completion_rate.png
+│   ├── cross_pattern_cost.png
+│   ├── cross_pattern_efficiency.csv
+│   ├── cross_pattern_summary.txt
+│   ├── diurnal_comparative_analysis.png
+│   ├── diurnal_comparison.csv
+│   ├── diurnal_completion_metrics.csv
+│   ├── diurnal_completion_rates.png
+│   ├── diurnal_completion_times.png
+│   ├── diurnal_cost_comparison.png
+│   ├── diurnal_cost_stats.csv
+│   ├── diurnal_cost_vs_util.png
+│   ├── diurnal_cpu_utilization.png
+│   ├── diurnal_efficiency_metrics.csv
+│   ├── diurnal_performance_metrics.png
+│   ├── diurnal_resource_stats.csv
+│   ├── diurnal_state_distribution.png
+│   ├── diurnal_summary.txt
+│   ├── diurnal_task_stats.csv
+│   ├── main_analysis.log
+│   ├── spike_comparative_analysis.png
+│   ├── spike_comparison.csv
+│   ├── spike_completion_metrics.csv
+│   ├── spike_completion_rates.png
+│   ├── spike_completion_times.png
+│   ├── spike_cost_comparison.png
+│   ├── spike_cost_stats.csv
+│   ├── spike_cost_vs_util.png
+│   ├── spike_cpu_utilization.png
+│   ├── spike_efficiency_metrics.csv
+│   ├── spike_performance_metrics.png
+│   ├── spike_resource_stats.csv
+│   ├── spike_state_distribution.png
+│   ├── spike_summary.txt
+│   ├── spike_task_stats.csv
+│   ├── stable_comparative_analysis.png
+│   ├── stable_comparison.csv
+│   ├── stable_completion_metrics.csv
+│   ├── stable_completion_rates.png
+│   ├── stable_completion_times.png
+│   ├── stable_cost_comparison.png
+│   ├── stable_cost_stats.csv
+│   ├── stable_cost_vs_util.png
+│   ├── stable_cpu_utilization.png
+│   ├── stable_efficiency_metrics.csv
+│   ├── stable_performance_metrics.png
+│   ├── stable_resource_stats.csv
+│   ├── stable_state_distribution.png
+│   ├── stable_summary.txt
+│   ├── stable_task_stats.csv
+│   ├── volatile_comparative_analysis.png
+│   ├── volatile_comparison.csv
+│   ├── volatile_completion_metrics.csv
+│   ├── volatile_completion_rates.png
+│   ├── volatile_completion_times.png
+│   ├── volatile_cost_comparison.png
+│   ├── volatile_cost_stats.csv
+│   ├── volatile_cost_vs_util.png
+│   ├── volatile_cpu_utilization.png
+│   ├── volatile_efficiency_metrics.csv
+│   ├── volatile_performance_metrics.png
+│   ├── volatile_resource_stats.csv
+│   ├── volatile_state_distribution.png
+│   ├── volatile_summary.txt
+│   └── volatile_task_stats.csv
+├── topologies
+│   ├── diurnal
+│   │   ├── topology_large.json
+│   │   ├── topology_medium.json
+│   │   └── topology_small.json
+│   ├── spike
+│   │   ├── topology_large.json
+│   │   ├── topology_medium.json
+│   │   └── topology_small.json
+│   ├── stable
+│   │   ├── topology_large.json
+│   │   ├── topology_medium.json
+│   │   └── topology_small.json
+│   └── volatile
+│       ├── topology_large.json
+│       ├── topology_medium.json
+│       └── topology_small.json
+├── traces
+│   └── bitbrains-small
+│       ├── fragments.parquet
+│       ├── interference-model.json
+│       └── tasks.parquet
+└── tree.txt
+
+194 directories, 583 files

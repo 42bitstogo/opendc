@@ -1,0 +1,42 @@
+{
+    "clusters": [
+        {
+            "name": "C01",
+            "hosts": [
+                {
+                    "name": "H01",
+                    "cpu": {
+                        "coreCount": 12,
+                        "coreSpeed": 3300
+                    },
+                    "memory": {
+                        "memorySize": 140457600000
+                    },
+                    "costTracePath": "price_parquet/stable/host1_costs.parquet"
+                },
+                {
+                    "name": "H02", 
+                    "cpu": {
+                        "coreCount": 12,
+                        "coreSpeed": 3300
+                    },
+                    "memory": {
+                        "memorySize": 140457600000
+                    },
+                    "costTracePath": "price_parquet/stable/host2_costs.parquet"
+                },
+                {
+                    "name": "H03",
+                    "cpu": {
+                        "coreCount": 12,
+                        "coreSpeed": 3300
+                    },
+                    "memory": {
+                        "memorySize": 140457600000
+                    },
+                    "costTracePath": "price_parquet/stable/host3_costs.parquet"
+                }
+            ]
+        }
+    ]
+}

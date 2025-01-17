@@ -1,0 +1,19 @@
+{
+    "name": "cost_experiment_diurnal",
+    "outputFolder": "output/cost_comparison/diurnal",
+    "runs": 3,
+    "topologies": [
+        {"pathToFile": "topologies/diurnal/topology_small.json"},
+        {"pathToFile": "topologies/diurnal/topology_medium.json"},
+        {"pathToFile": "topologies/diurnal/topology_large.json"}
+    ],
+    "workloads": [{
+        "pathToFile": "traces/bitbrains-small",
+        "type": "ComputeWorkload"
+    }],
+    "allocationPolicies": [
+        {"policyType": "SimpleCost"},
+        {"policyType": "CostEfficient"},
+        {"policyType": "PredictiveCost"}
+    ]
+}

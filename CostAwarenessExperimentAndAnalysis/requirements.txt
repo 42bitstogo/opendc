@@ -1,0 +1,18 @@
+# Data processing and analysis
+pandas>=1.5.0
+numpy>=1.21.0
+pyarrow>=7.0.0
+
+# Visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Progress bars
+tqdm>=4.65.0
+
+# Logging enhancements
+coloredlogs>=15.0.1
+
+# File handling
+fastparquet>=0.8.1
+python-dateutil>=2.8.2

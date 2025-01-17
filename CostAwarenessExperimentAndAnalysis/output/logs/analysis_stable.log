@@ -1,0 +1,1084 @@
+2025-01-16 14:47:00,906 - ExperimentAnalyzer_stable - INFO - Initializing ExperimentAnalyzer for stable cost pattern
+2025-01-16 14:47:00,906 - ExperimentAnalyzer_stable - INFO - Loading parquet files...
+2025-01-16 14:47:01,346 - ExperimentAnalyzer_stable - INFO - Loaded host data: 4427730 records
+2025-01-16 14:47:12,679 - ExperimentAnalyzer_stable - INFO - Loaded task data: 62357667 records
+2025-01-16 14:47:12,680 - ExperimentAnalyzer_stable - INFO - Loaded trackr data: 9 scenarios
+2025-01-16 14:47:12,680 - ExperimentAnalyzer_stable - INFO - Processing timestamps...
+2025-01-16 14:47:12,807 - ExperimentAnalyzer_stable - INFO - Processed timestamps for host data
+2025-01-16 14:47:13,299 - ExperimentAnalyzer_stable - INFO - Processed timestamps for task data
+2025-01-16 14:47:13,299 - ExperimentAnalyzer_stable - INFO - Generating scenario labels...
+2025-01-16 14:47:13,747 - ExperimentAnalyzer_stable - INFO - Generated scenario labels for host data
+2025-01-16 14:47:13,884 - ExperimentAnalyzer_stable - INFO - Unique scenarios: ['stable_cost_stable_SimpleCost' 'stable_cost_stable_CostEfficient'
+ 'stable_cost_stable_PredictiveCost']
+2025-01-16 14:47:26,655 - ExperimentAnalyzer_stable - INFO - Generated scenario labels for task data
+2025-01-16 14:47:28,551 - ExperimentAnalyzer_stable - INFO - Unique scenarios: ['stable_cost_stable_SimpleCost' 'stable_cost_stable_CostEfficient'
+ 'stable_cost_stable_PredictiveCost']
+2025-01-16 14:47:28,552 - ExperimentAnalyzer_stable - INFO - Starting task completion analysis...
+2025-01-16 14:47:30,445 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: stable_cost_stable_SimpleCost
+2025-01-16 14:47:39,152 - ExperimentAnalyzer_stable - INFO - 
+Statistics for stable_cost_stable_SimpleCost:
+2025-01-16 14:47:39,152 - ExperimentAnalyzer_stable - INFO - Total Tasks: 50
+2025-01-16 14:47:39,152 - ExperimentAnalyzer_stable - INFO - Completion Rate: 98.00%
+2025-01-16 14:47:39,152 - ExperimentAnalyzer_stable - INFO - Average Completion Time: 8815958.65s
+2025-01-16 14:47:39,152 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: stable_cost_stable_CostEfficient
+2025-01-16 14:47:49,830 - ExperimentAnalyzer_stable - INFO - 
+Statistics for stable_cost_stable_CostEfficient:
+2025-01-16 14:47:49,831 - ExperimentAnalyzer_stable - INFO - Total Tasks: 50
+2025-01-16 14:47:49,831 - ExperimentAnalyzer_stable - INFO - Completion Rate: 98.00%
+2025-01-16 14:47:49,831 - ExperimentAnalyzer_stable - INFO - Average Completion Time: 8815958.65s
+2025-01-16 14:47:49,831 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: stable_cost_stable_PredictiveCost
+2025-01-16 14:48:02,539 - ExperimentAnalyzer_stable - INFO - 
+Statistics for stable_cost_stable_PredictiveCost:
+2025-01-16 14:48:02,539 - ExperimentAnalyzer_stable - INFO - Total Tasks: 50
+2025-01-16 14:48:02,539 - ExperimentAnalyzer_stable - INFO - Completion Rate: 98.00%
+2025-01-16 14:48:02,539 - ExperimentAnalyzer_stable - INFO - Average Completion Time: 10781639.69s
+2025-01-16 14:48:02,543 - ExperimentAnalyzer_stable - INFO - Generating task completion visualizations...
+2025-01-16 14:48:02,762 - ExperimentAnalyzer_stable - INFO - Saved completion rates plot to results/stable_completion_rates.png
+2025-01-16 14:48:12,247 - ExperimentAnalyzer_stable - INFO - Saved completion times plot to results/stable_completion_times.png
+2025-01-16 14:48:32,952 - ExperimentAnalyzer_stable - INFO - Saved state distribution plot to results/stable_state_distribution.png
+2025-01-16 14:48:33,332 - ExperimentAnalyzer_stable - INFO - Starting resource utilization analysis...
+2025-01-16 14:48:33,332 - ExperimentAnalyzer_stable - INFO - Aggregating utilization metrics: ['cpu_utilization', 'guests_running', 'cpu_time_steal']
+2025-01-16 14:48:34,218 - ExperimentAnalyzer_stable - INFO - Successfully aggregated metrics across 466854 timestamps
+2025-01-16 14:48:34,218 - ExperimentAnalyzer_stable - INFO - Generating CPU utilization plot...
+2025-01-16 14:48:34,487 - ExperimentAnalyzer_stable - INFO - Saved CPU utilization plot to results/stable_cpu_utilization.png
+2025-01-16 14:48:34,488 - ExperimentAnalyzer_stable - INFO - Starting cost metrics analysis...
+2025-01-16 14:48:34,488 - ExperimentAnalyzer_stable - INFO - Analyzing cost metrics: ['cost', 'cpu_utilization']
+2025-01-16 14:48:34,963 - ExperimentAnalyzer_stable - INFO - Aggregated cost metrics across 3 scenarios
+2025-01-16 14:48:34,963 - ExperimentAnalyzer_stable - INFO - Calculating cost efficiency metrics...
+2025-01-16 14:48:34,963 - ExperimentAnalyzer_stable - INFO - Generating cost comparison plot...
+2025-01-16 14:48:35,022 - ExperimentAnalyzer_stable - INFO - Saved cost comparison plot to results/stable_cost_comparison.png
+2025-01-16 14:48:35,022 - ExperimentAnalyzer_stable - INFO - 
+Cost Summary Statistics:
+2025-01-16 14:48:35,022 - ExperimentAnalyzer_stable - INFO - 
+Scenario: stable_cost_stable_CostEfficient
+2025-01-16 14:48:35,022 - ExperimentAnalyzer_stable - INFO - Average Cost: 536.43
+2025-01-16 14:48:35,022 - ExperimentAnalyzer_stable - INFO - Cost Std Dev: 78.35
+2025-01-16 14:48:35,023 - ExperimentAnalyzer_stable - INFO - Cost Efficiency: 0.0002
+2025-01-16 14:48:35,023 - ExperimentAnalyzer_stable - INFO - 
+Scenario: stable_cost_stable_PredictiveCost
+2025-01-16 14:48:35,023 - ExperimentAnalyzer_stable - INFO - Average Cost: 535.42
+2025-01-16 14:48:35,023 - ExperimentAnalyzer_stable - INFO - Cost Std Dev: 78.49
+2025-01-16 14:48:35,023 - ExperimentAnalyzer_stable - INFO - Cost Efficiency: 0.0002
+2025-01-16 14:48:35,023 - ExperimentAnalyzer_stable - INFO - 
+Scenario: stable_cost_stable_SimpleCost
+2025-01-16 14:48:35,023 - ExperimentAnalyzer_stable - INFO - Average Cost: 536.43
+2025-01-16 14:48:35,023 - ExperimentAnalyzer_stable - INFO - Cost Std Dev: 78.35
+2025-01-16 14:48:35,023 - ExperimentAnalyzer_stable - INFO - Cost Efficiency: 0.0002
+2025-01-16 14:48:35,023 - ExperimentAnalyzer_stable - INFO - Starting comparative analysis...
+2025-01-16 14:48:35,024 - ExperimentAnalyzer_stable - INFO - Gathering metrics for comparison...
+2025-01-16 14:48:35,024 - ExperimentAnalyzer_stable - INFO - Starting cost metrics analysis...
+2025-01-16 14:48:35,024 - ExperimentAnalyzer_stable - INFO - Analyzing cost metrics: ['cost', 'cpu_utilization']
+2025-01-16 14:48:35,487 - ExperimentAnalyzer_stable - INFO - Aggregated cost metrics across 3 scenarios
+2025-01-16 14:48:35,487 - ExperimentAnalyzer_stable - INFO - Calculating cost efficiency metrics...
+2025-01-16 14:48:35,487 - ExperimentAnalyzer_stable - INFO - Generating cost comparison plot...
+2025-01-16 14:48:35,539 - ExperimentAnalyzer_stable - INFO - Saved cost comparison plot to results/stable_cost_comparison.png
+2025-01-16 14:48:35,539 - ExperimentAnalyzer_stable - INFO - 
+Cost Summary Statistics:
+2025-01-16 14:48:35,539 - ExperimentAnalyzer_stable - INFO - 
+Scenario: stable_cost_stable_CostEfficient
+2025-01-16 14:48:35,540 - ExperimentAnalyzer_stable - INFO - Average Cost: 536.43
+2025-01-16 14:48:35,540 - ExperimentAnalyzer_stable - INFO - Cost Std Dev: 78.35
+2025-01-16 14:48:35,540 - ExperimentAnalyzer_stable - INFO - Cost Efficiency: 0.0002
+2025-01-16 14:48:35,540 - ExperimentAnalyzer_stable - INFO - 
+Scenario: stable_cost_stable_PredictiveCost
+2025-01-16 14:48:35,540 - ExperimentAnalyzer_stable - INFO - Average Cost: 535.42
+2025-01-16 14:48:35,540 - ExperimentAnalyzer_stable - INFO - Cost Std Dev: 78.49
+2025-01-16 14:48:35,540 - ExperimentAnalyzer_stable - INFO - Cost Efficiency: 0.0002
+2025-01-16 14:48:35,540 - ExperimentAnalyzer_stable - INFO - 
+Scenario: stable_cost_stable_SimpleCost
+2025-01-16 14:48:35,540 - ExperimentAnalyzer_stable - INFO - Average Cost: 536.43
+2025-01-16 14:48:35,540 - ExperimentAnalyzer_stable - INFO - Cost Std Dev: 78.35
+2025-01-16 14:48:35,540 - ExperimentAnalyzer_stable - INFO - Cost Efficiency: 0.0002
+2025-01-16 14:48:35,540 - ExperimentAnalyzer_stable - INFO - Starting task completion analysis...
+2025-01-16 14:48:38,566 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: stable_cost_stable_SimpleCost
+2025-01-16 14:48:47,787 - ExperimentAnalyzer_stable - INFO - 
+Statistics for stable_cost_stable_SimpleCost:
+2025-01-16 14:48:47,788 - ExperimentAnalyzer_stable - INFO - Total Tasks: 50
+2025-01-16 14:48:47,788 - ExperimentAnalyzer_stable - INFO - Completion Rate: 98.00%
+2025-01-16 14:48:47,788 - ExperimentAnalyzer_stable - INFO - Average Completion Time: 8815958.65s
+2025-01-16 14:48:47,788 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: stable_cost_stable_CostEfficient
+2025-01-16 14:48:58,350 - ExperimentAnalyzer_stable - INFO - 
+Statistics for stable_cost_stable_CostEfficient:
+2025-01-16 14:48:58,351 - ExperimentAnalyzer_stable - INFO - Total Tasks: 50
+2025-01-16 14:48:58,351 - ExperimentAnalyzer_stable - INFO - Completion Rate: 98.00%
+2025-01-16 14:48:58,351 - ExperimentAnalyzer_stable - INFO - Average Completion Time: 8815958.65s
+2025-01-16 14:48:58,351 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: stable_cost_stable_PredictiveCost
+2025-01-16 14:49:10,635 - ExperimentAnalyzer_stable - INFO - 
+Statistics for stable_cost_stable_PredictiveCost:
+2025-01-16 14:49:10,636 - ExperimentAnalyzer_stable - INFO - Total Tasks: 50
+2025-01-16 14:49:10,636 - ExperimentAnalyzer_stable - INFO - Completion Rate: 98.00%
+2025-01-16 14:49:10,636 - ExperimentAnalyzer_stable - INFO - Average Completion Time: 10781639.69s
+2025-01-16 14:49:10,636 - ExperimentAnalyzer_stable - INFO - Generating task completion visualizations...
+2025-01-16 14:49:10,687 - ExperimentAnalyzer_stable - INFO - Saved completion rates plot to results/stable_completion_rates.png
+2025-01-16 14:49:19,890 - ExperimentAnalyzer_stable - INFO - Saved completion times plot to results/stable_completion_times.png
+2025-01-16 14:49:40,828 - ExperimentAnalyzer_stable - INFO - Saved state distribution plot to results/stable_state_distribution.png
+2025-01-16 14:49:41,348 - ExperimentAnalyzer_stable - INFO - Cost metrics index structure:
+2025-01-16 14:49:41,348 - ExperimentAnalyzer_stable - INFO - ['scenario_label', 'topology', 'scheduler']
+2025-01-16 14:49:41,350 - ExperimentAnalyzer_stable - INFO - 
+Completion metrics index structure:
+2025-01-16 14:49:41,350 - ExperimentAnalyzer_stable - INFO - [None]
+2025-01-16 14:49:41,353 - ExperimentAnalyzer_stable - INFO - 
+Comparison DataFrame columns:
+2025-01-16 14:49:41,353 - ExperimentAnalyzer_stable - INFO - Index(['topology', 'scheduler', 'avg_cost', 'cpu_utilization',
+       'cost_efficiency', 'completion_rate'],
+      dtype='object')
+2025-01-16 14:49:41,353 - ExperimentAnalyzer_stable - INFO - 
+Comparison DataFrame head:
+2025-01-16 14:49:41,354 - ExperimentAnalyzer_stable - INFO -   topology       scheduler avg_cost cpu_utilization cost_efficiency completion_rate
+0    small      SimpleCost     None            None            None            None
+1    small   CostEfficient     None            None            None            None
+2    small  PredictiveCost     None            None            None            None
+3   medium      SimpleCost     None            None            None            None
+4   medium   CostEfficient     None            None            None            None
+2025-01-16 14:49:41,527 - ExperimentAnalyzer_stable - INFO - Saved comparative analysis plot to results/stable_comparative_analysis.png
+2025-01-16 14:54:52,048 - ExperimentAnalyzer_stable - INFO - Initializing ExperimentAnalyzer for stable cost pattern
+2025-01-16 14:54:52,048 - ExperimentAnalyzer_stable - INFO - Loading parquet files...
+2025-01-16 14:54:52,048 - ExperimentAnalyzer_stable - ERROR - Error loading data: [Errno 2] No such file or directory: 'output/cost_comparison/stable/trackr.json'
+2025-01-16 14:56:40,930 - ExperimentAnalyzer_stable - INFO - Initializing ExperimentAnalyzer for stable cost pattern
+2025-01-16 14:56:40,931 - ExperimentAnalyzer_stable - INFO - Loading parquet files...
+2025-01-16 14:56:40,931 - ExperimentAnalyzer_stable - ERROR - Error loading data: [Errno 2] No such file or directory: 'output/cost_comparison/stable/trackr.json'
+2025-01-16 14:57:11,606 - ExperimentAnalyzer_stable - INFO - Initializing ExperimentAnalyzer for stable cost pattern
+2025-01-16 14:57:11,607 - ExperimentAnalyzer_stable - INFO - Loading parquet files...
+2025-01-16 14:57:11,607 - ExperimentAnalyzer_stable - ERROR - Error loading data: [Errno 2] No such file or directory: 'output/cost_comparison/cost_experiment_stable/raw-output'
+2025-01-16 14:57:49,649 - ExperimentAnalyzer_stable - INFO - Initializing ExperimentAnalyzer for stable cost pattern
+2025-01-16 14:57:49,649 - ExperimentAnalyzer_stable - INFO - Loading parquet files...
+2025-01-16 14:57:49,649 - ExperimentAnalyzer_stable - ERROR - Error loading data: name 're' is not defined
+2025-01-16 14:58:02,315 - ExperimentAnalyzer_stable - INFO - Initializing ExperimentAnalyzer for stable cost pattern
+2025-01-16 14:58:02,315 - ExperimentAnalyzer_stable - INFO - Loading parquet files...
+2025-01-16 14:58:02,781 - ExperimentAnalyzer_stable - INFO - Loaded host data: 4427730 records
+2025-01-16 14:58:11,908 - ExperimentAnalyzer_stable - INFO - Loaded task data: 62357667 records
+2025-01-16 14:58:11,909 - ExperimentAnalyzer_stable - INFO - Loaded trackr data: 9 scenarios
+2025-01-16 14:58:11,909 - ExperimentAnalyzer_stable - INFO - Processing timestamps...
+2025-01-16 14:58:12,032 - ExperimentAnalyzer_stable - INFO - Processed timestamps for host data
+2025-01-16 14:58:12,487 - ExperimentAnalyzer_stable - INFO - Processed timestamps for task data
+2025-01-16 14:58:12,487 - ExperimentAnalyzer_stable - INFO - Generating scenario labels...
+2025-01-16 14:58:12,911 - ExperimentAnalyzer_stable - INFO - Generated scenario labels for host data
+2025-01-16 14:58:13,045 - ExperimentAnalyzer_stable - INFO - Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 14:58:25,226 - ExperimentAnalyzer_stable - INFO - Generated scenario labels for task data
+2025-01-16 14:58:27,047 - ExperimentAnalyzer_stable - INFO - Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 14:58:27,047 - ExperimentAnalyzer_stable - INFO - Starting task completion analysis...
+2025-01-16 14:58:30,605 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: small_cost_stable_SimpleCost
+2025-01-16 14:58:36,867 - ExperimentAnalyzer_stable - INFO - 
+Statistics for small_cost_stable_SimpleCost:
+2025-01-16 14:58:36,868 - ExperimentAnalyzer_stable - INFO - Total Tasks: 50
+2025-01-16 14:58:36,868 - ExperimentAnalyzer_stable - INFO - Completion Rate: 98.00%
+2025-01-16 14:58:36,868 - ExperimentAnalyzer_stable - INFO - Average Completion Time: 24596183.53s
+2025-01-16 14:58:36,868 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: large_cost_stable_CostEfficient
+2025-01-16 14:58:40,573 - ExperimentAnalyzer_stable - INFO - 
+Statistics for large_cost_stable_CostEfficient:
+2025-01-16 14:58:40,573 - ExperimentAnalyzer_stable - INFO - Total Tasks: 50
+2025-01-16 14:58:40,573 - ExperimentAnalyzer_stable - INFO - Completion Rate: 98.00%
+2025-01-16 14:58:40,573 - ExperimentAnalyzer_stable - INFO - Average Completion Time: 5014190.92s
+2025-01-16 14:58:40,573 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: large_cost_stable_SimpleCost
+2025-01-16 14:58:44,055 - ExperimentAnalyzer_stable - INFO - 
+Statistics for large_cost_stable_SimpleCost:
+2025-01-16 14:58:44,056 - ExperimentAnalyzer_stable - INFO - Total Tasks: 50
+2025-01-16 14:58:44,056 - ExperimentAnalyzer_stable - INFO - Completion Rate: 98.00%
+2025-01-16 14:58:44,056 - ExperimentAnalyzer_stable - INFO - Average Completion Time: 5014190.92s
+2025-01-16 14:58:44,056 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: small_cost_stable_CostEfficient
+2025-01-16 14:58:51,886 - ExperimentAnalyzer_stable - INFO - 
+Statistics for small_cost_stable_CostEfficient:
+2025-01-16 14:58:51,887 - ExperimentAnalyzer_stable - INFO - Total Tasks: 50
+2025-01-16 14:58:51,887 - ExperimentAnalyzer_stable - INFO - Completion Rate: 98.00%
+2025-01-16 14:58:51,887 - ExperimentAnalyzer_stable - INFO - Average Completion Time: 24596183.53s
+2025-01-16 14:58:51,887 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: large_cost_stable_PredictiveCost
+2025-01-16 14:58:56,153 - ExperimentAnalyzer_stable - INFO - 
+Statistics for large_cost_stable_PredictiveCost:
+2025-01-16 14:58:56,153 - ExperimentAnalyzer_stable - INFO - Total Tasks: 50
+2025-01-16 14:58:56,153 - ExperimentAnalyzer_stable - INFO - Completion Rate: 98.00%
+2025-01-16 14:58:56,153 - ExperimentAnalyzer_stable - INFO - Average Completion Time: 6387207.55s
+2025-01-16 14:58:56,154 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: medium_cost_stable_CostEfficient
+2025-01-16 14:58:59,999 - ExperimentAnalyzer_stable - INFO - 
+Statistics for medium_cost_stable_CostEfficient:
+2025-01-16 14:59:00,000 - ExperimentAnalyzer_stable - INFO - Total Tasks: 50
+2025-01-16 14:59:00,000 - ExperimentAnalyzer_stable - INFO - Completion Rate: 98.00%
+2025-01-16 14:59:00,000 - ExperimentAnalyzer_stable - INFO - Average Completion Time: 8815958.65s
+2025-01-16 14:59:00,000 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: medium_cost_stable_SimpleCost
+2025-01-16 14:59:04,180 - ExperimentAnalyzer_stable - INFO - 
+Statistics for medium_cost_stable_SimpleCost:
+2025-01-16 14:59:04,180 - ExperimentAnalyzer_stable - INFO - Total Tasks: 50
+2025-01-16 14:59:04,180 - ExperimentAnalyzer_stable - INFO - Completion Rate: 98.00%
+2025-01-16 14:59:04,180 - ExperimentAnalyzer_stable - INFO - Average Completion Time: 8815958.65s
+2025-01-16 14:59:04,180 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: small_cost_stable_PredictiveCost
+2025-01-16 14:59:12,697 - ExperimentAnalyzer_stable - INFO - 
+Statistics for small_cost_stable_PredictiveCost:
+2025-01-16 14:59:12,698 - ExperimentAnalyzer_stable - INFO - Total Tasks: 50
+2025-01-16 14:59:12,698 - ExperimentAnalyzer_stable - INFO - Completion Rate: 98.00%
+2025-01-16 14:59:12,698 - ExperimentAnalyzer_stable - INFO - Average Completion Time: 30177264.67s
+2025-01-16 14:59:12,698 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: medium_cost_stable_PredictiveCost
+2025-01-16 14:59:17,102 - ExperimentAnalyzer_stable - INFO - 
+Statistics for medium_cost_stable_PredictiveCost:
+2025-01-16 14:59:17,102 - ExperimentAnalyzer_stable - INFO - Total Tasks: 50
+2025-01-16 14:59:17,102 - ExperimentAnalyzer_stable - INFO - Completion Rate: 98.00%
+2025-01-16 14:59:17,102 - ExperimentAnalyzer_stable - INFO - Average Completion Time: 10781639.69s
+2025-01-16 14:59:17,105 - ExperimentAnalyzer_stable - INFO - Generating task completion visualizations...
+2025-01-16 14:59:17,368 - ExperimentAnalyzer_stable - INFO - Saved completion rates plot to results/stable_completion_rates.png
+2025-01-16 14:59:52,047 - ExperimentAnalyzer_stable - INFO - Saved completion times plot to results/stable_completion_times.png
+2025-01-16 15:00:34,610 - ExperimentAnalyzer_stable - INFO - Saved state distribution plot to results/stable_state_distribution.png
+2025-01-16 15:00:34,740 - ExperimentAnalyzer_stable - INFO - Starting resource utilization analysis...
+2025-01-16 15:00:34,740 - ExperimentAnalyzer_stable - INFO - Aggregating utilization metrics: ['cpu_utilization', 'guests_running', 'cpu_time_steal']
+2025-01-16 15:00:35,834 - ExperimentAnalyzer_stable - INFO - Successfully aggregated metrics across 716947 timestamps
+2025-01-16 15:00:35,834 - ExperimentAnalyzer_stable - INFO - Generating CPU utilization plot...
+2025-01-16 15:00:35,945 - ExperimentAnalyzer_stable - ERROR - Error in resource utilization analysis: Failed to convert value(s) to axis units: array([(Timestamp('2013-08-12 13:40:46'), 'large', 'CostEfficient'),
+       (Timestamp('2013-08-12 13:45:46'), 'large', 'CostEfficient'),
+       (Timestamp('2013-08-12 13:50:46'), 'large', 'CostEfficient'), ...,
+       (Timestamp('2013-11-10 09:25:46'), 'large', 'CostEfficient'),
+       (Timestamp('2013-11-10 09:30:46'), 'large', 'CostEfficient'),
+       (Timestamp('2013-11-10 09:35:36'), 'large', 'CostEfficient')],
+      shape=(25872,), dtype=object)
+2025-01-16 15:31:03,955 - ExperimentAnalyzer_stable - INFO - Initializing ExperimentAnalyzer for 'stable' pattern.
+2025-01-16 15:31:03,956 - ExperimentAnalyzer_stable - INFO - Loading parquet files (host, task)...
+2025-01-16 15:31:04,901 - ExperimentAnalyzer_stable - INFO - Loaded host data: 4427730 records.
+2025-01-16 15:31:14,102 - ExperimentAnalyzer_stable - INFO - Loaded task data: 62357667 records.
+2025-01-16 15:31:14,103 - ExperimentAnalyzer_stable - INFO - Loaded trackr data: 9 scenarios.
+2025-01-16 15:31:14,103 - ExperimentAnalyzer_stable - INFO - Converting timestamps from 'timestamp_absolute' to datetime...
+2025-01-16 15:31:14,228 - ExperimentAnalyzer_stable - INFO - Processed timestamps for host data.
+2025-01-16 15:31:14,698 - ExperimentAnalyzer_stable - INFO - Processed timestamps for task data.
+2025-01-16 15:31:14,698 - ExperimentAnalyzer_stable - INFO - Generating scenario labels for each record...
+2025-01-16 15:31:15,257 - ExperimentAnalyzer_stable - INFO - [host] Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 15:31:33,412 - ExperimentAnalyzer_stable - INFO - [task] Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 15:31:33,413 - ExperimentAnalyzer_stable - INFO - Starting resource utilization analysis...
+2025-01-16 15:31:33,413 - ExperimentAnalyzer_stable - INFO - Aggregating utilization metrics: ['cpu_utilization', 'guests_running', 'cpu_time_steal']
+2025-01-16 15:31:34,178 - ExperimentAnalyzer_stable - INFO - Successfully aggregated metrics across 716947 grouped rows.
+2025-01-16 15:31:34,212 - ExperimentAnalyzer_stable - INFO - Generating CPU utilization plot...
+2025-01-16 15:31:34,996 - ExperimentAnalyzer_stable - INFO - Saved CPU utilization plot to results/stable_cpu_utilization.png
+2025-01-16 15:31:34,998 - ExperimentAnalyzer_stable - INFO - Starting cost metrics analysis...
+2025-01-16 15:31:34,998 - ExperimentAnalyzer_stable - INFO - Analyzing cost metrics: ['cost', 'cpu_utilization']
+2025-01-16 15:31:35,494 - ExperimentAnalyzer_stable - INFO - Aggregated cost metrics: 9 scenario group(s).
+2025-01-16 15:31:35,494 - ExperimentAnalyzer_stable - INFO - Calculating cost efficiency metrics...
+2025-01-16 15:31:35,495 - ExperimentAnalyzer_stable - INFO - Generating cost comparison plot...
+2025-01-16 15:31:35,569 - ExperimentAnalyzer_stable - INFO - Saved cost comparison plot to results/stable_cost_comparison.png
+2025-01-16 15:31:35,569 - ExperimentAnalyzer_stable - INFO - Cost Summary Statistics:
+2025-01-16 15:31:35,570 - ExperimentAnalyzer_stable - INFO - 
+Scenario:     large_cost_stable_CostEfficient
+Name: 0, dtype: object
+2025-01-16 15:31:35,570 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 517.28
+2025-01-16 15:31:35,570 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 68.30
+2025-01-16 15:31:35,570 - ExperimentAnalyzer_stable - ERROR - Error in cost metrics analysis: unsupported format string passed to Series.__format__
+2025-01-16 15:56:29,224 - ExperimentAnalyzer_stable - INFO - Initializing ExperimentAnalyzer for 'stable' pattern.
+2025-01-16 15:56:29,224 - ExperimentAnalyzer_stable - INFO - Loading parquet files (host, task)...
+2025-01-16 15:56:29,736 - ExperimentAnalyzer_stable - INFO - Loaded host data: 4427730 records.
+2025-01-16 15:56:40,607 - ExperimentAnalyzer_stable - INFO - Loaded task data: 62357667 records.
+2025-01-16 15:56:40,609 - ExperimentAnalyzer_stable - INFO - Loaded trackr data: 9 scenarios.
+2025-01-16 15:56:40,609 - ExperimentAnalyzer_stable - INFO - Converting timestamps from 'timestamp_absolute' to datetime...
+2025-01-16 15:56:40,743 - ExperimentAnalyzer_stable - INFO - Processed timestamps for host data.
+2025-01-16 15:56:41,321 - ExperimentAnalyzer_stable - INFO - Processed timestamps for task data.
+2025-01-16 15:56:41,322 - ExperimentAnalyzer_stable - INFO - Generating scenario labels for each record...
+2025-01-16 15:56:41,916 - ExperimentAnalyzer_stable - INFO - [host] Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 15:56:57,483 - ExperimentAnalyzer_stable - INFO - [task] Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 15:56:57,484 - ExperimentAnalyzer_stable - INFO - Starting resource utilization analysis...
+2025-01-16 15:56:57,484 - ExperimentAnalyzer_stable - INFO - Aggregating utilization metrics: ['cpu_utilization', 'guests_running', 'cpu_time_steal']
+2025-01-16 15:56:58,276 - ExperimentAnalyzer_stable - INFO - Successfully aggregated metrics across 716947 grouped rows.
+2025-01-16 15:56:58,310 - ExperimentAnalyzer_stable - INFO - Generating CPU utilization plot...
+2025-01-16 15:56:59,090 - ExperimentAnalyzer_stable - INFO - Saved CPU utilization plot to results/stable_cpu_utilization.png
+2025-01-16 15:56:59,092 - ExperimentAnalyzer_stable - INFO - Starting cost metrics analysis...
+2025-01-16 15:56:59,092 - ExperimentAnalyzer_stable - INFO - Analyzing cost metrics: ['cost', 'cpu_utilization']
+2025-01-16 15:56:59,602 - ExperimentAnalyzer_stable - INFO - Aggregated cost metrics: 9 scenario group(s).
+2025-01-16 15:56:59,602 - ExperimentAnalyzer_stable - INFO - Calculating cost efficiency metrics...
+2025-01-16 15:56:59,603 - ExperimentAnalyzer_stable - INFO - Generating cost comparison plot...
+2025-01-16 15:56:59,676 - ExperimentAnalyzer_stable - INFO - Saved cost comparison plot to results/stable_cost_comparison.png
+2025-01-16 15:56:59,676 - ExperimentAnalyzer_stable - INFO - Cost Summary Statistics:
+2025-01-16 15:56:59,678 - ExperimentAnalyzer_stable - INFO - 
+Scenario:     large_cost_stable_CostEfficient
+Name: 0, dtype: object
+2025-01-16 15:56:59,678 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 517.28
+2025-01-16 15:56:59,678 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 68.30
+2025-01-16 15:56:59,678 - ExperimentAnalyzer_stable - ERROR - Error in cost metrics analysis: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+2025-01-16 16:13:10,613 - ExperimentAnalyzer_stable - INFO - Initializing ExperimentAnalyzer for 'stable' pattern.
+2025-01-16 16:13:10,613 - ExperimentAnalyzer_stable - INFO - Loading parquet files (host, task)...
+2025-01-16 16:13:11,092 - ExperimentAnalyzer_stable - INFO - Loaded host data: 4427730 records.
+2025-01-16 16:13:20,687 - ExperimentAnalyzer_stable - INFO - Loaded task data: 62357667 records.
+2025-01-16 16:13:20,688 - ExperimentAnalyzer_stable - INFO - Loaded trackr data: 9 scenarios.
+2025-01-16 16:13:20,688 - ExperimentAnalyzer_stable - INFO - Converting timestamps from 'timestamp_absolute' to datetime...
+2025-01-16 16:13:20,813 - ExperimentAnalyzer_stable - INFO - Processed timestamps for host data.
+2025-01-16 16:13:21,313 - ExperimentAnalyzer_stable - INFO - Processed timestamps for task data.
+2025-01-16 16:13:21,313 - ExperimentAnalyzer_stable - INFO - Generating scenario labels for each record...
+2025-01-16 16:13:21,905 - ExperimentAnalyzer_stable - INFO - [host] Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 16:13:39,247 - ExperimentAnalyzer_stable - INFO - [task] Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 16:13:39,248 - ExperimentAnalyzer_stable - INFO - Starting resource utilization analysis...
+2025-01-16 16:13:39,248 - ExperimentAnalyzer_stable - INFO - Aggregating utilization metrics: ['cpu_utilization', 'guests_running', 'cpu_time_steal']
+2025-01-16 16:13:40,158 - ExperimentAnalyzer_stable - INFO - Successfully aggregated metrics across 716947 grouped rows.
+2025-01-16 16:13:40,200 - ExperimentAnalyzer_stable - INFO - Generating CPU utilization plot...
+2025-01-16 16:13:40,295 - ExperimentAnalyzer_stable - ERROR - Error in resource utilization analysis: 'scenario_label'
+2025-01-16 16:15:07,223 - ExperimentAnalyzer_stable - INFO - Initializing ExperimentAnalyzer for 'stable' pattern.
+2025-01-16 16:15:07,223 - ExperimentAnalyzer_stable - INFO - Loading parquet files (host, task)...
+2025-01-16 16:15:07,601 - ExperimentAnalyzer_stable - INFO - Loaded host data: 4427730 records.
+2025-01-16 16:15:16,831 - ExperimentAnalyzer_stable - INFO - Loaded task data: 62357667 records.
+2025-01-16 16:15:16,833 - ExperimentAnalyzer_stable - INFO - Loaded trackr data: 9 scenarios.
+2025-01-16 16:15:16,833 - ExperimentAnalyzer_stable - INFO - Converting timestamps from 'timestamp_absolute' to datetime...
+2025-01-16 16:15:16,957 - ExperimentAnalyzer_stable - INFO - Processed timestamps for host data.
+2025-01-16 16:15:17,448 - ExperimentAnalyzer_stable - INFO - Processed timestamps for task data.
+2025-01-16 16:15:17,448 - ExperimentAnalyzer_stable - INFO - Generating scenario labels for each record...
+2025-01-16 16:15:18,017 - ExperimentAnalyzer_stable - INFO - [host] Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 16:15:33,573 - ExperimentAnalyzer_stable - INFO - [task] Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 16:15:33,574 - ExperimentAnalyzer_stable - INFO - Starting resource utilization analysis...
+2025-01-16 16:15:33,574 - ExperimentAnalyzer_stable - INFO - Aggregating utilization metrics: ['cpu_utilization', 'guests_running', 'cpu_time_steal']
+2025-01-16 16:15:34,364 - ExperimentAnalyzer_stable - INFO - Successfully aggregated metrics across 716947 grouped rows.
+2025-01-16 16:15:34,401 - ExperimentAnalyzer_stable - ERROR - 'scenario_label' column is missing after flattening.
+2025-01-16 16:15:34,401 - ExperimentAnalyzer_stable - ERROR - KeyError in resource utilization analysis: "'scenario_label' column is missing after flattening."
+2025-01-16 16:17:14,068 - ExperimentAnalyzer_stable - INFO - Initializing ExperimentAnalyzer for 'stable' pattern.
+2025-01-16 16:17:14,068 - ExperimentAnalyzer_stable - INFO - Loading parquet files (host, task)...
+2025-01-16 16:17:14,445 - ExperimentAnalyzer_stable - INFO - Loaded host data: 4427730 records.
+2025-01-16 16:17:24,132 - ExperimentAnalyzer_stable - INFO - Loaded task data: 62357667 records.
+2025-01-16 16:17:24,133 - ExperimentAnalyzer_stable - INFO - Loaded trackr data: 9 scenarios.
+2025-01-16 16:17:24,133 - ExperimentAnalyzer_stable - INFO - Converting timestamps from 'timestamp_absolute' to datetime...
+2025-01-16 16:17:24,262 - ExperimentAnalyzer_stable - INFO - Processed timestamps for host data.
+2025-01-16 16:17:24,832 - ExperimentAnalyzer_stable - INFO - Processed timestamps for task data.
+2025-01-16 16:17:24,832 - ExperimentAnalyzer_stable - INFO - Generating scenario labels for each record...
+2025-01-16 16:17:25,425 - ExperimentAnalyzer_stable - INFO - [host] Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 16:17:40,119 - ExperimentAnalyzer_stable - INFO - [task] Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 16:17:40,120 - ExperimentAnalyzer_stable - INFO - Starting resource utilization analysis...
+2025-01-16 16:17:40,120 - ExperimentAnalyzer_stable - INFO - Aggregating utilization metrics: ['cpu_utilization', 'guests_running', 'cpu_time_steal']
+2025-01-16 16:17:40,818 - ExperimentAnalyzer_stable - INFO - Successfully aggregated metrics across 716947 grouped rows.
+2025-01-16 16:17:40,845 - ExperimentAnalyzer_stable - ERROR - 'scenario_label' column is missing after flattening.
+2025-01-16 16:17:40,845 - ExperimentAnalyzer_stable - ERROR - KeyError in resource utilization analysis: "'scenario_label' column is missing after flattening."
+2025-01-16 16:18:31,971 - ExperimentAnalyzer_stable - INFO - Initializing ExperimentAnalyzer for 'stable' pattern.
+2025-01-16 16:18:31,971 - ExperimentAnalyzer_stable - INFO - Loading parquet files (host, task)...
+2025-01-16 16:18:32,325 - ExperimentAnalyzer_stable - INFO - Loaded host data: 4427730 records.
+2025-01-16 16:18:41,645 - ExperimentAnalyzer_stable - INFO - Loaded task data: 62357667 records.
+2025-01-16 16:18:41,646 - ExperimentAnalyzer_stable - INFO - Loaded trackr data: 9 scenarios.
+2025-01-16 16:18:41,646 - ExperimentAnalyzer_stable - INFO - Converting timestamps from 'timestamp_absolute' to datetime...
+2025-01-16 16:18:41,774 - ExperimentAnalyzer_stable - INFO - Processed timestamps for host data.
+2025-01-16 16:18:42,263 - ExperimentAnalyzer_stable - INFO - Processed timestamps for task data.
+2025-01-16 16:18:42,263 - ExperimentAnalyzer_stable - INFO - Generating scenario labels for each record...
+2025-01-16 16:18:42,836 - ExperimentAnalyzer_stable - INFO - [host] Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 16:18:57,359 - ExperimentAnalyzer_stable - INFO - [task] Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 16:18:57,359 - ExperimentAnalyzer_stable - INFO - Starting resource utilization analysis...
+2025-01-16 16:18:57,359 - ExperimentAnalyzer_stable - INFO - Aggregating utilization metrics: ['cpu_utilization', 'guests_running', 'cpu_time_steal']
+2025-01-16 16:18:57,999 - ExperimentAnalyzer_stable - INFO - Successfully aggregated metrics across 716947 grouped rows.
+2025-01-16 16:18:58,026 - ExperimentAnalyzer_stable - ERROR - 'scenario_label' column is missing after flattening.
+2025-01-16 16:18:58,026 - ExperimentAnalyzer_stable - ERROR - KeyError in resource utilization analysis: "'scenario_label' column is missing after flattening."
+2025-01-16 16:19:31,266 - ExperimentAnalyzer_stable - INFO - Initializing ExperimentAnalyzer for 'stable' pattern.
+2025-01-16 16:19:31,266 - ExperimentAnalyzer_stable - INFO - Loading parquet files (host, task)...
+2025-01-16 16:19:31,632 - ExperimentAnalyzer_stable - INFO - Loaded host data: 4427730 records.
+2025-01-16 16:19:41,888 - ExperimentAnalyzer_stable - INFO - Loaded task data: 62357667 records.
+2025-01-16 16:19:41,889 - ExperimentAnalyzer_stable - INFO - Loaded trackr data: 9 scenarios.
+2025-01-16 16:19:41,889 - ExperimentAnalyzer_stable - INFO - Converting timestamps from 'timestamp_absolute' to datetime...
+2025-01-16 16:19:42,017 - ExperimentAnalyzer_stable - INFO - Processed timestamps for host data.
+2025-01-16 16:19:42,482 - ExperimentAnalyzer_stable - INFO - Processed timestamps for task data.
+2025-01-16 16:19:42,483 - ExperimentAnalyzer_stable - INFO - Generating scenario labels for each record...
+2025-01-16 16:19:43,054 - ExperimentAnalyzer_stable - INFO - [host] Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 16:19:52,183 - ExperimentAnalyzer_stable - INFO - Initializing ExperimentAnalyzer for 'stable' pattern.
+2025-01-16 16:19:52,183 - ExperimentAnalyzer_stable - INFO - Loading parquet files (host, task)...
+2025-01-16 16:19:52,543 - ExperimentAnalyzer_stable - INFO - Loaded host data: 4427730 records.
+2025-01-16 16:20:01,268 - ExperimentAnalyzer_stable - INFO - Loaded task data: 62357667 records.
+2025-01-16 16:20:01,269 - ExperimentAnalyzer_stable - INFO - Loaded trackr data: 9 scenarios.
+2025-01-16 16:20:01,269 - ExperimentAnalyzer_stable - INFO - Converting timestamps from 'timestamp_absolute' to datetime...
+2025-01-16 16:20:01,390 - ExperimentAnalyzer_stable - INFO - Processed timestamps for host data.
+2025-01-16 16:20:01,842 - ExperimentAnalyzer_stable - INFO - Processed timestamps for task data.
+2025-01-16 16:20:01,842 - ExperimentAnalyzer_stable - INFO - Generating scenario labels for each record...
+2025-01-16 16:20:02,396 - ExperimentAnalyzer_stable - INFO - [host] Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 16:20:17,300 - ExperimentAnalyzer_stable - INFO - [task] Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 16:20:17,300 - ExperimentAnalyzer_stable - INFO - Starting resource utilization analysis...
+2025-01-16 16:20:17,300 - ExperimentAnalyzer_stable - INFO - Aggregating utilization metrics: ['cpu_utilization', 'guests_running', 'cpu_time_steal']
+2025-01-16 16:20:18,052 - ExperimentAnalyzer_stable - INFO - Successfully aggregated metrics across 716947 grouped rows.
+2025-01-16 16:20:18,081 - ExperimentAnalyzer_stable - INFO - Columns before flattening: [('scenario_label', ''), ('datetime', ''), ('topology', ''), ('scheduler', ''), ('cpu_utilization', 'mean'), ('cpu_utilization', 'std'), ('guests_running', 'mean'), ('guests_running', 'std'), ('cpu_time_steal', 'mean'), ('cpu_time_steal', 'std')]
+2025-01-16 16:20:18,081 - ExperimentAnalyzer_stable - INFO - Columns after flattening: ['scenario_label_', 'datetime_', 'topology_', 'scheduler_', 'cpu_utilization_mean', 'cpu_utilization_std', 'guests_running_mean', 'guests_running_std', 'cpu_time_steal_mean', 'cpu_time_steal_std']
+2025-01-16 16:20:18,081 - ExperimentAnalyzer_stable - ERROR - 'scenario_label' column is missing after flattening.
+2025-01-16 16:20:18,081 - ExperimentAnalyzer_stable - ERROR - KeyError in resource utilization analysis: "'scenario_label' column is missing after flattening."
+2025-01-16 16:24:56,527 - ExperimentAnalyzer_stable - INFO - Initializing ExperimentAnalyzer for 'stable' pattern.
+2025-01-16 16:24:56,527 - ExperimentAnalyzer_stable - INFO - Loading parquet files (host, task)...
+2025-01-16 16:24:56,890 - ExperimentAnalyzer_stable - INFO - Loaded host data: 4427730 records.
+2025-01-16 16:25:06,000 - ExperimentAnalyzer_stable - INFO - Loaded task data: 62357667 records.
+2025-01-16 16:25:06,001 - ExperimentAnalyzer_stable - INFO - Loaded trackr data: 9 scenarios.
+2025-01-16 16:25:06,001 - ExperimentAnalyzer_stable - INFO - Converting timestamps from 'timestamp_absolute' to datetime...
+2025-01-16 16:25:06,122 - ExperimentAnalyzer_stable - INFO - Processed timestamps for host data.
+2025-01-16 16:25:06,581 - ExperimentAnalyzer_stable - INFO - Processed timestamps for task data.
+2025-01-16 16:25:06,581 - ExperimentAnalyzer_stable - INFO - Generating scenario labels for each record...
+2025-01-16 16:25:07,142 - ExperimentAnalyzer_stable - INFO - [host] Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 16:25:22,663 - ExperimentAnalyzer_stable - INFO - [task] Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 16:25:22,664 - ExperimentAnalyzer_stable - INFO - Starting resource utilization analysis...
+2025-01-16 16:25:22,664 - ExperimentAnalyzer_stable - INFO - Aggregating utilization metrics: ['cpu_utilization', 'guests_running', 'cpu_time_steal']
+2025-01-16 16:25:23,459 - ExperimentAnalyzer_stable - INFO - Successfully aggregated metrics across 716947 grouped rows.
+2025-01-16 16:25:23,492 - ExperimentAnalyzer_stable - INFO - Columns before flattening: [('scenario_label', ''), ('datetime', ''), ('topology', ''), ('scheduler', ''), ('cpu_utilization', 'mean'), ('cpu_utilization', 'std'), ('guests_running', 'mean'), ('guests_running', 'std'), ('cpu_time_steal', 'mean'), ('cpu_time_steal', 'std')]
+2025-01-16 16:25:23,492 - ExperimentAnalyzer_stable - INFO - Columns after flattening: ['scenario_label', 'datetime', 'topology', 'scheduler', 'cpu_utilization_mean', 'cpu_utilization_std', 'guests_running_mean', 'guests_running_std', 'cpu_time_steal_mean', 'cpu_time_steal_std']
+2025-01-16 16:25:23,492 - ExperimentAnalyzer_stable - INFO - Generating CPU utilization plot...
+2025-01-16 16:25:24,113 - ExperimentAnalyzer_stable - INFO - Saved CPU utilization plot to results/stable_cpu_utilization.png
+2025-01-16 16:25:24,114 - ExperimentAnalyzer_stable - INFO - Starting cost metrics analysis...
+2025-01-16 16:25:24,114 - ExperimentAnalyzer_stable - INFO - Analyzing cost metrics: ['cost', 'cpu_utilization']
+2025-01-16 16:25:24,630 - ExperimentAnalyzer_stable - INFO - Aggregated cost metrics: 9 scenario group(s).
+2025-01-16 16:25:24,631 - ExperimentAnalyzer_stable - INFO - Columns before flattening: [('scenario_label', ''), ('topology', ''), ('scheduler', ''), ('cost', 'mean'), ('cost', 'std'), ('cpu_utilization', 'mean'), ('cpu_utilization', 'std')]
+2025-01-16 16:25:24,631 - ExperimentAnalyzer_stable - INFO - Columns after flattening: ['scenario_label', 'topology', 'scheduler', 'cost_mean', 'cost_std', 'cpu_utilization_mean', 'cpu_utilization_std']
+2025-01-16 16:25:24,631 - ExperimentAnalyzer_stable - INFO - Calculating cost efficiency metrics...
+2025-01-16 16:25:24,631 - ExperimentAnalyzer_stable - INFO - Generating cost comparison plot...
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO - Saved cost comparison plot to results/stable_cost_comparison.png
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO - Cost Summary Statistics:
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO - 
+Scenario: large_cost_stable_CostEfficient
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO -   Topology: large
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO -   Scheduler: CostEfficient
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 517.28
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 68.30
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO - 
+Scenario: large_cost_stable_PredictiveCost
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO -   Topology: large
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO -   Scheduler: PredictiveCost
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 514.63
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 69.03
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO - 
+Scenario: large_cost_stable_SimpleCost
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO -   Topology: large
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO -   Scheduler: SimpleCost
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 517.28
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 68.30
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO - 
+Scenario: medium_cost_stable_CostEfficient
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO -   Topology: medium
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO -   Scheduler: CostEfficient
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 502.03
+2025-01-16 16:25:24,724 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 92.47
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO - 
+Scenario: medium_cost_stable_PredictiveCost
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Topology: medium
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Scheduler: PredictiveCost
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 501.18
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 92.82
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO - 
+Scenario: medium_cost_stable_SimpleCost
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Topology: medium
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Scheduler: SimpleCost
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 502.03
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 92.47
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO - 
+Scenario: small_cost_stable_CostEfficient
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Topology: small
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Scheduler: CostEfficient
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 594.02
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 11.97
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO - 
+Scenario: small_cost_stable_PredictiveCost
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Topology: small
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Scheduler: PredictiveCost
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 594.39
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 10.79
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO - 
+Scenario: small_cost_stable_SimpleCost
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Topology: small
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Scheduler: SimpleCost
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 594.02
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 11.97
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:25:24,725 - ExperimentAnalyzer_stable - INFO - Starting task completion analysis...
+2025-01-16 16:25:27,965 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: small_cost_stable_SimpleCost
+2025-01-16 16:25:34,196 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:25:34,197 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:25:34,197 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 24596183.53s
+2025-01-16 16:25:34,197 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: large_cost_stable_CostEfficient
+2025-01-16 16:25:37,820 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:25:37,820 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:25:37,820 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 5014190.92s
+2025-01-16 16:25:37,820 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: large_cost_stable_SimpleCost
+2025-01-16 16:25:40,994 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:25:40,994 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:25:40,994 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 5014190.92s
+2025-01-16 16:25:40,994 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: small_cost_stable_CostEfficient
+2025-01-16 16:25:47,781 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:25:47,781 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:25:47,781 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 24596183.53s
+2025-01-16 16:25:47,781 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: large_cost_stable_PredictiveCost
+2025-01-16 16:25:51,475 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:25:51,475 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:25:51,475 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 6387207.55s
+2025-01-16 16:25:51,475 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: medium_cost_stable_CostEfficient
+2025-01-16 16:25:55,134 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:25:55,134 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:25:55,134 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 8815958.65s
+2025-01-16 16:25:55,134 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: medium_cost_stable_SimpleCost
+2025-01-16 16:25:59,142 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:25:59,142 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:25:59,142 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 8815958.65s
+2025-01-16 16:25:59,142 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: small_cost_stable_PredictiveCost
+2025-01-16 16:26:08,009 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:26:08,010 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:26:08,010 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 30177264.67s
+2025-01-16 16:26:08,010 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: medium_cost_stable_PredictiveCost
+2025-01-16 16:26:12,387 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:26:12,388 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:26:12,388 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 10781639.69s
+2025-01-16 16:26:12,396 - ExperimentAnalyzer_stable - INFO - Generating task completion visualizations...
+2025-01-16 16:26:12,500 - ExperimentAnalyzer_stable - INFO - Saved completion rates plot to results/stable_completion_rates.png
+2025-01-16 16:26:38,687 - ExperimentAnalyzer_stable - INFO - Saved completion times plot to results/stable_completion_times.png
+2025-01-16 16:27:15,048 - ExperimentAnalyzer_stable - INFO - Saved state distribution plot to results/stable_state_distribution.png
+2025-01-16 16:28:56,034 - ExperimentAnalyzer_stable - INFO - Initializing ExperimentAnalyzer for 'stable' pattern.
+2025-01-16 16:28:56,034 - ExperimentAnalyzer_stable - INFO - Loading parquet files (host, task)...
+2025-01-16 16:28:56,400 - ExperimentAnalyzer_stable - INFO - Loaded host data: 4427730 records.
+2025-01-16 16:29:06,095 - ExperimentAnalyzer_stable - INFO - Loaded task data: 62357667 records.
+2025-01-16 16:29:06,096 - ExperimentAnalyzer_stable - INFO - Loaded trackr data: 9 scenarios.
+2025-01-16 16:29:06,096 - ExperimentAnalyzer_stable - INFO - Converting timestamps from 'timestamp_absolute' to datetime...
+2025-01-16 16:29:06,221 - ExperimentAnalyzer_stable - INFO - Processed timestamps for host data.
+2025-01-16 16:29:06,713 - ExperimentAnalyzer_stable - INFO - Processed timestamps for task data.
+2025-01-16 16:29:06,713 - ExperimentAnalyzer_stable - INFO - Generating scenario labels for each record...
+2025-01-16 16:29:07,301 - ExperimentAnalyzer_stable - INFO - [host] Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 16:29:22,923 - ExperimentAnalyzer_stable - INFO - [task] Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 16:29:22,924 - ExperimentAnalyzer_stable - INFO - Starting resource utilization analysis...
+2025-01-16 16:29:22,924 - ExperimentAnalyzer_stable - INFO - Aggregating utilization metrics: ['cpu_utilization', 'guests_running', 'cpu_time_steal']
+2025-01-16 16:29:23,806 - ExperimentAnalyzer_stable - INFO - Successfully aggregated metrics across 716947 grouped rows.
+2025-01-16 16:29:23,838 - ExperimentAnalyzer_stable - INFO - Columns before flattening: [('scenario_label', ''), ('datetime', ''), ('topology', ''), ('scheduler', ''), ('cpu_utilization', 'mean'), ('cpu_utilization', 'std'), ('guests_running', 'mean'), ('guests_running', 'std'), ('cpu_time_steal', 'mean'), ('cpu_time_steal', 'std')]
+2025-01-16 16:29:23,838 - ExperimentAnalyzer_stable - INFO - Columns after flattening: ['scenario_label', 'datetime', 'topology', 'scheduler', 'cpu_utilization_mean', 'cpu_utilization_std', 'guests_running_mean', 'guests_running_std', 'cpu_time_steal_mean', 'cpu_time_steal_std']
+2025-01-16 16:29:23,838 - ExperimentAnalyzer_stable - INFO - Generating CPU utilization plot...
+2025-01-16 16:29:24,539 - ExperimentAnalyzer_stable - INFO - Saved CPU utilization plot to results/stable_cpu_utilization.png
+2025-01-16 16:29:24,541 - ExperimentAnalyzer_stable - INFO - Starting cost metrics analysis...
+2025-01-16 16:29:24,541 - ExperimentAnalyzer_stable - INFO - Analyzing cost metrics: ['cost', 'cpu_utilization']
+2025-01-16 16:29:25,015 - ExperimentAnalyzer_stable - INFO - Aggregated cost metrics: 9 scenario group(s).
+2025-01-16 16:29:25,016 - ExperimentAnalyzer_stable - INFO - Columns before flattening: [('scenario_label', ''), ('topology', ''), ('scheduler', ''), ('cost', 'mean'), ('cost', 'std'), ('cpu_utilization', 'mean'), ('cpu_utilization', 'std')]
+2025-01-16 16:29:25,016 - ExperimentAnalyzer_stable - INFO - Columns after flattening: ['scenario_label', 'topology', 'scheduler', 'cost_mean', 'cost_std', 'cpu_utilization_mean', 'cpu_utilization_std']
+2025-01-16 16:29:25,016 - ExperimentAnalyzer_stable - INFO - Calculating cost efficiency metrics...
+2025-01-16 16:29:25,016 - ExperimentAnalyzer_stable - INFO - Generating cost comparison plot...
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO - Saved cost comparison plot to results/stable_cost_comparison.png
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO - Cost Summary Statistics:
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO - 
+Scenario: large_cost_stable_CostEfficient
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Topology: large
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Scheduler: CostEfficient
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 517.28
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 68.30
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO - 
+Scenario: large_cost_stable_PredictiveCost
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Topology: large
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Scheduler: PredictiveCost
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 514.63
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 69.03
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO - 
+Scenario: large_cost_stable_SimpleCost
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Topology: large
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Scheduler: SimpleCost
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 517.28
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 68.30
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO - 
+Scenario: medium_cost_stable_CostEfficient
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Topology: medium
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Scheduler: CostEfficient
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 502.03
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 92.47
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO - 
+Scenario: medium_cost_stable_PredictiveCost
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Topology: medium
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Scheduler: PredictiveCost
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 501.18
+2025-01-16 16:29:25,091 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 92.82
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO - 
+Scenario: medium_cost_stable_SimpleCost
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO -   Topology: medium
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO -   Scheduler: SimpleCost
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 502.03
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 92.47
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO - 
+Scenario: small_cost_stable_CostEfficient
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO -   Topology: small
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO -   Scheduler: CostEfficient
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 594.02
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 11.97
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO - 
+Scenario: small_cost_stable_PredictiveCost
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO -   Topology: small
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO -   Scheduler: PredictiveCost
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 594.39
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 10.79
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO - 
+Scenario: small_cost_stable_SimpleCost
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO -   Topology: small
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO -   Scheduler: SimpleCost
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 594.02
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 11.97
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:29:25,092 - ExperimentAnalyzer_stable - INFO - Starting task completion analysis...
+2025-01-16 16:29:28,038 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: small_cost_stable_SimpleCost
+2025-01-16 16:29:33,662 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:29:33,663 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:29:33,663 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 24596183.53s
+2025-01-16 16:29:33,663 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: large_cost_stable_CostEfficient
+2025-01-16 16:29:37,480 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:29:37,480 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:29:37,480 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 5014190.92s
+2025-01-16 16:29:37,480 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: large_cost_stable_SimpleCost
+2025-01-16 16:29:41,189 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:29:41,191 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:29:41,191 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 5014190.92s
+2025-01-16 16:29:41,191 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: small_cost_stable_CostEfficient
+2025-01-16 16:29:48,459 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:29:48,460 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:29:48,460 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 24596183.53s
+2025-01-16 16:29:48,460 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: large_cost_stable_PredictiveCost
+2025-01-16 16:29:52,576 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:29:52,576 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:29:52,576 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 6387207.55s
+2025-01-16 16:29:52,576 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: medium_cost_stable_CostEfficient
+2025-01-16 16:29:56,587 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:29:56,587 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:29:56,587 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 8815958.65s
+2025-01-16 16:29:56,587 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: medium_cost_stable_SimpleCost
+2025-01-16 16:30:01,078 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:30:01,078 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:30:01,078 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 8815958.65s
+2025-01-16 16:30:01,078 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: small_cost_stable_PredictiveCost
+2025-01-16 16:30:10,044 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:30:10,044 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:30:10,044 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 30177264.67s
+2025-01-16 16:30:10,044 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: medium_cost_stable_PredictiveCost
+2025-01-16 16:30:14,810 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:30:14,810 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:30:14,810 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 10781639.69s
+2025-01-16 16:30:14,811 - ExperimentAnalyzer_stable - INFO - Generating task completion visualizations...
+2025-01-16 16:30:14,893 - ExperimentAnalyzer_stable - INFO - Saved completion rates plot to results/stable_completion_rates.png
+2025-01-16 16:30:43,490 - ExperimentAnalyzer_stable - INFO - Saved completion times plot to results/stable_completion_times.png
+2025-01-16 16:31:19,858 - ExperimentAnalyzer_stable - INFO - Saved state distribution plot to results/stable_state_distribution.png
+2025-01-16 16:31:19,937 - ExperimentAnalyzer_stable - INFO - Starting comparative analysis...
+2025-01-16 16:31:19,937 - ExperimentAnalyzer_stable - INFO - Starting cost metrics analysis...
+2025-01-16 16:31:19,937 - ExperimentAnalyzer_stable - INFO - Analyzing cost metrics: ['cost', 'cpu_utilization']
+2025-01-16 16:31:20,468 - ExperimentAnalyzer_stable - INFO - Aggregated cost metrics: 9 scenario group(s).
+2025-01-16 16:31:20,468 - ExperimentAnalyzer_stable - INFO - Columns before flattening: [('scenario_label', ''), ('topology', ''), ('scheduler', ''), ('cost', 'mean'), ('cost', 'std'), ('cpu_utilization', 'mean'), ('cpu_utilization', 'std')]
+2025-01-16 16:31:20,469 - ExperimentAnalyzer_stable - INFO - Columns after flattening: ['scenario_label', 'topology', 'scheduler', 'cost_mean', 'cost_std', 'cpu_utilization_mean', 'cpu_utilization_std']
+2025-01-16 16:31:20,469 - ExperimentAnalyzer_stable - INFO - Calculating cost efficiency metrics...
+2025-01-16 16:31:20,469 - ExperimentAnalyzer_stable - INFO - Generating cost comparison plot...
+2025-01-16 16:31:20,531 - ExperimentAnalyzer_stable - INFO - Saved cost comparison plot to results/stable_cost_comparison.png
+2025-01-16 16:31:20,531 - ExperimentAnalyzer_stable - INFO - Cost Summary Statistics:
+2025-01-16 16:31:20,531 - ExperimentAnalyzer_stable - INFO - 
+Scenario: large_cost_stable_CostEfficient
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Topology: large
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Scheduler: CostEfficient
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 517.28
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 68.30
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO - 
+Scenario: large_cost_stable_PredictiveCost
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Topology: large
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Scheduler: PredictiveCost
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 514.63
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 69.03
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO - 
+Scenario: large_cost_stable_SimpleCost
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Topology: large
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Scheduler: SimpleCost
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 517.28
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 68.30
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO - 
+Scenario: medium_cost_stable_CostEfficient
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Topology: medium
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Scheduler: CostEfficient
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 502.03
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 92.47
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO - 
+Scenario: medium_cost_stable_PredictiveCost
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Topology: medium
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Scheduler: PredictiveCost
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 501.18
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 92.82
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO - 
+Scenario: medium_cost_stable_SimpleCost
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Topology: medium
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Scheduler: SimpleCost
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 502.03
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 92.47
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO - 
+Scenario: small_cost_stable_CostEfficient
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Topology: small
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Scheduler: CostEfficient
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 594.02
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 11.97
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO - 
+Scenario: small_cost_stable_PredictiveCost
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Topology: small
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Scheduler: PredictiveCost
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 594.39
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 10.79
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO - 
+Scenario: small_cost_stable_SimpleCost
+2025-01-16 16:31:20,532 - ExperimentAnalyzer_stable - INFO -   Topology: small
+2025-01-16 16:31:20,533 - ExperimentAnalyzer_stable - INFO -   Scheduler: SimpleCost
+2025-01-16 16:31:20,533 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 594.02
+2025-01-16 16:31:20,533 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 11.97
+2025-01-16 16:31:20,533 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:31:20,533 - ExperimentAnalyzer_stable - INFO - Starting task completion analysis...
+2025-01-16 16:31:23,769 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: small_cost_stable_SimpleCost
+2025-01-16 16:31:29,418 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:31:29,418 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:31:29,418 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 24596183.53s
+2025-01-16 16:31:29,418 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: large_cost_stable_CostEfficient
+2025-01-16 16:31:33,176 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:31:33,176 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:31:33,176 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 5014190.92s
+2025-01-16 16:31:33,176 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: large_cost_stable_SimpleCost
+2025-01-16 16:31:36,761 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:31:36,762 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:31:36,762 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 5014190.92s
+2025-01-16 16:31:36,762 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: small_cost_stable_CostEfficient
+2025-01-16 16:31:44,311 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:31:44,312 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:31:44,312 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 24596183.53s
+2025-01-16 16:31:44,312 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: large_cost_stable_PredictiveCost
+2025-01-16 16:31:48,429 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:31:48,429 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:31:48,429 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 6387207.55s
+2025-01-16 16:31:48,429 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: medium_cost_stable_CostEfficient
+2025-01-16 16:31:52,314 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:31:52,315 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:31:52,315 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 8815958.65s
+2025-01-16 16:31:52,315 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: medium_cost_stable_SimpleCost
+2025-01-16 16:31:56,772 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:31:56,774 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:31:56,774 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 8815958.65s
+2025-01-16 16:31:56,774 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: small_cost_stable_PredictiveCost
+2025-01-16 16:32:05,406 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:32:05,407 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:32:05,407 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 30177264.67s
+2025-01-16 16:32:05,407 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: medium_cost_stable_PredictiveCost
+2025-01-16 16:32:10,407 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:32:10,408 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:32:10,408 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 10781639.69s
+2025-01-16 16:32:10,408 - ExperimentAnalyzer_stable - INFO - Generating task completion visualizations...
+2025-01-16 16:32:10,514 - ExperimentAnalyzer_stable - INFO - Saved completion rates plot to results/stable_completion_rates.png
+2025-01-16 16:32:48,797 - ExperimentAnalyzer_stable - INFO - Saved completion times plot to results/stable_completion_times.png
+2025-01-16 16:34:26,707 - ExperimentAnalyzer_stable - INFO - Initializing ExperimentAnalyzer for 'stable' pattern.
+2025-01-16 16:34:26,707 - ExperimentAnalyzer_stable - INFO - Loading parquet files (host, task)...
+2025-01-16 16:34:27,068 - ExperimentAnalyzer_stable - INFO - Loaded host data: 4427730 records.
+2025-01-16 16:34:35,949 - ExperimentAnalyzer_stable - INFO - Loaded task data: 62357667 records.
+2025-01-16 16:34:35,950 - ExperimentAnalyzer_stable - INFO - Loaded trackr data: 9 scenarios.
+2025-01-16 16:34:35,950 - ExperimentAnalyzer_stable - INFO - Converting timestamps from 'timestamp_absolute' to datetime...
+2025-01-16 16:34:36,074 - ExperimentAnalyzer_stable - INFO - Processed timestamps for host data.
+2025-01-16 16:34:36,524 - ExperimentAnalyzer_stable - INFO - Processed timestamps for task data.
+2025-01-16 16:34:36,524 - ExperimentAnalyzer_stable - INFO - Generating scenario labels for each record...
+2025-01-16 16:34:37,083 - ExperimentAnalyzer_stable - INFO - [host] Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 16:34:51,295 - ExperimentAnalyzer_stable - INFO - [task] Unique scenarios: ['small_cost_stable_SimpleCost' 'large_cost_stable_CostEfficient'
+ 'large_cost_stable_SimpleCost' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'medium_cost_stable_SimpleCost' 'small_cost_stable_PredictiveCost'
+ 'medium_cost_stable_PredictiveCost']
+2025-01-16 16:34:51,297 - ExperimentAnalyzer_stable - INFO - Starting resource utilization analysis...
+2025-01-16 16:34:51,297 - ExperimentAnalyzer_stable - INFO - Aggregating utilization metrics: ['cpu_utilization', 'guests_running', 'cpu_time_steal']
+2025-01-16 16:34:51,987 - ExperimentAnalyzer_stable - INFO - Successfully aggregated metrics across 716947 grouped rows.
+2025-01-16 16:34:52,014 - ExperimentAnalyzer_stable - INFO - Columns before flattening: [('scenario_label', ''), ('datetime', ''), ('topology', ''), ('scheduler', ''), ('cpu_utilization', 'mean'), ('cpu_utilization', 'std'), ('guests_running', 'mean'), ('guests_running', 'std'), ('cpu_time_steal', 'mean'), ('cpu_time_steal', 'std')]
+2025-01-16 16:34:52,014 - ExperimentAnalyzer_stable - INFO - Columns after flattening: ['scenario_label', 'datetime', 'topology', 'scheduler', 'cpu_utilization_mean', 'cpu_utilization_std', 'guests_running_mean', 'guests_running_std', 'cpu_time_steal_mean', 'cpu_time_steal_std']
+2025-01-16 16:34:52,014 - ExperimentAnalyzer_stable - INFO - Generating CPU utilization plot...
+2025-01-16 16:34:52,615 - ExperimentAnalyzer_stable - INFO - Saved CPU utilization plot to results/stable_cpu_utilization.png
+2025-01-16 16:34:52,616 - ExperimentAnalyzer_stable - INFO - Starting cost metrics analysis...
+2025-01-16 16:34:52,616 - ExperimentAnalyzer_stable - INFO - Analyzing cost metrics: ['cost', 'cpu_utilization']
+2025-01-16 16:34:53,093 - ExperimentAnalyzer_stable - INFO - Aggregated cost metrics: 9 scenario group(s).
+2025-01-16 16:34:53,093 - ExperimentAnalyzer_stable - INFO - Columns before flattening: [('scenario_label', ''), ('topology', ''), ('scheduler', ''), ('cost', 'mean'), ('cost', 'std'), ('cpu_utilization', 'mean'), ('cpu_utilization', 'std')]
+2025-01-16 16:34:53,093 - ExperimentAnalyzer_stable - INFO - Columns after flattening: ['scenario_label', 'topology', 'scheduler', 'cost_mean', 'cost_std', 'cpu_utilization_mean', 'cpu_utilization_std']
+2025-01-16 16:34:53,093 - ExperimentAnalyzer_stable - INFO - Calculating cost efficiency metrics...
+2025-01-16 16:34:53,094 - ExperimentAnalyzer_stable - INFO - Generating cost comparison plot...
+2025-01-16 16:34:53,165 - ExperimentAnalyzer_stable - INFO - Saved cost comparison plot to results/stable_cost_comparison.png
+2025-01-16 16:34:53,165 - ExperimentAnalyzer_stable - INFO - Cost Summary Statistics:
+2025-01-16 16:34:53,165 - ExperimentAnalyzer_stable - INFO - 
+Scenario: large_cost_stable_CostEfficient
+2025-01-16 16:34:53,165 - ExperimentAnalyzer_stable - INFO -   Topology: large
+2025-01-16 16:34:53,165 - ExperimentAnalyzer_stable - INFO -   Scheduler: CostEfficient
+2025-01-16 16:34:53,165 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 517.28
+2025-01-16 16:34:53,165 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 68.30
+2025-01-16 16:34:53,165 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:34:53,165 - ExperimentAnalyzer_stable - INFO - 
+Scenario: large_cost_stable_PredictiveCost
+2025-01-16 16:34:53,165 - ExperimentAnalyzer_stable - INFO -   Topology: large
+2025-01-16 16:34:53,165 - ExperimentAnalyzer_stable - INFO -   Scheduler: PredictiveCost
+2025-01-16 16:34:53,165 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 514.63
+2025-01-16 16:34:53,165 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 69.03
+2025-01-16 16:34:53,165 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:34:53,165 - ExperimentAnalyzer_stable - INFO - 
+Scenario: large_cost_stable_SimpleCost
+2025-01-16 16:34:53,165 - ExperimentAnalyzer_stable - INFO -   Topology: large
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Scheduler: SimpleCost
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 517.28
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 68.30
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO - 
+Scenario: medium_cost_stable_CostEfficient
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Topology: medium
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Scheduler: CostEfficient
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 502.03
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 92.47
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO - 
+Scenario: medium_cost_stable_PredictiveCost
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Topology: medium
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Scheduler: PredictiveCost
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 501.18
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 92.82
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO - 
+Scenario: medium_cost_stable_SimpleCost
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Topology: medium
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Scheduler: SimpleCost
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 502.03
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 92.47
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO - 
+Scenario: small_cost_stable_CostEfficient
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Topology: small
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Scheduler: CostEfficient
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 594.02
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 11.97
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO - 
+Scenario: small_cost_stable_PredictiveCost
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Topology: small
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Scheduler: PredictiveCost
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 594.39
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 10.79
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO - 
+Scenario: small_cost_stable_SimpleCost
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Topology: small
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Scheduler: SimpleCost
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 594.02
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 11.97
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:34:53,166 - ExperimentAnalyzer_stable - INFO - Starting task completion analysis...
+2025-01-16 16:34:56,630 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: small_cost_stable_SimpleCost
+2025-01-16 16:35:02,083 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:35:02,084 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:35:02,084 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 24596183.53s
+2025-01-16 16:35:02,084 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: large_cost_stable_CostEfficient
+2025-01-16 16:35:05,945 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:35:05,945 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:35:05,945 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 5014190.92s
+2025-01-16 16:35:05,945 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: large_cost_stable_SimpleCost
+2025-01-16 16:35:09,514 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:35:09,514 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:35:09,514 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 5014190.92s
+2025-01-16 16:35:09,514 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: small_cost_stable_CostEfficient
+2025-01-16 16:35:16,555 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:35:16,556 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:35:16,556 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 24596183.53s
+2025-01-16 16:35:16,556 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: large_cost_stable_PredictiveCost
+2025-01-16 16:35:20,469 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:35:20,470 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:35:20,470 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 6387207.55s
+2025-01-16 16:35:20,470 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: medium_cost_stable_CostEfficient
+2025-01-16 16:35:24,500 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:35:24,500 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:35:24,500 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 8815958.65s
+2025-01-16 16:35:24,500 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: medium_cost_stable_SimpleCost
+2025-01-16 16:35:28,757 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:35:28,758 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:35:28,758 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 8815958.65s
+2025-01-16 16:35:28,758 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: small_cost_stable_PredictiveCost
+2025-01-16 16:35:37,349 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:35:37,350 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:35:37,350 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 30177264.67s
+2025-01-16 16:35:37,350 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: medium_cost_stable_PredictiveCost
+2025-01-16 16:35:41,851 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-16 16:35:41,851 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-16 16:35:41,851 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 10781639.69s
+2025-01-16 16:35:41,852 - ExperimentAnalyzer_stable - INFO - Generating task completion visualizations...
+2025-01-16 16:35:41,935 - ExperimentAnalyzer_stable - INFO - Saved completion rates plot to results/stable_completion_rates.png
+2025-01-16 16:36:08,393 - ExperimentAnalyzer_stable - INFO - Saved completion times plot to results/stable_completion_times.png
+2025-01-16 16:36:43,628 - ExperimentAnalyzer_stable - INFO - Saved state distribution plot to results/stable_state_distribution.png
+2025-01-16 16:36:43,702 - ExperimentAnalyzer_stable - INFO - Starting comparative analysis...
+2025-01-16 16:36:43,702 - ExperimentAnalyzer_stable - INFO - Generating comparative bar plots...
+2025-01-16 16:36:43,917 - ExperimentAnalyzer_stable - INFO - Saved comparative analysis plot to results/stable_comparative_analysis.png
+2025-01-17 01:45:37,028 - ExperimentAnalyzer_stable - INFO - Initializing ExperimentAnalyzer for 'stable' pattern.
+2025-01-17 01:45:37,028 - ExperimentAnalyzer_stable - INFO - Loading parquet files (host, task)...
+2025-01-17 01:45:52,825 - ExperimentAnalyzer_stable - INFO - Loaded and filtered host data: 3063495 records.
+2025-01-17 01:45:52,826 - ExperimentAnalyzer_stable - INFO - Loaded and filtered task data: 43063206 records.
+2025-01-17 01:45:52,826 - ExperimentAnalyzer_stable - INFO - Loaded trackr data: 9 scenarios.
+2025-01-17 01:45:52,827 - ExperimentAnalyzer_stable - INFO - Converting timestamps from 'timestamp_absolute' to datetime...
+2025-01-17 01:45:52,871 - ExperimentAnalyzer_stable - INFO - Processed timestamps for host data.
+2025-01-17 01:45:53,189 - ExperimentAnalyzer_stable - INFO - Processed timestamps for task data.
+2025-01-17 01:45:53,189 - ExperimentAnalyzer_stable - INFO - Generating scenario labels for each record...
+2025-01-17 01:45:53,591 - ExperimentAnalyzer_stable - INFO - [host] Unique scenarios: ['large_cost_stable_CostEfficient' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'small_cost_stable_PredictiveCost' 'medium_cost_stable_PredictiveCost']
+2025-01-17 01:46:02,701 - ExperimentAnalyzer_stable - INFO - [task] Unique scenarios: ['large_cost_stable_CostEfficient' 'small_cost_stable_CostEfficient'
+ 'large_cost_stable_PredictiveCost' 'medium_cost_stable_CostEfficient'
+ 'small_cost_stable_PredictiveCost' 'medium_cost_stable_PredictiveCost']
+2025-01-17 01:46:02,702 - ExperimentAnalyzer_stable - INFO - Starting resource utilization analysis...
+2025-01-17 01:46:02,702 - ExperimentAnalyzer_stable - INFO - Aggregating utilization metrics: ['cpu_utilization', 'guests_running', 'cpu_time_steal']
+2025-01-17 01:46:03,149 - ExperimentAnalyzer_stable - INFO - Successfully aggregated metrics across 495030 grouped rows.
+2025-01-17 01:46:03,167 - ExperimentAnalyzer_stable - INFO - Columns before flattening: [('scenario_label', ''), ('datetime', ''), ('topology', ''), ('scheduler', ''), ('cpu_utilization', 'mean'), ('cpu_utilization', 'std'), ('guests_running', 'mean'), ('guests_running', 'std'), ('cpu_time_steal', 'mean'), ('cpu_time_steal', 'std')]
+2025-01-17 01:46:03,168 - ExperimentAnalyzer_stable - INFO - Columns after flattening: ['scenario_label', 'datetime', 'topology', 'scheduler', 'cpu_utilization_mean', 'cpu_utilization_std', 'guests_running_mean', 'guests_running_std', 'cpu_time_steal_mean', 'cpu_time_steal_std']
+2025-01-17 01:46:03,168 - ExperimentAnalyzer_stable - INFO - Generating CPU utilization plot...
+2025-01-17 01:46:03,580 - ExperimentAnalyzer_stable - INFO - Saved CPU utilization plot to results/stable_cpu_utilization.png
+2025-01-17 01:46:03,581 - ExperimentAnalyzer_stable - INFO - Starting cost metrics analysis...
+2025-01-17 01:46:03,581 - ExperimentAnalyzer_stable - INFO - Analyzing cost metrics: ['cost', 'cpu_utilization']
+2025-01-17 01:46:03,917 - ExperimentAnalyzer_stable - INFO - Aggregated cost metrics: 6 scenario group(s).
+2025-01-17 01:46:03,917 - ExperimentAnalyzer_stable - INFO - Columns before flattening: [('scenario_label', ''), ('topology', ''), ('scheduler', ''), ('cost', 'mean'), ('cost', 'std'), ('cpu_utilization', 'mean'), ('cpu_utilization', 'std')]
+2025-01-17 01:46:03,917 - ExperimentAnalyzer_stable - INFO - Columns after flattening: ['scenario_label', 'topology', 'scheduler', 'cost_mean', 'cost_std', 'cpu_utilization_mean', 'cpu_utilization_std']
+2025-01-17 01:46:03,917 - ExperimentAnalyzer_stable - INFO - Calculating cost efficiency metrics...
+2025-01-17 01:46:03,917 - ExperimentAnalyzer_stable - INFO - Generating cost comparison plot...
+2025-01-17 01:46:03,981 - ExperimentAnalyzer_stable - INFO - Saved cost comparison plot to results/stable_cost_comparison.png
+2025-01-17 01:46:03,981 - ExperimentAnalyzer_stable - INFO - Cost Summary Statistics:
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO - 
+Scenario: large_cost_stable_CostEfficient
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Topology: large
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Scheduler: CostEfficient
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 517.28
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 68.30
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO - 
+Scenario: large_cost_stable_PredictiveCost
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Topology: large
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Scheduler: PredictiveCost
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 514.63
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 69.03
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO - 
+Scenario: medium_cost_stable_CostEfficient
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Topology: medium
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Scheduler: CostEfficient
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 502.03
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 92.47
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO - 
+Scenario: medium_cost_stable_PredictiveCost
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Topology: medium
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Scheduler: PredictiveCost
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 501.18
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 92.82
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO - 
+Scenario: small_cost_stable_CostEfficient
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Topology: small
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Scheduler: CostEfficient
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 594.02
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 11.97
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO - 
+Scenario: small_cost_stable_PredictiveCost
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Topology: small
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Scheduler: PredictiveCost
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Avg Cost: 594.39
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Cost Std Dev: 10.79
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO -   Cost Efficiency: 0.0002
+2025-01-17 01:46:03,982 - ExperimentAnalyzer_stable - INFO - Starting task completion analysis...
+2025-01-17 01:46:05,396 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: large_cost_stable_CostEfficient
+2025-01-17 01:46:07,029 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-17 01:46:07,029 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-17 01:46:07,029 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 5014190.92s
+2025-01-17 01:46:07,029 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: small_cost_stable_CostEfficient
+2025-01-17 01:46:12,861 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-17 01:46:12,862 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-17 01:46:12,862 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 24596183.53s
+2025-01-17 01:46:12,862 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: large_cost_stable_PredictiveCost
+2025-01-17 01:46:15,987 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-17 01:46:15,988 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-17 01:46:15,988 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 6387207.55s
+2025-01-17 01:46:15,988 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: medium_cost_stable_CostEfficient
+2025-01-17 01:46:18,924 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-17 01:46:18,924 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-17 01:46:18,925 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 8815958.65s
+2025-01-17 01:46:18,925 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: small_cost_stable_PredictiveCost
+2025-01-17 01:46:26,313 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-17 01:46:26,313 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-17 01:46:26,313 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 30177264.67s
+2025-01-17 01:46:26,314 - ExperimentAnalyzer_stable - INFO - Analyzing scenario: medium_cost_stable_PredictiveCost
+2025-01-17 01:46:30,139 - ExperimentAnalyzer_stable - INFO -   Total Tasks: 50
+2025-01-17 01:46:30,139 - ExperimentAnalyzer_stable - INFO -   Completion Rate: 98.00%
+2025-01-17 01:46:30,139 - ExperimentAnalyzer_stable - INFO -   Average Completion Time: 10781639.69s
+2025-01-17 01:46:30,141 - ExperimentAnalyzer_stable - INFO - Generating task completion visualizations...
+2025-01-17 01:46:30,225 - ExperimentAnalyzer_stable - INFO - Saved completion rates plot to results/stable_completion_rates.png
+2025-01-17 01:46:40,996 - ExperimentAnalyzer_stable - INFO - Saved completion times plot to results/stable_completion_times.png
+2025-01-17 01:46:57,982 - ExperimentAnalyzer_stable - INFO - Saved state distribution plot to results/stable_state_distribution.png
+2025-01-17 01:46:58,058 - ExperimentAnalyzer_stable - INFO - Starting comparative analysis...
+2025-01-17 01:46:58,058 - ExperimentAnalyzer_stable - INFO - Generating comparative bar plots...
+2025-01-17 01:46:58,263 - ExperimentAnalyzer_stable - INFO - Saved comparative analysis plot to results/stable_comparative_analysis.png

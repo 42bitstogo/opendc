@@ -1,0 +1,7 @@
+scheduler,topology,avg_cost,avg_utilization,cost_efficiency,std_cost,std_utilization,pattern
+CostEfficient,large,471.03802,0.11040889,0.00023439484,190.53943,0.19369023,diurnal
+CostEfficient,medium,402.27188,0.11043375,0.00027452514,136.06146,0.19128424,diurnal
+CostEfficient,small,303.17896,0.118766256,0.00039173648,75.81785,0.19577119,diurnal
+PredictiveCost,large,445.5863,0.082821056,0.00018586984,172.54213,0.1731209,diurnal
+PredictiveCost,medium,396.13535,0.09462665,0.00023887455,128.57726,0.1804694,diurnal
+PredictiveCost,small,299.92514,0.096166,0.00032063335,68.55311,0.18150851,diurnal

@@ -1,0 +1,1297 @@
+2025-01-17 01:37:16,503 - CostAnalysis - INFO - Starting cost analysis - Comparing CostEfficient vs PredictiveCost
+2025-01-17 01:37:16,503 - CostAnalysis - INFO - Analyzing diurnal pattern
+2025-01-17 01:37:16,503 - CostAnalysis - INFO - Loading data from path: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output
+2025-01-17 01:37:16,504 - CostAnalysis - INFO - Processing scenario: 0
+2025-01-17 01:37:16,504 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/0
+2025-01-17 01:37:16,504 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:37:16,532 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/0
+2025-01-17 01:37:16,532 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:16,533 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:37:16,534 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_small.json
+2025-01-17 01:37:16,535 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:37:16,806 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/0
+2025-01-17 01:37:16,806 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:16,807 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:37:16,817 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_small.json
+2025-01-17 01:37:16,827 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:37:16,827 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:37:16,835 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/0
+2025-01-17 01:37:16,835 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:16,835 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:37:16,835 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_small.json
+2025-01-17 01:37:16,836 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:37:17,058 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/0
+2025-01-17 01:37:17,059 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:17,059 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:37:17,070 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_small.json
+2025-01-17 01:37:17,080 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:37:17,080 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:37:17,087 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/0
+2025-01-17 01:37:17,087 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:17,087 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:37:17,088 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_small.json
+2025-01-17 01:37:17,089 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:37:17,345 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/0
+2025-01-17 01:37:17,345 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:17,345 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:37:17,356 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_small.json
+2025-01-17 01:37:17,366 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:37:17,366 - CostAnalysis - INFO - Processing scenario: 7
+2025-01-17 01:37:17,366 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/7
+2025-01-17 01:37:17,366 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:37:17,373 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/7
+2025-01-17 01:37:17,373 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:17,374 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:37:17,374 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_large.json
+2025-01-17 01:37:17,375 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:37:17,415 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/7
+2025-01-17 01:37:17,416 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:17,416 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:37:17,418 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_large.json
+2025-01-17 01:37:17,420 - CostAnalysis - INFO - Loaded task data: (836224, 24)
+2025-01-17 01:37:17,421 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:37:17,427 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/7
+2025-01-17 01:37:17,427 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:17,427 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:37:17,427 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_large.json
+2025-01-17 01:37:17,428 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:37:17,469 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/7
+2025-01-17 01:37:17,469 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:17,469 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:37:17,471 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_large.json
+2025-01-17 01:37:17,473 - CostAnalysis - INFO - Loaded task data: (836224, 24)
+2025-01-17 01:37:17,473 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:37:17,479 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/7
+2025-01-17 01:37:17,479 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:17,479 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:37:17,480 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_large.json
+2025-01-17 01:37:17,480 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:37:17,519 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/7
+2025-01-17 01:37:17,519 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:17,519 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:37:17,521 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_large.json
+2025-01-17 01:37:17,523 - CostAnalysis - INFO - Loaded task data: (836224, 24)
+2025-01-17 01:37:17,523 - CostAnalysis - INFO - Processing scenario: 6
+2025-01-17 01:37:17,523 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/6
+2025-01-17 01:37:17,524 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:37:17,529 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/6
+2025-01-17 01:37:17,530 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:17,530 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:37:17,530 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_large.json
+2025-01-17 01:37:17,531 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:37:17,581 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/6
+2025-01-17 01:37:17,581 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:17,581 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:37:17,583 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_large.json
+2025-01-17 01:37:17,585 - CostAnalysis - INFO - Loaded task data: (836224, 24)
+2025-01-17 01:37:17,585 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:37:17,593 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/6
+2025-01-17 01:37:17,593 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:17,593 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:37:17,593 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_large.json
+2025-01-17 01:37:17,594 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:37:17,637 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/6
+2025-01-17 01:37:17,637 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:17,637 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:37:17,640 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_large.json
+2025-01-17 01:37:17,642 - CostAnalysis - INFO - Loaded task data: (836224, 24)
+2025-01-17 01:37:17,642 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:37:17,650 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/6
+2025-01-17 01:37:17,650 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:17,650 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:37:17,651 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_large.json
+2025-01-17 01:37:17,651 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:37:17,700 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/6
+2025-01-17 01:37:17,700 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:17,700 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:37:17,702 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_large.json
+2025-01-17 01:37:17,704 - CostAnalysis - INFO - Loaded task data: (836224, 24)
+2025-01-17 01:37:17,704 - CostAnalysis - INFO - Processing scenario: 1
+2025-01-17 01:37:17,704 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/1
+2025-01-17 01:37:17,704 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:37:17,712 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/1
+2025-01-17 01:37:17,712 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:17,712 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:37:17,713 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_small.json
+2025-01-17 01:37:17,714 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:37:18,051 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/1
+2025-01-17 01:37:18,051 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:18,051 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:37:18,062 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_small.json
+2025-01-17 01:37:18,071 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:37:18,071 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:37:18,077 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/1
+2025-01-17 01:37:18,077 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:18,077 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:37:18,078 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_small.json
+2025-01-17 01:37:18,078 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:37:18,314 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/1
+2025-01-17 01:37:18,314 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:18,314 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:37:18,325 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_small.json
+2025-01-17 01:37:18,335 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:37:18,335 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:37:18,342 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/1
+2025-01-17 01:37:18,342 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:18,342 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:37:18,342 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_small.json
+2025-01-17 01:37:18,343 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:37:18,589 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/1
+2025-01-17 01:37:18,589 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:18,590 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:37:18,600 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_small.json
+2025-01-17 01:37:18,609 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:37:18,610 - CostAnalysis - INFO - Processing scenario: 8
+2025-01-17 01:37:18,610 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/8
+2025-01-17 01:37:18,610 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:37:18,618 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/8
+2025-01-17 01:37:18,618 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:18,618 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:37:18,618 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_large.json
+2025-01-17 01:37:18,619 - CostAnalysis - INFO - Loaded host data: (206940, 29)
+2025-01-17 01:37:18,671 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/8
+2025-01-17 01:37:18,671 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:18,671 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:37:18,673 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_large.json
+2025-01-17 01:37:18,675 - CostAnalysis - INFO - Loaded task data: (991415, 24)
+2025-01-17 01:37:18,676 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:37:18,683 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/8
+2025-01-17 01:37:18,683 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:18,683 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:37:18,684 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_large.json
+2025-01-17 01:37:18,685 - CostAnalysis - INFO - Loaded host data: (206940, 29)
+2025-01-17 01:37:18,733 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/8
+2025-01-17 01:37:18,733 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:18,734 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:37:18,736 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_large.json
+2025-01-17 01:37:18,738 - CostAnalysis - INFO - Loaded task data: (991415, 24)
+2025-01-17 01:37:18,738 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:37:18,747 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/8
+2025-01-17 01:37:18,747 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:18,747 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:37:18,748 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_large.json
+2025-01-17 01:37:18,749 - CostAnalysis - INFO - Loaded host data: (206940, 29)
+2025-01-17 01:37:18,802 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/8
+2025-01-17 01:37:18,802 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:18,802 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:37:18,805 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_large.json
+2025-01-17 01:37:18,807 - CostAnalysis - INFO - Loaded task data: (991415, 24)
+2025-01-17 01:37:18,807 - CostAnalysis - INFO - Processing scenario: 4
+2025-01-17 01:37:18,807 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/4
+2025-01-17 01:37:18,808 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:37:18,815 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/4
+2025-01-17 01:37:18,815 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:18,815 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:37:18,815 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_medium.json
+2025-01-17 01:37:18,816 - CostAnalysis - INFO - Loaded host data: (155202, 29)
+2025-01-17 01:37:18,908 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/4
+2025-01-17 01:37:18,908 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:18,909 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:37:18,913 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_medium.json
+2025-01-17 01:37:18,916 - CostAnalysis - INFO - Loaded task data: (1474432, 24)
+2025-01-17 01:37:18,916 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:37:18,923 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/4
+2025-01-17 01:37:18,923 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:18,924 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:37:18,924 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_medium.json
+2025-01-17 01:37:18,925 - CostAnalysis - INFO - Loaded host data: (155202, 29)
+2025-01-17 01:37:18,999 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/4
+2025-01-17 01:37:18,999 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:18,999 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:37:19,003 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_medium.json
+2025-01-17 01:37:19,007 - CostAnalysis - INFO - Loaded task data: (1474432, 24)
+2025-01-17 01:37:19,007 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:37:19,014 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/4
+2025-01-17 01:37:19,014 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:19,014 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:37:19,015 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_medium.json
+2025-01-17 01:37:19,016 - CostAnalysis - INFO - Loaded host data: (155202, 29)
+2025-01-17 01:37:19,092 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/4
+2025-01-17 01:37:19,092 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:19,092 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:37:19,097 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_medium.json
+2025-01-17 01:37:19,100 - CostAnalysis - INFO - Loaded task data: (1474432, 24)
+2025-01-17 01:37:19,100 - CostAnalysis - INFO - Processing scenario: 3
+2025-01-17 01:37:19,100 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/3
+2025-01-17 01:37:19,101 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:37:19,107 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/3
+2025-01-17 01:37:19,107 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:19,107 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:37:19,107 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_medium.json
+2025-01-17 01:37:19,108 - CostAnalysis - INFO - Loaded host data: (155202, 29)
+2025-01-17 01:37:19,188 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/3
+2025-01-17 01:37:19,188 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:19,188 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:37:19,192 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_medium.json
+2025-01-17 01:37:19,195 - CostAnalysis - INFO - Loaded task data: (1474432, 24)
+2025-01-17 01:37:19,195 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:37:19,202 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/3
+2025-01-17 01:37:19,202 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:19,202 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:37:19,202 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_medium.json
+2025-01-17 01:37:19,203 - CostAnalysis - INFO - Loaded host data: (155202, 29)
+2025-01-17 01:37:19,277 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/3
+2025-01-17 01:37:19,277 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:19,277 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:37:19,281 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_medium.json
+2025-01-17 01:37:19,284 - CostAnalysis - INFO - Loaded task data: (1474432, 24)
+2025-01-17 01:37:19,284 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:37:19,290 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/3
+2025-01-17 01:37:19,291 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:19,291 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:37:19,291 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_medium.json
+2025-01-17 01:37:19,292 - CostAnalysis - INFO - Loaded host data: (155202, 29)
+2025-01-17 01:37:19,371 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/3
+2025-01-17 01:37:19,371 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:19,371 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:37:19,375 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_medium.json
+2025-01-17 01:37:19,380 - CostAnalysis - INFO - Loaded task data: (1474432, 24)
+2025-01-17 01:37:19,380 - CostAnalysis - INFO - Processing scenario: 2
+2025-01-17 01:37:19,380 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/2
+2025-01-17 01:37:19,380 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:37:19,387 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/2
+2025-01-17 01:37:19,387 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:19,387 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:37:19,388 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_small.json
+2025-01-17 01:37:19,388 - CostAnalysis - INFO - Loaded host data: (178226, 29)
+2025-01-17 01:37:19,737 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/2
+2025-01-17 01:37:19,737 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:19,737 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:37:19,750 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_small.json
+2025-01-17 01:37:19,762 - CostAnalysis - INFO - Loaded task data: (5058285, 24)
+2025-01-17 01:37:19,762 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:37:19,769 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/2
+2025-01-17 01:37:19,769 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:19,769 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:37:19,769 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_small.json
+2025-01-17 01:37:19,770 - CostAnalysis - INFO - Loaded host data: (178226, 29)
+2025-01-17 01:37:20,059 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/2
+2025-01-17 01:37:20,059 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:20,059 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:37:20,072 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_small.json
+2025-01-17 01:37:20,084 - CostAnalysis - INFO - Loaded task data: (5058285, 24)
+2025-01-17 01:37:20,085 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:37:20,092 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/2
+2025-01-17 01:37:20,092 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:20,092 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:37:20,093 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_small.json
+2025-01-17 01:37:20,094 - CostAnalysis - INFO - Loaded host data: (178226, 29)
+2025-01-17 01:37:20,370 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/2
+2025-01-17 01:37:20,370 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:20,370 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:37:20,383 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_small.json
+2025-01-17 01:37:20,395 - CostAnalysis - INFO - Loaded task data: (5058285, 24)
+2025-01-17 01:37:20,395 - CostAnalysis - INFO - Processing scenario: 5
+2025-01-17 01:37:20,395 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/5
+2025-01-17 01:37:20,395 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:37:20,404 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/5
+2025-01-17 01:37:20,404 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:20,404 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:37:20,405 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_medium.json
+2025-01-17 01:37:20,405 - CostAnalysis - INFO - Loaded host data: (181128, 29)
+2025-01-17 01:37:20,490 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/5
+2025-01-17 01:37:20,490 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:20,490 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:37:20,495 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_medium.json
+2025-01-17 01:37:20,500 - CostAnalysis - INFO - Loaded task data: (1804120, 24)
+2025-01-17 01:37:20,500 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:37:20,507 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/5
+2025-01-17 01:37:20,507 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:20,507 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:37:20,508 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_medium.json
+2025-01-17 01:37:20,508 - CostAnalysis - INFO - Loaded host data: (181128, 29)
+2025-01-17 01:37:20,604 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/5
+2025-01-17 01:37:20,605 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:20,605 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:37:20,610 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_medium.json
+2025-01-17 01:37:20,614 - CostAnalysis - INFO - Loaded task data: (1804120, 24)
+2025-01-17 01:37:20,614 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:37:20,621 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/5
+2025-01-17 01:37:20,621 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:20,621 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:37:20,622 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_medium.json
+2025-01-17 01:37:20,623 - CostAnalysis - INFO - Loaded host data: (181128, 29)
+2025-01-17 01:37:20,720 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/diurnal/cost_experiment_diurnal/raw-output/5
+2025-01-17 01:37:20,720 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/diurnal/cost_experiment_diurnal/trackr.json
+2025-01-17 01:37:20,720 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:37:20,725 - CostAnalysis - INFO - Found topology path: topologies/diurnal/topology_medium.json
+2025-01-17 01:37:20,729 - CostAnalysis - INFO - Loaded task data: (1804120, 24)
+2025-01-17 01:37:31,901 - CostAnalysis - INFO - Loaded data for diurnal pattern
+2025-01-17 01:37:31,902 - CostAnalysis - INFO - Host data shape: (3063117, 29)
+2025-01-17 01:37:31,902 - CostAnalysis - INFO - Task data shape: (42855912, 24)
+2025-01-17 01:37:49,360 - CostAnalysis - INFO - Calculated metrics for diurnal pattern
+2025-01-17 01:37:49,658 - CostAnalysis - INFO - Created visualizations for diurnal pattern
+2025-01-17 01:37:49,662 - CostAnalysis - INFO - Saved analysis results for diurnal pattern
+2025-01-17 01:37:49,662 - CostAnalysis - INFO - Analyzing spike pattern
+2025-01-17 01:37:49,662 - CostAnalysis - INFO - Loading data from path: output/cost_comparison/spike/cost_experiment_spike/raw-output
+2025-01-17 01:37:49,663 - CostAnalysis - INFO - Processing scenario: 0
+2025-01-17 01:37:49,663 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/spike/cost_experiment_spike/raw-output/0
+2025-01-17 01:37:49,663 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:37:49,672 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/0
+2025-01-17 01:37:49,672 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:49,673 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:37:49,673 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_small.json
+2025-01-17 01:37:49,674 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:37:49,867 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/0
+2025-01-17 01:37:49,867 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:49,867 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:37:49,877 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_small.json
+2025-01-17 01:37:49,887 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:37:49,887 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:37:49,895 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/0
+2025-01-17 01:37:49,895 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:49,895 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:37:49,895 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_small.json
+2025-01-17 01:37:49,896 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:37:50,102 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/0
+2025-01-17 01:37:50,102 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:50,102 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:37:50,113 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_small.json
+2025-01-17 01:37:50,123 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:37:50,123 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:37:50,130 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/0
+2025-01-17 01:37:50,130 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:50,130 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:37:50,131 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_small.json
+2025-01-17 01:37:50,131 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:37:50,334 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/0
+2025-01-17 01:37:50,335 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:50,335 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:37:50,345 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_small.json
+2025-01-17 01:37:50,354 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:37:50,354 - CostAnalysis - INFO - Processing scenario: 7
+2025-01-17 01:37:50,354 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/spike/cost_experiment_spike/raw-output/7
+2025-01-17 01:37:50,355 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:37:50,362 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/7
+2025-01-17 01:37:50,362 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:50,362 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:37:50,362 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_large.json
+2025-01-17 01:37:50,363 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:37:50,404 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/7
+2025-01-17 01:37:50,404 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:50,405 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:37:50,407 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_large.json
+2025-01-17 01:37:50,409 - CostAnalysis - INFO - Loaded task data: (836227, 24)
+2025-01-17 01:37:50,409 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:37:50,416 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/7
+2025-01-17 01:37:50,416 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:50,416 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:37:50,416 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_large.json
+2025-01-17 01:37:50,417 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:37:50,458 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/7
+2025-01-17 01:37:50,458 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:50,458 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:37:50,460 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_large.json
+2025-01-17 01:37:50,462 - CostAnalysis - INFO - Loaded task data: (836227, 24)
+2025-01-17 01:37:50,462 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:37:50,468 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/7
+2025-01-17 01:37:50,469 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:50,469 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:37:50,469 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_large.json
+2025-01-17 01:37:50,470 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:37:50,511 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/7
+2025-01-17 01:37:50,511 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:50,511 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:37:50,514 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_large.json
+2025-01-17 01:37:50,516 - CostAnalysis - INFO - Loaded task data: (836227, 24)
+2025-01-17 01:37:50,516 - CostAnalysis - INFO - Processing scenario: 6
+2025-01-17 01:37:50,516 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/spike/cost_experiment_spike/raw-output/6
+2025-01-17 01:37:50,516 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:37:50,523 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/6
+2025-01-17 01:37:50,523 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:50,523 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:37:50,523 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_large.json
+2025-01-17 01:37:50,524 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:37:50,566 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/6
+2025-01-17 01:37:50,566 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:50,566 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:37:50,568 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_large.json
+2025-01-17 01:37:50,570 - CostAnalysis - INFO - Loaded task data: (836227, 24)
+2025-01-17 01:37:50,570 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:37:50,577 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/6
+2025-01-17 01:37:50,577 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:50,577 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:37:50,577 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_large.json
+2025-01-17 01:37:50,578 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:37:50,618 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/6
+2025-01-17 01:37:50,618 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:50,618 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:37:50,620 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_large.json
+2025-01-17 01:37:50,623 - CostAnalysis - INFO - Loaded task data: (836227, 24)
+2025-01-17 01:37:50,623 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:37:50,629 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/6
+2025-01-17 01:37:50,629 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:50,629 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:37:50,629 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_large.json
+2025-01-17 01:37:50,630 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:37:50,672 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/6
+2025-01-17 01:37:50,672 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:50,672 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:37:50,674 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_large.json
+2025-01-17 01:37:50,676 - CostAnalysis - INFO - Loaded task data: (836227, 24)
+2025-01-17 01:37:50,676 - CostAnalysis - INFO - Processing scenario: 1
+2025-01-17 01:37:50,676 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/spike/cost_experiment_spike/raw-output/1
+2025-01-17 01:37:50,676 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:37:50,683 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/1
+2025-01-17 01:37:50,683 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:50,683 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:37:50,683 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_small.json
+2025-01-17 01:37:50,684 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:37:50,886 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/1
+2025-01-17 01:37:50,886 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:50,886 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:37:50,897 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_small.json
+2025-01-17 01:37:50,907 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:37:50,907 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:37:50,913 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/1
+2025-01-17 01:37:50,913 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:50,914 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:37:50,914 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_small.json
+2025-01-17 01:37:50,915 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:37:51,156 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/1
+2025-01-17 01:37:51,156 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:51,156 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:37:51,167 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_small.json
+2025-01-17 01:37:51,177 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:37:51,177 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:37:51,183 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/1
+2025-01-17 01:37:51,183 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:51,183 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:37:51,184 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_small.json
+2025-01-17 01:37:51,184 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:37:51,415 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/1
+2025-01-17 01:37:51,416 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:51,416 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:37:51,426 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_small.json
+2025-01-17 01:37:51,436 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:37:51,436 - CostAnalysis - INFO - Processing scenario: 8
+2025-01-17 01:37:51,436 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/spike/cost_experiment_spike/raw-output/8
+2025-01-17 01:37:51,436 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:37:51,445 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/8
+2025-01-17 01:37:51,445 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:51,445 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:37:51,446 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_large.json
+2025-01-17 01:37:51,446 - CostAnalysis - INFO - Loaded host data: (207090, 29)
+2025-01-17 01:37:51,502 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/8
+2025-01-17 01:37:51,502 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:51,502 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:37:51,504 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_large.json
+2025-01-17 01:37:51,507 - CostAnalysis - INFO - Loaded task data: (1086422, 24)
+2025-01-17 01:37:51,507 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:37:51,515 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/8
+2025-01-17 01:37:51,515 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:51,515 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:37:51,516 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_large.json
+2025-01-17 01:37:51,516 - CostAnalysis - INFO - Loaded host data: (207090, 29)
+2025-01-17 01:37:51,572 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/8
+2025-01-17 01:37:51,572 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:51,573 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:37:51,575 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_large.json
+2025-01-17 01:37:51,578 - CostAnalysis - INFO - Loaded task data: (1086422, 24)
+2025-01-17 01:37:51,578 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:37:51,586 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/8
+2025-01-17 01:37:51,586 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:51,586 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:37:51,587 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_large.json
+2025-01-17 01:37:51,588 - CostAnalysis - INFO - Loaded host data: (207090, 29)
+2025-01-17 01:37:51,648 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/8
+2025-01-17 01:37:51,649 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:51,649 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:37:51,651 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_large.json
+2025-01-17 01:37:51,654 - CostAnalysis - INFO - Loaded task data: (1086422, 24)
+2025-01-17 01:37:51,654 - CostAnalysis - INFO - Processing scenario: 4
+2025-01-17 01:37:51,654 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/spike/cost_experiment_spike/raw-output/4
+2025-01-17 01:37:51,655 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:37:51,663 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/4
+2025-01-17 01:37:51,663 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:51,663 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:37:51,663 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_medium.json
+2025-01-17 01:37:51,664 - CostAnalysis - INFO - Loaded host data: (155202, 29)
+2025-01-17 01:37:51,755 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/4
+2025-01-17 01:37:51,755 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:51,755 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:37:51,759 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_medium.json
+2025-01-17 01:37:51,762 - CostAnalysis - INFO - Loaded task data: (1474432, 24)
+2025-01-17 01:37:51,762 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:37:51,769 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/4
+2025-01-17 01:37:51,769 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:51,770 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:37:51,770 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_medium.json
+2025-01-17 01:37:51,771 - CostAnalysis - INFO - Loaded host data: (155202, 29)
+2025-01-17 01:37:51,866 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/4
+2025-01-17 01:37:51,866 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:51,866 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:37:51,870 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_medium.json
+2025-01-17 01:37:51,874 - CostAnalysis - INFO - Loaded task data: (1474432, 24)
+2025-01-17 01:37:51,874 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:37:51,880 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/4
+2025-01-17 01:37:51,880 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:51,880 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:37:51,881 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_medium.json
+2025-01-17 01:37:51,881 - CostAnalysis - INFO - Loaded host data: (155202, 29)
+2025-01-17 01:37:51,974 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/4
+2025-01-17 01:37:51,974 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:51,974 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:37:51,978 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_medium.json
+2025-01-17 01:37:51,982 - CostAnalysis - INFO - Loaded task data: (1474432, 24)
+2025-01-17 01:37:51,982 - CostAnalysis - INFO - Processing scenario: 3
+2025-01-17 01:37:51,982 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/spike/cost_experiment_spike/raw-output/3
+2025-01-17 01:37:51,982 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:37:51,988 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/3
+2025-01-17 01:37:51,988 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:51,988 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:37:51,989 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_medium.json
+2025-01-17 01:37:51,989 - CostAnalysis - INFO - Loaded host data: (155202, 29)
+2025-01-17 01:37:52,068 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/3
+2025-01-17 01:37:52,068 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:52,068 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:37:52,072 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_medium.json
+2025-01-17 01:37:52,075 - CostAnalysis - INFO - Loaded task data: (1474432, 24)
+2025-01-17 01:37:52,075 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:37:52,084 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/3
+2025-01-17 01:37:52,084 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:52,084 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:37:52,084 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_medium.json
+2025-01-17 01:37:52,085 - CostAnalysis - INFO - Loaded host data: (155202, 29)
+2025-01-17 01:37:52,160 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/3
+2025-01-17 01:37:52,160 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:52,160 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:37:52,164 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_medium.json
+2025-01-17 01:37:52,168 - CostAnalysis - INFO - Loaded task data: (1474432, 24)
+2025-01-17 01:37:52,168 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:37:52,174 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/3
+2025-01-17 01:37:52,174 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:52,175 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:37:52,175 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_medium.json
+2025-01-17 01:37:52,176 - CostAnalysis - INFO - Loaded host data: (155202, 29)
+2025-01-17 01:37:52,254 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/3
+2025-01-17 01:37:52,254 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:52,254 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:37:52,258 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_medium.json
+2025-01-17 01:37:52,262 - CostAnalysis - INFO - Loaded task data: (1474432, 24)
+2025-01-17 01:37:52,262 - CostAnalysis - INFO - Processing scenario: 2
+2025-01-17 01:37:52,262 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/spike/cost_experiment_spike/raw-output/2
+2025-01-17 01:37:52,262 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:37:52,269 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/2
+2025-01-17 01:37:52,269 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:52,269 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:37:52,270 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_small.json
+2025-01-17 01:37:52,270 - CostAnalysis - INFO - Loaded host data: (178226, 29)
+2025-01-17 01:37:52,620 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/2
+2025-01-17 01:37:52,620 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:52,621 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:37:52,634 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_small.json
+2025-01-17 01:37:52,647 - CostAnalysis - INFO - Loaded task data: (5058285, 24)
+2025-01-17 01:37:52,647 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:37:52,653 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/2
+2025-01-17 01:37:52,653 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:52,654 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:37:52,654 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_small.json
+2025-01-17 01:37:52,655 - CostAnalysis - INFO - Loaded host data: (178226, 29)
+2025-01-17 01:37:52,919 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/2
+2025-01-17 01:37:52,919 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:52,919 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:37:52,933 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_small.json
+2025-01-17 01:37:52,945 - CostAnalysis - INFO - Loaded task data: (5058285, 24)
+2025-01-17 01:37:52,945 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:37:52,952 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/2
+2025-01-17 01:37:52,952 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:52,952 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:37:52,953 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_small.json
+2025-01-17 01:37:52,953 - CostAnalysis - INFO - Loaded host data: (178226, 29)
+2025-01-17 01:37:53,227 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/2
+2025-01-17 01:37:53,227 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:53,227 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:37:53,240 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_small.json
+2025-01-17 01:37:53,252 - CostAnalysis - INFO - Loaded task data: (5058285, 24)
+2025-01-17 01:37:53,252 - CostAnalysis - INFO - Processing scenario: 5
+2025-01-17 01:37:53,252 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/spike/cost_experiment_spike/raw-output/5
+2025-01-17 01:37:53,252 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:37:53,259 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/5
+2025-01-17 01:37:53,259 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:53,260 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:37:53,260 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_medium.json
+2025-01-17 01:37:53,261 - CostAnalysis - INFO - Loaded host data: (181128, 29)
+2025-01-17 01:37:53,350 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/5
+2025-01-17 01:37:53,350 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:53,350 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:37:53,355 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_medium.json
+2025-01-17 01:37:53,359 - CostAnalysis - INFO - Loaded task data: (1804123, 24)
+2025-01-17 01:37:53,359 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:37:53,366 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/5
+2025-01-17 01:37:53,366 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:53,367 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:37:53,367 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_medium.json
+2025-01-17 01:37:53,368 - CostAnalysis - INFO - Loaded host data: (181128, 29)
+2025-01-17 01:37:53,460 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/5
+2025-01-17 01:37:53,460 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:53,460 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:37:53,465 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_medium.json
+2025-01-17 01:37:53,469 - CostAnalysis - INFO - Loaded task data: (1804123, 24)
+2025-01-17 01:37:53,469 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:37:53,476 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/5
+2025-01-17 01:37:53,476 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:53,476 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:37:53,477 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_medium.json
+2025-01-17 01:37:53,477 - CostAnalysis - INFO - Loaded host data: (181128, 29)
+2025-01-17 01:37:53,571 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/spike/cost_experiment_spike/raw-output/5
+2025-01-17 01:37:53,571 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/spike/cost_experiment_spike/trackr.json
+2025-01-17 01:37:53,572 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:37:53,576 - CostAnalysis - INFO - Found topology path: topologies/spike/topology_medium.json
+2025-01-17 01:37:53,581 - CostAnalysis - INFO - Loaded task data: (1804123, 24)
+2025-01-17 01:38:04,735 - CostAnalysis - INFO - Loaded data for spike pattern
+2025-01-17 01:38:04,735 - CostAnalysis - INFO - Host data shape: (3063567, 29)
+2025-01-17 01:38:04,735 - CostAnalysis - INFO - Task data shape: (43140951, 24)
+2025-01-17 01:38:21,463 - CostAnalysis - INFO - Calculated metrics for spike pattern
+2025-01-17 01:38:21,685 - CostAnalysis - INFO - Created visualizations for spike pattern
+2025-01-17 01:38:21,688 - CostAnalysis - INFO - Saved analysis results for spike pattern
+2025-01-17 01:38:21,688 - CostAnalysis - INFO - Analyzing stable pattern
+2025-01-17 01:38:21,688 - CostAnalysis - INFO - Loading data from path: output/cost_comparison/stable/cost_experiment_stable/raw-output
+2025-01-17 01:38:21,688 - CostAnalysis - INFO - Processing scenario: 0
+2025-01-17 01:38:21,688 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/stable/cost_experiment_stable/raw-output/0
+2025-01-17 01:38:21,688 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:38:21,697 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/0
+2025-01-17 01:38:21,697 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:21,698 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:38:21,698 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_small.json
+2025-01-17 01:38:21,699 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:38:21,887 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/0
+2025-01-17 01:38:21,888 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:21,888 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:38:21,898 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_small.json
+2025-01-17 01:38:21,908 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:38:21,908 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:38:21,915 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/0
+2025-01-17 01:38:21,915 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:21,915 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:38:21,916 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_small.json
+2025-01-17 01:38:21,916 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:38:22,123 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/0
+2025-01-17 01:38:22,123 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:22,124 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:38:22,134 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_small.json
+2025-01-17 01:38:22,144 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:38:22,144 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:38:22,151 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/0
+2025-01-17 01:38:22,151 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:22,151 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:38:22,151 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_small.json
+2025-01-17 01:38:22,152 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:38:22,358 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/0
+2025-01-17 01:38:22,358 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:22,358 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:38:22,369 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_small.json
+2025-01-17 01:38:22,378 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:38:22,378 - CostAnalysis - INFO - Processing scenario: 7
+2025-01-17 01:38:22,379 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/stable/cost_experiment_stable/raw-output/7
+2025-01-17 01:38:22,379 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:38:22,387 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/7
+2025-01-17 01:38:22,387 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:22,387 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:38:22,387 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_large.json
+2025-01-17 01:38:22,388 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:38:22,430 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/7
+2025-01-17 01:38:22,430 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:22,430 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:38:22,432 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_large.json
+2025-01-17 01:38:22,434 - CostAnalysis - INFO - Loaded task data: (836227, 24)
+2025-01-17 01:38:22,434 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:38:22,440 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/7
+2025-01-17 01:38:22,440 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:22,441 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:38:22,441 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_large.json
+2025-01-17 01:38:22,441 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:38:22,483 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/7
+2025-01-17 01:38:22,483 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:22,483 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:38:22,485 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_large.json
+2025-01-17 01:38:22,487 - CostAnalysis - INFO - Loaded task data: (836227, 24)
+2025-01-17 01:38:22,487 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:38:22,494 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/7
+2025-01-17 01:38:22,494 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:22,494 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:38:22,494 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_large.json
+2025-01-17 01:38:22,495 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:38:22,535 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/7
+2025-01-17 01:38:22,535 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:22,535 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:38:22,537 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_large.json
+2025-01-17 01:38:22,539 - CostAnalysis - INFO - Loaded task data: (836227, 24)
+2025-01-17 01:38:22,539 - CostAnalysis - INFO - Processing scenario: 6
+2025-01-17 01:38:22,539 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/stable/cost_experiment_stable/raw-output/6
+2025-01-17 01:38:22,539 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:38:22,546 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/6
+2025-01-17 01:38:22,546 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:22,546 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:38:22,547 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_large.json
+2025-01-17 01:38:22,548 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:38:22,589 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/6
+2025-01-17 01:38:22,589 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:22,589 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:38:22,592 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_large.json
+2025-01-17 01:38:22,594 - CostAnalysis - INFO - Loaded task data: (836227, 24)
+2025-01-17 01:38:22,594 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:38:22,600 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/6
+2025-01-17 01:38:22,600 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:22,600 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:38:22,600 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_large.json
+2025-01-17 01:38:22,601 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:38:22,643 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/6
+2025-01-17 01:38:22,643 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:22,643 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:38:22,645 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_large.json
+2025-01-17 01:38:22,647 - CostAnalysis - INFO - Loaded task data: (836227, 24)
+2025-01-17 01:38:22,647 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:38:22,653 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/6
+2025-01-17 01:38:22,653 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:22,654 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:38:22,654 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_large.json
+2025-01-17 01:38:22,654 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:38:22,694 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/6
+2025-01-17 01:38:22,694 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:22,694 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:38:22,697 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_large.json
+2025-01-17 01:38:22,699 - CostAnalysis - INFO - Loaded task data: (836227, 24)
+2025-01-17 01:38:22,699 - CostAnalysis - INFO - Processing scenario: 1
+2025-01-17 01:38:22,699 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/stable/cost_experiment_stable/raw-output/1
+2025-01-17 01:38:22,699 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:38:22,705 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/1
+2025-01-17 01:38:22,705 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:22,705 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:38:22,706 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_small.json
+2025-01-17 01:38:22,706 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:38:22,922 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/1
+2025-01-17 01:38:22,922 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:22,922 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:38:22,933 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_small.json
+2025-01-17 01:38:22,943 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:38:22,943 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:38:22,950 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/1
+2025-01-17 01:38:22,950 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:22,951 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:38:22,951 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_small.json
+2025-01-17 01:38:22,951 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:38:23,173 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/1
+2025-01-17 01:38:23,173 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:23,173 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:38:23,184 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_small.json
+2025-01-17 01:38:23,194 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:38:23,194 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:38:23,199 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/1
+2025-01-17 01:38:23,199 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:23,199 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:38:23,200 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_small.json
+2025-01-17 01:38:23,200 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:38:23,421 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/1
+2025-01-17 01:38:23,421 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:23,421 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:38:23,431 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_small.json
+2025-01-17 01:38:23,441 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:38:23,441 - CostAnalysis - INFO - Processing scenario: 8
+2025-01-17 01:38:23,441 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/stable/cost_experiment_stable/raw-output/8
+2025-01-17 01:38:23,442 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:38:23,451 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/8
+2025-01-17 01:38:23,451 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:23,451 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:38:23,452 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_large.json
+2025-01-17 01:38:23,452 - CostAnalysis - INFO - Loaded host data: (207066, 29)
+2025-01-17 01:38:23,506 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/8
+2025-01-17 01:38:23,506 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:23,506 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:38:23,509 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_large.json
+2025-01-17 01:38:23,512 - CostAnalysis - INFO - Loaded task data: (1060507, 24)
+2025-01-17 01:38:23,512 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:38:23,519 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/8
+2025-01-17 01:38:23,519 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:23,519 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:38:23,520 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_large.json
+2025-01-17 01:38:23,521 - CostAnalysis - INFO - Loaded host data: (207066, 29)
+2025-01-17 01:38:23,575 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/8
+2025-01-17 01:38:23,575 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:23,575 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:38:23,578 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_large.json
+2025-01-17 01:38:23,580 - CostAnalysis - INFO - Loaded task data: (1060507, 24)
+2025-01-17 01:38:23,581 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:38:23,589 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/8
+2025-01-17 01:38:23,589 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:23,589 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:38:23,590 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_large.json
+2025-01-17 01:38:23,590 - CostAnalysis - INFO - Loaded host data: (207066, 29)
+2025-01-17 01:38:23,655 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/8
+2025-01-17 01:38:23,655 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:23,655 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:38:23,658 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_large.json
+2025-01-17 01:38:23,661 - CostAnalysis - INFO - Loaded task data: (1060507, 24)
+2025-01-17 01:38:23,661 - CostAnalysis - INFO - Processing scenario: 4
+2025-01-17 01:38:23,661 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/stable/cost_experiment_stable/raw-output/4
+2025-01-17 01:38:23,662 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:38:23,668 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/4
+2025-01-17 01:38:23,668 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:23,668 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:38:23,669 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_medium.json
+2025-01-17 01:38:23,669 - CostAnalysis - INFO - Loaded host data: (155202, 29)
+2025-01-17 01:38:23,764 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/4
+2025-01-17 01:38:23,764 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:23,764 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:38:23,769 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_medium.json
+2025-01-17 01:38:23,772 - CostAnalysis - INFO - Loaded task data: (1474432, 24)
+2025-01-17 01:38:23,772 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:38:23,779 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/4
+2025-01-17 01:38:23,779 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:23,779 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:38:23,780 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_medium.json
+2025-01-17 01:38:23,780 - CostAnalysis - INFO - Loaded host data: (155202, 29)
+2025-01-17 01:38:23,869 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/4
+2025-01-17 01:38:23,869 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:23,869 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:38:23,873 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_medium.json
+2025-01-17 01:38:23,877 - CostAnalysis - INFO - Loaded task data: (1474432, 24)
+2025-01-17 01:38:23,877 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:38:23,884 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/4
+2025-01-17 01:38:23,884 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:23,884 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:38:23,886 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_medium.json
+2025-01-17 01:38:23,886 - CostAnalysis - INFO - Loaded host data: (155202, 29)
+2025-01-17 01:38:23,970 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/4
+2025-01-17 01:38:23,970 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:23,970 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:38:23,974 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_medium.json
+2025-01-17 01:38:23,978 - CostAnalysis - INFO - Loaded task data: (1474432, 24)
+2025-01-17 01:38:23,978 - CostAnalysis - INFO - Processing scenario: 3
+2025-01-17 01:38:23,978 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/stable/cost_experiment_stable/raw-output/3
+2025-01-17 01:38:23,978 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:38:23,984 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/3
+2025-01-17 01:38:23,985 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:23,985 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:38:23,985 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_medium.json
+2025-01-17 01:38:23,986 - CostAnalysis - INFO - Loaded host data: (155202, 29)
+2025-01-17 01:38:24,079 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/3
+2025-01-17 01:38:24,079 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:24,079 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:38:24,083 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_medium.json
+2025-01-17 01:38:24,087 - CostAnalysis - INFO - Loaded task data: (1474432, 24)
+2025-01-17 01:38:24,087 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:38:24,093 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/3
+2025-01-17 01:38:24,093 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:24,093 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:38:24,094 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_medium.json
+2025-01-17 01:38:24,094 - CostAnalysis - INFO - Loaded host data: (155202, 29)
+2025-01-17 01:38:24,176 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/3
+2025-01-17 01:38:24,176 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:24,176 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:38:24,180 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_medium.json
+2025-01-17 01:38:24,184 - CostAnalysis - INFO - Loaded task data: (1474432, 24)
+2025-01-17 01:38:24,184 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:38:24,190 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/3
+2025-01-17 01:38:24,190 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:24,190 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:38:24,191 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_medium.json
+2025-01-17 01:38:24,191 - CostAnalysis - INFO - Loaded host data: (155202, 29)
+2025-01-17 01:38:24,276 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/3
+2025-01-17 01:38:24,276 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:24,276 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:38:24,280 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_medium.json
+2025-01-17 01:38:24,284 - CostAnalysis - INFO - Loaded task data: (1474432, 24)
+2025-01-17 01:38:24,284 - CostAnalysis - INFO - Processing scenario: 2
+2025-01-17 01:38:24,284 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/stable/cost_experiment_stable/raw-output/2
+2025-01-17 01:38:24,284 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:38:24,292 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/2
+2025-01-17 01:38:24,292 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:24,292 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:38:24,292 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_small.json
+2025-01-17 01:38:24,293 - CostAnalysis - INFO - Loaded host data: (178226, 29)
+2025-01-17 01:38:24,637 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/2
+2025-01-17 01:38:24,637 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:24,637 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:38:24,651 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_small.json
+2025-01-17 01:38:24,663 - CostAnalysis - INFO - Loaded task data: (5058285, 24)
+2025-01-17 01:38:24,663 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:38:24,672 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/2
+2025-01-17 01:38:24,672 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:24,672 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:38:24,672 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_small.json
+2025-01-17 01:38:24,673 - CostAnalysis - INFO - Loaded host data: (178226, 29)
+2025-01-17 01:38:24,955 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/2
+2025-01-17 01:38:24,956 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:24,956 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:38:24,969 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_small.json
+2025-01-17 01:38:24,982 - CostAnalysis - INFO - Loaded task data: (5058285, 24)
+2025-01-17 01:38:24,982 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:38:24,989 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/2
+2025-01-17 01:38:24,989 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:24,989 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:38:24,989 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_small.json
+2025-01-17 01:38:24,990 - CostAnalysis - INFO - Loaded host data: (178226, 29)
+2025-01-17 01:38:25,272 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/2
+2025-01-17 01:38:25,273 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:25,273 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:38:25,286 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_small.json
+2025-01-17 01:38:25,298 - CostAnalysis - INFO - Loaded task data: (5058285, 24)
+2025-01-17 01:38:25,298 - CostAnalysis - INFO - Processing scenario: 5
+2025-01-17 01:38:25,298 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/stable/cost_experiment_stable/raw-output/5
+2025-01-17 01:38:25,299 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:38:25,307 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/5
+2025-01-17 01:38:25,307 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:25,307 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:38:25,308 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_medium.json
+2025-01-17 01:38:25,308 - CostAnalysis - INFO - Loaded host data: (181128, 29)
+2025-01-17 01:38:25,398 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/5
+2025-01-17 01:38:25,398 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:25,399 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:38:25,403 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_medium.json
+2025-01-17 01:38:25,408 - CostAnalysis - INFO - Loaded task data: (1804123, 24)
+2025-01-17 01:38:25,408 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:38:25,415 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/5
+2025-01-17 01:38:25,415 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:25,415 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:38:25,415 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_medium.json
+2025-01-17 01:38:25,416 - CostAnalysis - INFO - Loaded host data: (181128, 29)
+2025-01-17 01:38:25,513 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/5
+2025-01-17 01:38:25,513 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:25,513 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:38:25,518 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_medium.json
+2025-01-17 01:38:25,523 - CostAnalysis - INFO - Loaded task data: (1804123, 24)
+2025-01-17 01:38:25,523 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:38:25,530 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/5
+2025-01-17 01:38:25,530 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:25,530 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:38:25,530 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_medium.json
+2025-01-17 01:38:25,531 - CostAnalysis - INFO - Loaded host data: (181128, 29)
+2025-01-17 01:38:25,634 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/stable/cost_experiment_stable/raw-output/5
+2025-01-17 01:38:25,634 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/stable/cost_experiment_stable/trackr.json
+2025-01-17 01:38:25,635 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:38:25,639 - CostAnalysis - INFO - Found topology path: topologies/stable/topology_medium.json
+2025-01-17 01:38:25,644 - CostAnalysis - INFO - Loaded task data: (1804123, 24)
+2025-01-17 01:38:36,871 - CostAnalysis - INFO - Loaded data for stable pattern
+2025-01-17 01:38:36,872 - CostAnalysis - INFO - Host data shape: (3063495, 29)
+2025-01-17 01:38:36,872 - CostAnalysis - INFO - Task data shape: (43063206, 24)
+2025-01-17 01:38:53,584 - CostAnalysis - INFO - Calculated metrics for stable pattern
+2025-01-17 01:38:53,835 - CostAnalysis - INFO - Created visualizations for stable pattern
+2025-01-17 01:38:53,838 - CostAnalysis - INFO - Saved analysis results for stable pattern
+2025-01-17 01:38:53,838 - CostAnalysis - INFO - Analyzing volatile pattern
+2025-01-17 01:38:53,838 - CostAnalysis - INFO - Loading data from path: output/cost_comparison/volatile/cost_experiment_volatile/raw-output
+2025-01-17 01:38:53,838 - CostAnalysis - INFO - Processing scenario: 0
+2025-01-17 01:38:53,838 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/0
+2025-01-17 01:38:53,838 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:38:53,848 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/0
+2025-01-17 01:38:53,848 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:53,849 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:38:53,850 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_small.json
+2025-01-17 01:38:53,850 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:38:54,047 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/0
+2025-01-17 01:38:54,047 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:54,047 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:38:54,058 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_small.json
+2025-01-17 01:38:54,067 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:38:54,067 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:38:54,075 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/0
+2025-01-17 01:38:54,075 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:54,076 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:38:54,076 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_small.json
+2025-01-17 01:38:54,076 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:38:54,281 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/0
+2025-01-17 01:38:54,281 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:54,281 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:38:54,292 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_small.json
+2025-01-17 01:38:54,302 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:38:54,302 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:38:54,309 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/0
+2025-01-17 01:38:54,309 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:54,309 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:38:54,310 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_small.json
+2025-01-17 01:38:54,310 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:38:54,527 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/0
+2025-01-17 01:38:54,527 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:54,527 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 0
+2025-01-17 01:38:54,538 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_small.json
+2025-01-17 01:38:54,547 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:38:54,547 - CostAnalysis - INFO - Processing scenario: 7
+2025-01-17 01:38:54,547 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/7
+2025-01-17 01:38:54,550 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:38:54,557 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/7
+2025-01-17 01:38:54,558 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:54,558 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:38:54,558 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_large.json
+2025-01-17 01:38:54,559 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:38:54,599 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/7
+2025-01-17 01:38:54,599 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:54,599 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:38:54,601 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_large.json
+2025-01-17 01:38:54,604 - CostAnalysis - INFO - Loaded task data: (819053, 24)
+2025-01-17 01:38:54,604 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:38:54,611 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/7
+2025-01-17 01:38:54,611 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:54,611 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:38:54,611 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_large.json
+2025-01-17 01:38:54,612 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:38:54,651 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/7
+2025-01-17 01:38:54,651 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:54,651 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:38:54,654 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_large.json
+2025-01-17 01:38:54,656 - CostAnalysis - INFO - Loaded task data: (819053, 24)
+2025-01-17 01:38:54,656 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:38:54,662 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/7
+2025-01-17 01:38:54,662 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:54,663 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:38:54,663 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_large.json
+2025-01-17 01:38:54,664 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:38:54,702 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/7
+2025-01-17 01:38:54,702 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:54,702 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 7
+2025-01-17 01:38:54,704 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_large.json
+2025-01-17 01:38:54,706 - CostAnalysis - INFO - Loaded task data: (819053, 24)
+2025-01-17 01:38:54,706 - CostAnalysis - INFO - Processing scenario: 6
+2025-01-17 01:38:54,706 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/6
+2025-01-17 01:38:54,706 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:38:54,712 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/6
+2025-01-17 01:38:54,712 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:54,712 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:38:54,713 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_large.json
+2025-01-17 01:38:54,713 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:38:54,755 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/6
+2025-01-17 01:38:54,755 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:54,755 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:38:54,757 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_large.json
+2025-01-17 01:38:54,759 - CostAnalysis - INFO - Loaded task data: (819053, 24)
+2025-01-17 01:38:54,759 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:38:54,766 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/6
+2025-01-17 01:38:54,766 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:54,766 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:38:54,766 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_large.json
+2025-01-17 01:38:54,767 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:38:54,806 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/6
+2025-01-17 01:38:54,806 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:54,806 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:38:54,808 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_large.json
+2025-01-17 01:38:54,810 - CostAnalysis - INFO - Loaded task data: (819053, 24)
+2025-01-17 01:38:54,810 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:38:54,816 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/6
+2025-01-17 01:38:54,816 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:54,816 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:38:54,817 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_large.json
+2025-01-17 01:38:54,817 - CostAnalysis - INFO - Loaded host data: (155232, 29)
+2025-01-17 01:38:54,857 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/6
+2025-01-17 01:38:54,857 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:54,857 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 6
+2025-01-17 01:38:54,859 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_large.json
+2025-01-17 01:38:54,861 - CostAnalysis - INFO - Loaded task data: (819053, 24)
+2025-01-17 01:38:54,861 - CostAnalysis - INFO - Processing scenario: 1
+2025-01-17 01:38:54,862 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/1
+2025-01-17 01:38:54,862 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:38:54,868 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/1
+2025-01-17 01:38:54,868 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:54,868 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:38:54,868 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_small.json
+2025-01-17 01:38:54,869 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:38:55,073 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/1
+2025-01-17 01:38:55,073 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:55,074 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:38:55,085 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_small.json
+2025-01-17 01:38:55,095 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:38:55,095 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:38:55,101 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/1
+2025-01-17 01:38:55,101 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:55,101 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:38:55,102 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_small.json
+2025-01-17 01:38:55,102 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:38:55,320 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/1
+2025-01-17 01:38:55,320 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:55,320 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:38:55,331 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_small.json
+2025-01-17 01:38:55,341 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:38:55,341 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:38:55,348 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/1
+2025-01-17 01:38:55,348 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:55,349 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:38:55,349 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_small.json
+2025-01-17 01:38:55,349 - CostAnalysis - INFO - Loaded host data: (144311, 29)
+2025-01-17 01:38:55,553 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/1
+2025-01-17 01:38:55,554 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:55,554 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 1
+2025-01-17 01:38:55,565 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_small.json
+2025-01-17 01:38:55,576 - CostAnalysis - INFO - Loaded task data: (4120828, 24)
+2025-01-17 01:38:55,576 - CostAnalysis - INFO - Processing scenario: 8
+2025-01-17 01:38:55,576 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/8
+2025-01-17 01:38:55,576 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:38:55,585 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/8
+2025-01-17 01:38:55,585 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:55,585 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:38:55,586 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_large.json
+2025-01-17 01:38:55,587 - CostAnalysis - INFO - Loaded host data: (207090, 29)
+2025-01-17 01:38:55,645 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/8
+2025-01-17 01:38:55,645 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:55,645 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:38:55,648 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_large.json
+2025-01-17 01:38:55,651 - CostAnalysis - INFO - Loaded task data: (1086435, 24)
+2025-01-17 01:38:55,651 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:38:55,659 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/8
+2025-01-17 01:38:55,659 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:55,659 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:38:55,659 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_large.json
+2025-01-17 01:38:55,660 - CostAnalysis - INFO - Loaded host data: (207090, 29)
+2025-01-17 01:38:55,715 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/8
+2025-01-17 01:38:55,715 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:55,715 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:38:55,718 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_large.json
+2025-01-17 01:38:55,721 - CostAnalysis - INFO - Loaded task data: (1086435, 24)
+2025-01-17 01:38:55,721 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:38:55,729 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/8
+2025-01-17 01:38:55,729 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:55,729 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:38:55,729 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_large.json
+2025-01-17 01:38:55,730 - CostAnalysis - INFO - Loaded host data: (207090, 29)
+2025-01-17 01:38:55,790 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/8
+2025-01-17 01:38:55,790 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:55,790 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 8
+2025-01-17 01:38:55,793 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_large.json
+2025-01-17 01:38:55,796 - CostAnalysis - INFO - Loaded task data: (1086435, 24)
+2025-01-17 01:38:55,796 - CostAnalysis - INFO - Processing scenario: 4
+2025-01-17 01:38:55,796 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/4
+2025-01-17 01:38:55,797 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:38:55,804 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/4
+2025-01-17 01:38:55,804 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:55,804 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:38:55,804 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_medium.json
+2025-01-17 01:38:55,805 - CostAnalysis - INFO - Loaded host data: (155199, 29)
+2025-01-17 01:38:55,901 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/4
+2025-01-17 01:38:55,901 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:55,901 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:38:55,905 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_medium.json
+2025-01-17 01:38:55,908 - CostAnalysis - INFO - Loaded task data: (1474422, 24)
+2025-01-17 01:38:55,908 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:38:55,915 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/4
+2025-01-17 01:38:55,915 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:55,915 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:38:55,915 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_medium.json
+2025-01-17 01:38:55,916 - CostAnalysis - INFO - Loaded host data: (155199, 29)
+2025-01-17 01:38:56,005 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/4
+2025-01-17 01:38:56,005 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:56,005 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:38:56,010 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_medium.json
+2025-01-17 01:38:56,013 - CostAnalysis - INFO - Loaded task data: (1474422, 24)
+2025-01-17 01:38:56,013 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:38:56,020 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/4
+2025-01-17 01:38:56,020 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:56,020 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:38:56,021 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_medium.json
+2025-01-17 01:38:56,021 - CostAnalysis - INFO - Loaded host data: (155199, 29)
+2025-01-17 01:38:56,107 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/4
+2025-01-17 01:38:56,107 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:56,107 - CostAnalysis - INFO - Found scheduler: CostEfficient for scenario 4
+2025-01-17 01:38:56,111 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_medium.json
+2025-01-17 01:38:56,115 - CostAnalysis - INFO - Loaded task data: (1474422, 24)
+2025-01-17 01:38:56,115 - CostAnalysis - INFO - Processing scenario: 3
+2025-01-17 01:38:56,115 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/3
+2025-01-17 01:38:56,115 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:38:56,122 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/3
+2025-01-17 01:38:56,122 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:56,122 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:38:56,122 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_medium.json
+2025-01-17 01:38:56,123 - CostAnalysis - INFO - Loaded host data: (155199, 29)
+2025-01-17 01:38:56,201 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/3
+2025-01-17 01:38:56,201 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:56,201 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:38:56,205 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_medium.json
+2025-01-17 01:38:56,209 - CostAnalysis - INFO - Loaded task data: (1474422, 24)
+2025-01-17 01:38:56,209 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:38:56,215 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/3
+2025-01-17 01:38:56,216 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:56,216 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:38:56,216 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_medium.json
+2025-01-17 01:38:56,217 - CostAnalysis - INFO - Loaded host data: (155199, 29)
+2025-01-17 01:38:56,292 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/3
+2025-01-17 01:38:56,292 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:56,292 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:38:56,295 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_medium.json
+2025-01-17 01:38:56,299 - CostAnalysis - INFO - Loaded task data: (1474422, 24)
+2025-01-17 01:38:56,299 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:38:56,305 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/3
+2025-01-17 01:38:56,305 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:56,305 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:38:56,306 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_medium.json
+2025-01-17 01:38:56,306 - CostAnalysis - INFO - Loaded host data: (155199, 29)
+2025-01-17 01:38:56,390 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/3
+2025-01-17 01:38:56,390 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:56,390 - CostAnalysis - INFO - Found scheduler: SimpleCost for scenario 3
+2025-01-17 01:38:56,394 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_medium.json
+2025-01-17 01:38:56,398 - CostAnalysis - INFO - Loaded task data: (1474422, 24)
+2025-01-17 01:38:56,398 - CostAnalysis - INFO - Processing scenario: 2
+2025-01-17 01:38:56,398 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/2
+2025-01-17 01:38:56,399 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:38:56,406 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/2
+2025-01-17 01:38:56,406 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:56,406 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:38:56,407 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_small.json
+2025-01-17 01:38:56,407 - CostAnalysis - INFO - Loaded host data: (178226, 29)
+2025-01-17 01:38:56,736 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/2
+2025-01-17 01:38:56,736 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:56,737 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:38:56,750 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_small.json
+2025-01-17 01:38:56,763 - CostAnalysis - INFO - Loaded task data: (5058285, 24)
+2025-01-17 01:38:56,763 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:38:56,770 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/2
+2025-01-17 01:38:56,770 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:56,770 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:38:56,770 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_small.json
+2025-01-17 01:38:56,771 - CostAnalysis - INFO - Loaded host data: (178226, 29)
+2025-01-17 01:38:57,056 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/2
+2025-01-17 01:38:57,056 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:57,056 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:38:57,071 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_small.json
+2025-01-17 01:38:57,083 - CostAnalysis - INFO - Loaded task data: (5058285, 24)
+2025-01-17 01:38:57,083 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:38:57,090 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/2
+2025-01-17 01:38:57,090 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:57,090 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:38:57,091 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_small.json
+2025-01-17 01:38:57,091 - CostAnalysis - INFO - Loaded host data: (178226, 29)
+2025-01-17 01:38:57,362 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/2
+2025-01-17 01:38:57,362 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:57,362 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 2
+2025-01-17 01:38:57,375 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_small.json
+2025-01-17 01:38:57,387 - CostAnalysis - INFO - Loaded task data: (5058285, 24)
+2025-01-17 01:38:57,388 - CostAnalysis - INFO - Processing scenario: 5
+2025-01-17 01:38:57,388 - CostAnalysis - INFO - Processing scenario path: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/5
+2025-01-17 01:38:57,388 - CostAnalysis - INFO - Processing seed directory: seed=1
+2025-01-17 01:38:57,395 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/5
+2025-01-17 01:38:57,395 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:57,396 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:38:57,396 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_medium.json
+2025-01-17 01:38:57,397 - CostAnalysis - INFO - Loaded host data: (181128, 29)
+2025-01-17 01:38:57,485 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/5
+2025-01-17 01:38:57,485 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:57,485 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:38:57,490 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_medium.json
+2025-01-17 01:38:57,495 - CostAnalysis - INFO - Loaded task data: (1804123, 24)
+2025-01-17 01:38:57,495 - CostAnalysis - INFO - Processing seed directory: seed=0
+2025-01-17 01:38:57,502 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/5
+2025-01-17 01:38:57,502 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:57,502 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:38:57,502 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_medium.json
+2025-01-17 01:38:57,503 - CostAnalysis - INFO - Loaded host data: (181128, 29)
+2025-01-17 01:38:57,596 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/5
+2025-01-17 01:38:57,596 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:57,596 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:38:57,601 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_medium.json
+2025-01-17 01:38:57,606 - CostAnalysis - INFO - Loaded task data: (1804123, 24)
+2025-01-17 01:38:57,606 - CostAnalysis - INFO - Processing seed directory: seed=2
+2025-01-17 01:38:57,613 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/5
+2025-01-17 01:38:57,613 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:57,613 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:38:57,613 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_medium.json
+2025-01-17 01:38:57,614 - CostAnalysis - INFO - Loaded host data: (181128, 29)
+2025-01-17 01:38:57,723 - CostAnalysis - INFO - Getting scheduler info for scenario: output/cost_comparison/volatile/cost_experiment_volatile/raw-output/5
+2025-01-17 01:38:57,723 - CostAnalysis - INFO - Looking for trackr.json at: output/cost_comparison/volatile/cost_experiment_volatile/trackr.json
+2025-01-17 01:38:57,723 - CostAnalysis - INFO - Found scheduler: PredictiveCost for scenario 5
+2025-01-17 01:38:57,727 - CostAnalysis - INFO - Found topology path: topologies/volatile/topology_medium.json
+2025-01-17 01:38:57,732 - CostAnalysis - INFO - Loaded task data: (1804123, 24)
+2025-01-17 01:39:08,739 - CostAnalysis - INFO - Loaded data for volatile pattern
+2025-01-17 01:39:08,739 - CostAnalysis - INFO - Host data shape: (3063558, 29)
+2025-01-17 01:39:08,739 - CostAnalysis - INFO - Task data shape: (43089438, 24)
+2025-01-17 01:39:26,052 - CostAnalysis - INFO - Calculated metrics for volatile pattern
+2025-01-17 01:39:26,264 - CostAnalysis - INFO - Created visualizations for volatile pattern
+2025-01-17 01:39:26,268 - CostAnalysis - INFO - Saved analysis results for volatile pattern
+2025-01-17 01:39:26,268 - CostAnalysis - INFO - Performing cross-pattern analysis
+2025-01-17 01:39:26,513 - CostAnalysis - INFO - Completed cross-pattern analysis
+2025-01-17 01:39:26,513 - CostAnalysis - INFO - Analysis completed
+2025-01-17 01:39:26,513 - CostAnalysis - INFO - Results saved in results

@@ -1,0 +1,23 @@
+Cross-Pattern Analysis Summary: CostEfficient vs PredictiveCost
+==================================================
+
+Average Cost by Scheduler:
+scheduler
+CostEfficient     454.850006
+PredictiveCost    448.790009
+
+Average Cost Efficiency by Scheduler:
+scheduler
+CostEfficient     0.0
+PredictiveCost    0.0
+
+Average Completion Rate by Scheduler:
+scheduler
+CostEfficient     0.0
+PredictiveCost    0.0
+
+Best Performing Pattern-Scheduler Combinations:
+ pattern      scheduler  cost_efficiency
+ diurnal  CostEfficient         0.000392
+volatile  CostEfficient         0.000379
+ diurnal PredictiveCost         0.000321

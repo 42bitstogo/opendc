@@ -1,0 +1,247 @@
+2025-01-16 16:39:28,437 - ExperimentAnalyzer_diurnal - INFO - Initializing ExperimentAnalyzer for 'diurnal' pattern.
+2025-01-16 16:39:28,437 - ExperimentAnalyzer_diurnal - INFO - Loading parquet files (host, task)...
+2025-01-16 16:39:28,942 - ExperimentAnalyzer_diurnal - INFO - Loaded host data: 4427352 records.
+2025-01-16 16:39:38,559 - ExperimentAnalyzer_diurnal - INFO - Loaded task data: 62150364 records.
+2025-01-16 16:39:38,560 - ExperimentAnalyzer_diurnal - INFO - Loaded trackr data: 9 scenarios.
+2025-01-16 16:39:38,560 - ExperimentAnalyzer_diurnal - INFO - Converting timestamps from 'timestamp_absolute' to datetime...
+2025-01-16 16:39:38,684 - ExperimentAnalyzer_diurnal - INFO - Processed timestamps for host data.
+2025-01-16 16:39:39,145 - ExperimentAnalyzer_diurnal - INFO - Processed timestamps for task data.
+2025-01-16 16:39:39,145 - ExperimentAnalyzer_diurnal - INFO - Generating scenario labels for each record...
+2025-01-16 16:39:39,766 - ExperimentAnalyzer_diurnal - INFO - [host] Unique scenarios: ['small_cost_diurnal_SimpleCost' 'large_cost_diurnal_CostEfficient'
+ 'large_cost_diurnal_SimpleCost' 'small_cost_diurnal_CostEfficient'
+ 'large_cost_diurnal_PredictiveCost' 'medium_cost_diurnal_CostEfficient'
+ 'medium_cost_diurnal_SimpleCost' 'small_cost_diurnal_PredictiveCost'
+ 'medium_cost_diurnal_PredictiveCost']
+2025-01-16 16:39:54,515 - ExperimentAnalyzer_diurnal - INFO - [task] Unique scenarios: ['small_cost_diurnal_SimpleCost' 'large_cost_diurnal_CostEfficient'
+ 'large_cost_diurnal_SimpleCost' 'small_cost_diurnal_CostEfficient'
+ 'large_cost_diurnal_PredictiveCost' 'medium_cost_diurnal_CostEfficient'
+ 'medium_cost_diurnal_SimpleCost' 'small_cost_diurnal_PredictiveCost'
+ 'medium_cost_diurnal_PredictiveCost']
+2025-01-16 16:40:01,700 - ExperimentAnalyzer_diurnal - INFO - Starting resource utilization analysis...
+2025-01-16 16:40:01,700 - ExperimentAnalyzer_diurnal - INFO - Aggregating utilization metrics: ['cpu_utilization', 'guests_running', 'cpu_time_steal']
+2025-01-16 16:40:02,355 - ExperimentAnalyzer_diurnal - INFO - Successfully aggregated metrics across 716926 grouped rows.
+2025-01-16 16:40:02,390 - ExperimentAnalyzer_diurnal - INFO - Columns before flattening: [('scenario_label', ''), ('datetime', ''), ('topology', ''), ('scheduler', ''), ('cpu_utilization', 'mean'), ('cpu_utilization', 'std'), ('guests_running', 'mean'), ('guests_running', 'std'), ('cpu_time_steal', 'mean'), ('cpu_time_steal', 'std')]
+2025-01-16 16:40:02,390 - ExperimentAnalyzer_diurnal - INFO - Columns after flattening: ['scenario_label', 'datetime', 'topology', 'scheduler', 'cpu_utilization_mean', 'cpu_utilization_std', 'guests_running_mean', 'guests_running_std', 'cpu_time_steal_mean', 'cpu_time_steal_std']
+2025-01-16 16:40:02,393 - ExperimentAnalyzer_diurnal - INFO - Generating CPU utilization plot...
+2025-01-16 16:40:02,934 - ExperimentAnalyzer_diurnal - INFO - Saved CPU utilization plot to results/diurnal_cpu_utilization.png
+2025-01-16 16:40:02,943 - ExperimentAnalyzer_diurnal - INFO - Starting cost metrics analysis...
+2025-01-16 16:40:02,943 - ExperimentAnalyzer_diurnal - INFO - Analyzing cost metrics: ['cost', 'cpu_utilization']
+2025-01-16 16:40:03,412 - ExperimentAnalyzer_diurnal - INFO - Aggregated cost metrics: 9 scenario group(s).
+2025-01-16 16:40:03,412 - ExperimentAnalyzer_diurnal - INFO - Columns before flattening: [('scenario_label', ''), ('topology', ''), ('scheduler', ''), ('cost', 'mean'), ('cost', 'std'), ('cpu_utilization', 'mean'), ('cpu_utilization', 'std')]
+2025-01-16 16:40:03,412 - ExperimentAnalyzer_diurnal - INFO - Columns after flattening: ['scenario_label', 'topology', 'scheduler', 'cost_mean', 'cost_std', 'cpu_utilization_mean', 'cpu_utilization_std']
+2025-01-16 16:40:03,412 - ExperimentAnalyzer_diurnal - INFO - Calculating cost efficiency metrics...
+2025-01-16 16:40:03,413 - ExperimentAnalyzer_diurnal - INFO - Generating cost comparison plot...
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO - Saved cost comparison plot to results/diurnal_cost_comparison.png
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO - Cost Summary Statistics:
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO - 
+Scenario: large_cost_diurnal_CostEfficient
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Topology: large
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Scheduler: CostEfficient
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Avg Cost: 471.04
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Cost Std Dev: 190.54
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO - 
+Scenario: large_cost_diurnal_PredictiveCost
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Topology: large
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Scheduler: PredictiveCost
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Avg Cost: 445.59
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Cost Std Dev: 172.54
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO - 
+Scenario: large_cost_diurnal_SimpleCost
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Topology: large
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Scheduler: SimpleCost
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Avg Cost: 471.04
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Cost Std Dev: 190.54
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO - 
+Scenario: medium_cost_diurnal_CostEfficient
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Topology: medium
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Scheduler: CostEfficient
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Avg Cost: 402.27
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Cost Std Dev: 136.06
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Cost Efficiency: 0.0003
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO - 
+Scenario: medium_cost_diurnal_PredictiveCost
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Topology: medium
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Scheduler: PredictiveCost
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Avg Cost: 396.14
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Cost Std Dev: 128.58
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Cost Efficiency: 0.0002
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO - 
+Scenario: medium_cost_diurnal_SimpleCost
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Topology: medium
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Scheduler: SimpleCost
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Avg Cost: 402.27
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Cost Std Dev: 136.06
+2025-01-16 16:40:03,482 - ExperimentAnalyzer_diurnal - INFO -   Cost Efficiency: 0.0003
+2025-01-16 16:40:03,483 - ExperimentAnalyzer_diurnal - INFO - 
+Scenario: small_cost_diurnal_CostEfficient
+2025-01-16 16:40:03,483 - ExperimentAnalyzer_diurnal - INFO -   Topology: small
+2025-01-16 16:40:03,483 - ExperimentAnalyzer_diurnal - INFO -   Scheduler: CostEfficient
+2025-01-16 16:40:03,483 - ExperimentAnalyzer_diurnal - INFO -   Avg Cost: 303.18
+2025-01-16 16:40:03,483 - ExperimentAnalyzer_diurnal - INFO -   Cost Std Dev: 75.82
+2025-01-16 16:40:03,483 - ExperimentAnalyzer_diurnal - INFO -   Cost Efficiency: 0.0004
+2025-01-16 16:40:03,483 - ExperimentAnalyzer_diurnal - INFO - 
+Scenario: small_cost_diurnal_PredictiveCost
+2025-01-16 16:40:03,483 - ExperimentAnalyzer_diurnal - INFO -   Topology: small
+2025-01-16 16:40:03,483 - ExperimentAnalyzer_diurnal - INFO -   Scheduler: PredictiveCost
+2025-01-16 16:40:03,483 - ExperimentAnalyzer_diurnal - INFO -   Avg Cost: 299.93
+2025-01-16 16:40:03,483 - ExperimentAnalyzer_diurnal - INFO -   Cost Std Dev: 68.55
+2025-01-16 16:40:03,483 - ExperimentAnalyzer_diurnal - INFO -   Cost Efficiency: 0.0003
+2025-01-16 16:40:03,483 - ExperimentAnalyzer_diurnal - INFO - 
+Scenario: small_cost_diurnal_SimpleCost
+2025-01-16 16:40:03,483 - ExperimentAnalyzer_diurnal - INFO -   Topology: small
+2025-01-16 16:40:03,483 - ExperimentAnalyzer_diurnal - INFO -   Scheduler: SimpleCost
+2025-01-16 16:40:03,483 - ExperimentAnalyzer_diurnal - INFO -   Avg Cost: 303.18
+2025-01-16 16:40:03,483 - ExperimentAnalyzer_diurnal - INFO -   Cost Std Dev: 75.82
+2025-01-16 16:40:03,483 - ExperimentAnalyzer_diurnal - INFO -   Cost Efficiency: 0.0004
+2025-01-16 16:40:03,483 - ExperimentAnalyzer_diurnal - INFO - Starting task completion analysis...
+2025-01-16 16:40:05,642 - ExperimentAnalyzer_diurnal - INFO - Analyzing scenario: small_cost_diurnal_SimpleCost
+2025-01-16 16:40:11,070 - ExperimentAnalyzer_diurnal - INFO -   Total Tasks: 50
+2025-01-16 16:40:11,070 - ExperimentAnalyzer_diurnal - INFO -   Completion Rate: 98.00%
+2025-01-16 16:40:11,070 - ExperimentAnalyzer_diurnal - INFO -   Average Completion Time: 24596183.53s
+2025-01-16 16:40:11,070 - ExperimentAnalyzer_diurnal - INFO - Analyzing scenario: large_cost_diurnal_CostEfficient
+2025-01-16 16:40:14,830 - ExperimentAnalyzer_diurnal - INFO -   Total Tasks: 50
+2025-01-16 16:40:14,830 - ExperimentAnalyzer_diurnal - INFO -   Completion Rate: 98.00%
+2025-01-16 16:40:14,830 - ExperimentAnalyzer_diurnal - INFO -   Average Completion Time: 5014162.27s
+2025-01-16 16:40:14,830 - ExperimentAnalyzer_diurnal - INFO - Analyzing scenario: large_cost_diurnal_SimpleCost
+2025-01-16 16:40:16,862 - ExperimentAnalyzer_diurnal - INFO -   Total Tasks: 50
+2025-01-16 16:40:16,862 - ExperimentAnalyzer_diurnal - INFO -   Completion Rate: 98.00%
+2025-01-16 16:40:16,862 - ExperimentAnalyzer_diurnal - INFO -   Average Completion Time: 5014162.27s
+2025-01-16 16:40:16,862 - ExperimentAnalyzer_diurnal - INFO - Analyzing scenario: small_cost_diurnal_CostEfficient
+2025-01-16 16:40:22,993 - ExperimentAnalyzer_diurnal - INFO -   Total Tasks: 50
+2025-01-16 16:40:22,994 - ExperimentAnalyzer_diurnal - INFO -   Completion Rate: 98.00%
+2025-01-16 16:40:22,994 - ExperimentAnalyzer_diurnal - INFO -   Average Completion Time: 24596183.53s
+2025-01-16 16:40:22,994 - ExperimentAnalyzer_diurnal - INFO - Analyzing scenario: large_cost_diurnal_PredictiveCost
+2025-01-16 16:40:26,473 - ExperimentAnalyzer_diurnal - INFO -   Total Tasks: 50
+2025-01-16 16:40:26,473 - ExperimentAnalyzer_diurnal - INFO -   Completion Rate: 98.00%
+2025-01-16 16:40:26,473 - ExperimentAnalyzer_diurnal - INFO -   Average Completion Time: 5964223.90s
+2025-01-16 16:40:26,473 - ExperimentAnalyzer_diurnal - INFO - Analyzing scenario: medium_cost_diurnal_CostEfficient
+2025-01-16 16:40:29,211 - ExperimentAnalyzer_diurnal - INFO -   Total Tasks: 50
+2025-01-16 16:40:29,211 - ExperimentAnalyzer_diurnal - INFO -   Completion Rate: 98.00%
+2025-01-16 16:40:29,211 - ExperimentAnalyzer_diurnal - INFO -   Average Completion Time: 8815958.65s
+2025-01-16 16:40:29,211 - ExperimentAnalyzer_diurnal - INFO - Analyzing scenario: medium_cost_diurnal_SimpleCost
+2025-01-16 16:40:32,590 - ExperimentAnalyzer_diurnal - INFO -   Total Tasks: 50
+2025-01-16 16:40:32,590 - ExperimentAnalyzer_diurnal - INFO -   Completion Rate: 98.00%
+2025-01-16 16:40:32,590 - ExperimentAnalyzer_diurnal - INFO -   Average Completion Time: 8815958.65s
+2025-01-16 16:40:32,590 - ExperimentAnalyzer_diurnal - INFO - Analyzing scenario: small_cost_diurnal_PredictiveCost
+2025-01-16 16:40:39,783 - ExperimentAnalyzer_diurnal - INFO -   Total Tasks: 50
+2025-01-16 16:40:39,783 - ExperimentAnalyzer_diurnal - INFO -   Completion Rate: 98.00%
+2025-01-16 16:40:39,783 - ExperimentAnalyzer_diurnal - INFO -   Average Completion Time: 30177264.67s
+2025-01-16 16:40:39,783 - ExperimentAnalyzer_diurnal - INFO - Analyzing scenario: medium_cost_diurnal_PredictiveCost
+2025-01-16 16:40:44,218 - ExperimentAnalyzer_diurnal - INFO -   Total Tasks: 50
+2025-01-16 16:40:44,219 - ExperimentAnalyzer_diurnal - INFO -   Completion Rate: 98.00%
+2025-01-16 16:40:44,219 - ExperimentAnalyzer_diurnal - INFO -   Average Completion Time: 10781621.76s
+2025-01-16 16:40:44,219 - ExperimentAnalyzer_diurnal - INFO - Generating task completion visualizations...
+2025-01-16 16:40:44,290 - ExperimentAnalyzer_diurnal - INFO - Saved completion rates plot to results/diurnal_completion_rates.png
+2025-01-16 16:41:19,825 - ExperimentAnalyzer_diurnal - INFO - Saved completion times plot to results/diurnal_completion_times.png
+2025-01-16 16:41:57,584 - ExperimentAnalyzer_diurnal - INFO - Saved state distribution plot to results/diurnal_state_distribution.png
+2025-01-16 16:41:57,669 - ExperimentAnalyzer_diurnal - INFO - Starting comparative analysis...
+2025-01-16 16:41:57,669 - ExperimentAnalyzer_diurnal - INFO - Generating comparative bar plots...
+2025-01-16 16:41:57,881 - ExperimentAnalyzer_diurnal - INFO - Saved comparative analysis plot to results/diurnal_comparative_analysis.png
+2025-01-17 01:48:17,190 - ExperimentAnalyzer_diurnal - INFO - Initializing ExperimentAnalyzer for 'diurnal' pattern.
+2025-01-17 01:48:17,191 - ExperimentAnalyzer_diurnal - INFO - Loading parquet files (host, task)...
+2025-01-17 01:48:33,023 - ExperimentAnalyzer_diurnal - INFO - Loaded and filtered host data: 3063117 records.
+2025-01-17 01:48:33,024 - ExperimentAnalyzer_diurnal - INFO - Loaded and filtered task data: 42855912 records.
+2025-01-17 01:48:33,024 - ExperimentAnalyzer_diurnal - INFO - Loaded trackr data: 9 scenarios.
+2025-01-17 01:48:33,024 - ExperimentAnalyzer_diurnal - INFO - Converting timestamps from 'timestamp_absolute' to datetime...
+2025-01-17 01:48:33,069 - ExperimentAnalyzer_diurnal - INFO - Processed timestamps for host data.
+2025-01-17 01:48:33,387 - ExperimentAnalyzer_diurnal - INFO - Processed timestamps for task data.
+2025-01-17 01:48:33,387 - ExperimentAnalyzer_diurnal - INFO - Generating scenario labels for each record...
+2025-01-17 01:48:33,795 - ExperimentAnalyzer_diurnal - INFO - [host] Unique scenarios: ['large_cost_diurnal_CostEfficient' 'small_cost_diurnal_CostEfficient'
+ 'large_cost_diurnal_PredictiveCost' 'medium_cost_diurnal_CostEfficient'
+ 'small_cost_diurnal_PredictiveCost' 'medium_cost_diurnal_PredictiveCost']
+2025-01-17 01:48:43,023 - ExperimentAnalyzer_diurnal - INFO - [task] Unique scenarios: ['large_cost_diurnal_CostEfficient' 'small_cost_diurnal_CostEfficient'
+ 'large_cost_diurnal_PredictiveCost' 'medium_cost_diurnal_CostEfficient'
+ 'small_cost_diurnal_PredictiveCost' 'medium_cost_diurnal_PredictiveCost']
+2025-01-17 01:48:44,934 - ExperimentAnalyzer_diurnal - INFO - Starting resource utilization analysis...
+2025-01-17 01:48:44,935 - ExperimentAnalyzer_diurnal - INFO - Aggregating utilization metrics: ['cpu_utilization', 'guests_running', 'cpu_time_steal']
+2025-01-17 01:48:45,387 - ExperimentAnalyzer_diurnal - INFO - Successfully aggregated metrics across 495009 grouped rows.
+2025-01-17 01:48:45,405 - ExperimentAnalyzer_diurnal - INFO - Columns before flattening: [('scenario_label', ''), ('datetime', ''), ('topology', ''), ('scheduler', ''), ('cpu_utilization', 'mean'), ('cpu_utilization', 'std'), ('guests_running', 'mean'), ('guests_running', 'std'), ('cpu_time_steal', 'mean'), ('cpu_time_steal', 'std')]
+2025-01-17 01:48:45,405 - ExperimentAnalyzer_diurnal - INFO - Columns after flattening: ['scenario_label', 'datetime', 'topology', 'scheduler', 'cpu_utilization_mean', 'cpu_utilization_std', 'guests_running_mean', 'guests_running_std', 'cpu_time_steal_mean', 'cpu_time_steal_std']
+2025-01-17 01:48:45,405 - ExperimentAnalyzer_diurnal - INFO - Generating CPU utilization plot...
+2025-01-17 01:48:45,751 - ExperimentAnalyzer_diurnal - INFO - Saved CPU utilization plot to results/diurnal_cpu_utilization.png
+2025-01-17 01:48:45,758 - ExperimentAnalyzer_diurnal - INFO - Starting cost metrics analysis...
+2025-01-17 01:48:45,758 - ExperimentAnalyzer_diurnal - INFO - Analyzing cost metrics: ['cost', 'cpu_utilization']
+2025-01-17 01:48:46,093 - ExperimentAnalyzer_diurnal - INFO - Aggregated cost metrics: 6 scenario group(s).
+2025-01-17 01:48:46,093 - ExperimentAnalyzer_diurnal - INFO - Columns before flattening: [('scenario_label', ''), ('topology', ''), ('scheduler', ''), ('cost', 'mean'), ('cost', 'std'), ('cpu_utilization', 'mean'), ('cpu_utilization', 'std')]
+2025-01-17 01:48:46,093 - ExperimentAnalyzer_diurnal - INFO - Columns after flattening: ['scenario_label', 'topology', 'scheduler', 'cost_mean', 'cost_std', 'cpu_utilization_mean', 'cpu_utilization_std']
+2025-01-17 01:48:46,093 - ExperimentAnalyzer_diurnal - INFO - Calculating cost efficiency metrics...
+2025-01-17 01:48:46,094 - ExperimentAnalyzer_diurnal - INFO - Generating cost comparison plot...
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO - Saved cost comparison plot to results/diurnal_cost_comparison.png
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO - Cost Summary Statistics:
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO - 
+Scenario: large_cost_diurnal_CostEfficient
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Topology: large
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Scheduler: CostEfficient
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Avg Cost: 471.04
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Cost Std Dev: 190.54
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Cost Efficiency: 0.0002
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO - 
+Scenario: large_cost_diurnal_PredictiveCost
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Topology: large
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Scheduler: PredictiveCost
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Avg Cost: 445.59
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Cost Std Dev: 172.54
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Cost Efficiency: 0.0002
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO - 
+Scenario: medium_cost_diurnal_CostEfficient
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Topology: medium
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Scheduler: CostEfficient
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Avg Cost: 402.27
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Cost Std Dev: 136.06
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Cost Efficiency: 0.0003
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO - 
+Scenario: medium_cost_diurnal_PredictiveCost
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Topology: medium
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Scheduler: PredictiveCost
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Avg Cost: 396.14
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Cost Std Dev: 128.58
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Cost Efficiency: 0.0002
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO - 
+Scenario: small_cost_diurnal_CostEfficient
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Topology: small
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Scheduler: CostEfficient
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Avg Cost: 303.18
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Cost Std Dev: 75.82
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Cost Efficiency: 0.0004
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO - 
+Scenario: small_cost_diurnal_PredictiveCost
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Topology: small
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Scheduler: PredictiveCost
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Avg Cost: 299.93
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Cost Std Dev: 68.55
+2025-01-17 01:48:46,154 - ExperimentAnalyzer_diurnal - INFO -   Cost Efficiency: 0.0003
+2025-01-17 01:48:46,155 - ExperimentAnalyzer_diurnal - INFO - Starting task completion analysis...
+2025-01-17 01:48:47,489 - ExperimentAnalyzer_diurnal - INFO - Analyzing scenario: large_cost_diurnal_CostEfficient
+2025-01-17 01:48:48,974 - ExperimentAnalyzer_diurnal - INFO -   Total Tasks: 50
+2025-01-17 01:48:48,974 - ExperimentAnalyzer_diurnal - INFO -   Completion Rate: 98.00%
+2025-01-17 01:48:48,974 - ExperimentAnalyzer_diurnal - INFO -   Average Completion Time: 5014162.27s
+2025-01-17 01:48:48,974 - ExperimentAnalyzer_diurnal - INFO - Analyzing scenario: small_cost_diurnal_CostEfficient
+2025-01-17 01:48:53,821 - ExperimentAnalyzer_diurnal - INFO -   Total Tasks: 50
+2025-01-17 01:48:53,822 - ExperimentAnalyzer_diurnal - INFO -   Completion Rate: 98.00%
+2025-01-17 01:48:53,822 - ExperimentAnalyzer_diurnal - INFO -   Average Completion Time: 24596183.53s
+2025-01-17 01:48:53,822 - ExperimentAnalyzer_diurnal - INFO - Analyzing scenario: large_cost_diurnal_PredictiveCost
+2025-01-17 01:48:56,194 - ExperimentAnalyzer_diurnal - INFO -   Total Tasks: 50
+2025-01-17 01:48:56,194 - ExperimentAnalyzer_diurnal - INFO -   Completion Rate: 98.00%
+2025-01-17 01:48:56,194 - ExperimentAnalyzer_diurnal - INFO -   Average Completion Time: 5964223.90s
+2025-01-17 01:48:56,194 - ExperimentAnalyzer_diurnal - INFO - Analyzing scenario: medium_cost_diurnal_CostEfficient
+2025-01-17 01:48:58,186 - ExperimentAnalyzer_diurnal - INFO -   Total Tasks: 50
+2025-01-17 01:48:58,186 - ExperimentAnalyzer_diurnal - INFO -   Completion Rate: 98.00%
+2025-01-17 01:48:58,186 - ExperimentAnalyzer_diurnal - INFO -   Average Completion Time: 8815958.65s
+2025-01-17 01:48:58,186 - ExperimentAnalyzer_diurnal - INFO - Analyzing scenario: small_cost_diurnal_PredictiveCost
+2025-01-17 01:49:04,196 - ExperimentAnalyzer_diurnal - INFO -   Total Tasks: 50
+2025-01-17 01:49:04,196 - ExperimentAnalyzer_diurnal - INFO -   Completion Rate: 98.00%
+2025-01-17 01:49:04,196 - ExperimentAnalyzer_diurnal - INFO -   Average Completion Time: 30177264.67s
+2025-01-17 01:49:04,196 - ExperimentAnalyzer_diurnal - INFO - Analyzing scenario: medium_cost_diurnal_PredictiveCost
+2025-01-17 01:49:07,427 - ExperimentAnalyzer_diurnal - INFO -   Total Tasks: 50
+2025-01-17 01:49:07,427 - ExperimentAnalyzer_diurnal - INFO -   Completion Rate: 98.00%
+2025-01-17 01:49:07,427 - ExperimentAnalyzer_diurnal - INFO -   Average Completion Time: 10781621.76s
+2025-01-17 01:49:07,428 - ExperimentAnalyzer_diurnal - INFO - Generating task completion visualizations...
+2025-01-17 01:49:07,489 - ExperimentAnalyzer_diurnal - INFO - Saved completion rates plot to results/diurnal_completion_rates.png
+2025-01-17 01:49:17,507 - ExperimentAnalyzer_diurnal - INFO - Saved completion times plot to results/diurnal_completion_times.png
+2025-01-17 01:49:31,962 - ExperimentAnalyzer_diurnal - INFO - Saved state distribution plot to results/diurnal_state_distribution.png
+2025-01-17 01:49:32,036 - ExperimentAnalyzer_diurnal - INFO - Starting comparative analysis...
+2025-01-17 01:49:32,036 - ExperimentAnalyzer_diurnal - INFO - Generating comparative bar plots...
+2025-01-17 01:49:32,237 - ExperimentAnalyzer_diurnal - INFO - Saved comparative analysis plot to results/diurnal_comparative_analysis.png

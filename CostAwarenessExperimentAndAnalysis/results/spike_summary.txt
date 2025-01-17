@@ -1,0 +1,14 @@
+Analysis Summary for Spike Pattern
+==================================================
+
+Efficiency Metrics Summary:
+                  avg_cost  avg_utilization  cost_efficiency
+scheduler                                                   
+CostEfficient   475.000000             0.11              0.0
+PredictiveCost  467.630005             0.09              0.0
+
+Task Completion Summary:
+                completion_rate  avg_completion_time
+scheduler                                           
+CostEfficient               0.0          12808777.70
+PredictiveCost              0.0          15834917.76

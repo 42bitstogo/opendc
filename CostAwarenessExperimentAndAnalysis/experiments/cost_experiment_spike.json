@@ -1,0 +1,19 @@
+{
+    "name": "cost_experiment_spike",
+    "outputFolder": "output/cost_comparison/spike",
+    "runs": 3,
+    "topologies": [
+        {"pathToFile": "topologies/spike/topology_small.json"},
+        {"pathToFile": "topologies/spike/topology_medium.json"},
+        {"pathToFile": "topologies/spike/topology_large.json"}
+    ],
+    "workloads": [{
+        "pathToFile": "traces/bitbrains-small",
+        "type": "ComputeWorkload"
+    }],
+    "allocationPolicies": [
+        {"policyType": "SimpleCost"},
+        {"policyType": "CostEfficient"},
+        {"policyType": "PredictiveCost"}
+    ]
+}

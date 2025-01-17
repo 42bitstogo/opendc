@@ -1,0 +1,19 @@
+{
+    "name": "cost_experiment_stable",
+    "outputFolder": "output/cost_comparison/stable",
+    "runs": 3,
+    "topologies": [
+        {"pathToFile": "topologies/stable/topology_small.json"},
+        {"pathToFile": "topologies/stable/topology_medium.json"},
+        {"pathToFile": "topologies/stable/topology_large.json"}
+    ],
+    "workloads": [{
+        "pathToFile": "traces/bitbrains-small",
+        "type": "ComputeWorkload"
+    }],
+    "allocationPolicies": [
+        {"policyType": "SimpleCost"},
+        {"policyType": "CostEfficient"},
+        {"policyType": "PredictiveCost"}
+    ]
+}
